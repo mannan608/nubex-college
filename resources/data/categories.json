@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Trade",
+        "slug": "trade",
+        "short_name": "Trade",
+        "nav_title": "Hands-on construction & building qualifications.",
+        "description": "Explore practical, industry-focused qualifications designed to recognise existing skills and experience across a range of trade and vocational industries.",
+        "overview": "Turn your hands-on industry experience into a nationally recognised qualification through Recognition of Prior Learning (RPL). Nubex College helps you identify suitable trade and vocational qualifications based on your existing skills, workplace experience and career goals. Your practical knowledge and industry experience may be assessed and recognised toward a formal qualification, helping you avoid repeating learning you already have.",
+        "highlights": "Recognise practical industry skills, technical knowledge and workplace experience across automotive, construction, manufacturing, resources and other trade and vocational pathways.",
+        "image": "/industry/trade-vocational/trade-vocational.jpg",
+        "banner": "/industry/trade-vocational/trade-vocational.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Health Care",
+        "slug": "health-care",
+        "short_name": "Health",
+        "nav_title": "Care, ageing and mental health pathways.",
+        "description": "Explore nationally recognised health care qualifications for people with practical experience supporting individuals, patients and communities.",
+        "overview": "Build on your existing experience in health care and related support roles through Recognition of Prior Learning (RPL). Nubex College helps you identify suitable qualifications and RTO partners based on your skills, workplace experience and career goals. Your existing knowledge and practical experience may be assessed and recognised toward a nationally recognised qualification, helping you gain formal recognition without unnecessarily repeating learning you already have.",
+        "highlights": "Recognise practical skills in patient support, personal care, communication, health services and related care environments while working toward nationally recognised qualifications.",
+        "image": "/industry/health-care/health-care.jpg",
+        "banner": "/industry/health-care/health-care.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Business",
+        "slug": "business",
+        "short_name": "Business",
+        "nav_title": "Leadership, management and enterprise skills.",
+        "description": "Explore practical business qualifications designed to recognise workplace experience and develop skills in administration, operations, leadership and business services.",
+        "overview": "Turn your business and workplace experience into a nationally recognised qualification through Recognition of Prior Learning (RPL). Nubex College helps you find a suitable qualification and RTO partner based on your existing skills, experience and career goals. Your practical experience in administration, customer service, operations, communication, leadership and business environments may contribute toward a nationally recognised qualification.",
+        "highlights": "Recognise and develop skills in administration, communication, customer service, leadership, operations and business management for a range of professional career pathways.",
+        "image": "/industry/business/business.jpg",
+        "banner": "/industry/business/business.jpg"
+    }
+]

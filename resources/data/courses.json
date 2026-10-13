@@ -1,0 +1,1190 @@
+[
+ {
+    "id": 1,
+    "code": "CPC30220",
+    "category_slug": "trade",
+    "category_name": "Trade",
+    "level": "Certificate III",
+    "name": "Certificate III in Carpentry",
+    "slug": "cpc30220-certificate-iii-in-carpentry",
+    "image": "/industry/trade-vocational/CPC30220.jpg",
+
+    "hero": {
+        "badge": "Trades",
+        "course_code": "CPC30220",
+        "title": "Certificate III in Carpentry",
+        "description": "A trade qualification for carpenters working in residential and commercial construction environments, covering the setting out, manufacture, construction, assembly, installation and repair of timber and non-timber products."
+    },
+
+    "key_information": {
+        "duration": "104 weeks",
+        "total_units": 34,
+        "mode_of_study": "20 hrs/week (mixed)",
+        "cricos": "119993K",
+        "national_code": "CPC30220"
+    },
+
+    "course_description": "This is a trade qualification for carpenters in residential and commercial workplaces. It includes setting out, manufacturing, constructing, assembling, installing and repairing products made using timber and non-timber materials.",
+
+    "important_information": [
+        "State and territory jurisdictions may have different licensing, legislative, regulatory or certification requirements. Relevant state and territory regulatory authorities should be consulted to confirm those requirements.",
+        "Completion of the general construction induction training program, specified in the Safe Work Australia model Code of Practice: Construction Work, is required by anyone carrying out construction work.",
+        "Achievement of CPCCWHS1001 Prepare to work safely in the construction industry meets this requirement."
+    ],
+
+    "course_structure": {
+        "total_units": 34,
+        "core_units": {
+            "total": 27,
+            "units": [
+                {
+                    "code": "CPCCWHS2001",
+                    "name": "Apply WHS requirements, policies and procedures in the construction industry"
+                },
+                {
+                    "code": "CPCCOM1014",
+                    "name": "Conduct workplace communication"
+                },
+                {
+                    "code": "CPCCOM1012",
+                    "name": "Work effectively and sustainably in the construction industry"
+                },
+                {
+                    "code": "CPCCCA2011",
+                    "name": "Handle carpentry materials"
+                },
+                {
+                    "code": "CPCCCA2002",
+                    "name": "Use carpentry tools and equipment"
+                },
+                {
+                    "code": "CPCCOM1015",
+                    "name": "Carry out measurements and calculations"
+                },
+                {
+                    "code": "CPCCCA3025",
+                    "name": "Read and interpret plans, specifications and drawings for carpentry work"
+                },
+                {
+                    "code": "CPCCOM3001",
+                    "name": "Perform construction calculations to determine carpentry material requirements"
+                },
+                {
+                    "code": "CPCWHS3001",
+                    "name": "Identify construction work hazards and select risk control strategies"
+                },
+                {
+                    "code": "CPCCCM2012",
+                    "name": "Work safely at heights"
+                },
+                {
+                    "code": "CPCCCM2008",
+                    "name": "Erect and dismantle restricted height scaffolding"
+                },
+                {
+                    "code": "CPCCCM2006",
+                    "name": "Apply basic levelling procedures"
+                },
+                {
+                    "code": "CPCCOM3006",
+                    "name": "Carry out levelling operations"
+                },
+                {
+                    "code": "CPCCCA3002",
+                    "name": "Carry out setting out"
+                },
+                {
+                    "code": "CPCCCO2013",
+                    "name": "Carry out concreting to simple forms"
+                },
+                {
+                    "code": "CPCCCA3003",
+                    "name": "Install flooring systems"
+                },
+                {
+                    "code": "CPCCCA3004",
+                    "name": "Construct and erect wall frames"
+                },
+                {
+                    "code": "CPCCCA3010",
+                    "name": "Install windows and doors"
+                },
+                {
+                    "code": "CPCCCA3005",
+                    "name": "Construct ceiling frames"
+                },
+                {
+                    "code": "CPCCCA3006",
+                    "name": "Erect roof trusses"
+                },
+                {
+                    "code": "CPCCCA3007",
+                    "name": "Construct pitched roofs"
+                },
+                {
+                    "code": "CPCCCA3008",
+                    "name": "Construct eaves"
+                },
+                {
+                    "code": "CPCCCA3017",
+                    "name": "Install exterior cladding"
+                },
+                {
+                    "code": "CPCCCA3024",
+                    "name": "Install lining, panelling and moulding"
+                },
+                {
+                    "code": "CPCCCA3016",
+                    "name": "Construct, assemble and install timber external stairs"
+                },
+                {
+                    "code": "CPCCCA3028",
+                    "name": "Erect and dismantle formwork for footings and slabs on ground"
+                },
+                {
+                    "code": "CPCCCA3001",
+                    "name": "Carry out general demolition of minor building structures"
+                }
+            ]
+        },
+
+        "elective_units": {
+            "total": 7,
+            "units": [
+                {
+                    "code": "CPCCOM1013",
+                    "name": "Plan and organise work"
+                },
+                {
+                    "code": "CPCCM3005",
+                    "name": "Calculate costs of construction work"
+                },
+                {
+                    "code": "CPCCCM3001",
+                    "name": "Operate elevated work platforms up to 11 metres"
+                },
+                {
+                    "code": "CPCCCM2002",
+                    "name": "Carry out hand excavation"
+                },
+                {
+                    "code": "CPCCCA3014",
+                    "name": "Construct and install bulkheads"
+                },
+                {
+                    "code": "CPCCCA3012",
+                    "name": "Frame and fit wet area fixtures"
+                },
+                {
+                    "code": "CPCCCA3018",
+                    "name": "Construct, erect and dismantle formwork for stairs and ramps"
+                }
+            ]
+        }
+    },
+
+    "entry_requirements": [
+        {
+            "label": "Minimum age",
+            "value": "18 years at the time of enrolment",
+            "link": {
+                "text": "",
+                "url": ""
+            }
+        },
+        {
+            "label": "English language proficiency",
+            "value": "IELTS 6.0 with a minimum of 5.5 in each module, or an ",
+            "link": {
+        "text": "equivalent test accepted by the Department of Home Affairs",
+        "url": "https://immi.homeaffairs.gov.au/help-support/meeting-our-requirements/english-language"
+      }
+        },
+        {
+            "label": "Academic requirement",
+            "value": "Year 12 qualification or equivalent academic background",
+            "link": {
+                "text": "",
+                "url": ""
+            }
+        }
+    ],
+
+    "career_outcomes": [
+        "Carpenter — Commercial",
+        "Carpenter — Formwork",
+        "Carpenter — Residential"
+    ],
+
+    "education_pathways": [
+        "Diploma of Building and Construction",
+        "Relevant bachelor degree or post-graduate certificate"
+    ],
+
+    "exit_point_award": {
+        "qualification": "CPC30220 Certificate III in Carpentry",
+        "recognition": "Australian Qualifications Framework (AQF)",
+        "completion_requirement": "Students who successfully complete all 34 units of competency will be issued with CPC30220 Certificate III in Carpentry, recognised nationally under the AQF.",
+        "partial_completion": "Students who complete some but not all units may be issued with a Statement of Attainment."
+    },
+
+    "rpl_credit_transfer": {
+        "available": true,
+        "description": "Fast track your qualification by gaining credit for your existing skills and prior learning. If you have relevant experience or completed units or qualifications, indicate RPL or Credit Transfer in your application.",
+        "recognition_statement": "Australian Health and Horticulture Institute Pty Ltd recognises AQF qualifications and Statements of Attainment issued by Registered Training Organisations."
+    },
+
+    "additional_information": {
+        "student_handbook_url": "https://uti.edu.au/current-students",
+        "description": "For full terms, conditions and student life information, please refer to the Student Handbook."
+    },
+
+    "admissions": {
+        "title": "Talk to admissions",
+        "description": "Our team will help you choose an intake, prepare documents and confirm fees.",
+        "enquire_url": "https://uti.edu.au/contact"
+    },
+
+    "brochure": {
+        "title": "Course brochure",
+        "description": "Detailed course outline, units, fees and intake dates.",
+        "file_name": "CPC30220.pdf",
+        "url": "https://uti.edu.au/brochures/CPC30220.pdf"
+    },
+
+    "course_url": "https://uti.edu.au/courses/CPC30220",
+
+    "demand": "High"
+},
+{
+    "id": 2,
+    "code": "CPC50220",
+    "category_slug": "trade",
+    "category_name": "Trade",
+    "level": "Diploma",
+    "name": "Diploma of Building and Construction",
+    "slug": "cpc50220-diploma-of-building-and-construction-building",
+    "image": "/industry/trade-vocational/CPC50220.jpg",
+
+    "hero": {
+        "badge": "Trades",
+        "course_code": "CPC50220",
+        "title": "Building and Construction",
+        "description": "Develop practical building and construction skills, including structural principles, risk management, estimating, contracts and construction supervision."
+    },
+
+    "key_information": {
+        "duration": "52 weeks",
+        "total_units": 27,
+        "mode_of_study": "20 hrs/week",
+        "cricos": "119994J",
+        "national_code": "CPC50220"
+    },
+
+    "course_description": "This qualification reflects the role of building professionals who apply knowledge of structural principles, risk and financial management, estimating, preparing and administering building and construction contracts, selecting contractors, overseeing the work and its quality, and managing construction work in building projects including residential and commercial construction.",
+
+    "limitations": [
+        "Residential construction is limited to National Construction Code Class 1 and 10 buildings to a maximum of 3 storeys.",
+        "Commercial construction is limited to National Construction Code Class 2 to 9 buildings, Type C and Type B construction."
+    ],
+
+    "course_structure": {
+        "total_units": 27,
+
+        "core_units": {
+            "total": 24,
+            "units": [
+                {
+                    "code": "BSBWHS513",
+                    "name": "Lead WHS risk management"
+                },
+                {
+                    "code": "BSBOPS504",
+                    "name": "Manage business risk"
+                },
+                {
+                    "code": "CPCCBC5011",
+                    "name": "Manage environmental management practices and processes in building and construction"
+                },
+                {
+                    "code": "CPCCBC5010",
+                    "name": "Manage construction work"
+                },
+                {
+                    "code": "CPCCBC4012",
+                    "name": "Read and interpret plans and specifications"
+                },
+                {
+                    "code": "CPCCBC4014",
+                    "name": "Prepare simple building sketches and drawings"
+                },
+                {
+                    "code": "CPCCBC4004",
+                    "name": "Identify and produce estimated costs for building and construction projects"
+                },
+                {
+                    "code": "CPCCBC5002",
+                    "name": "Monitor costing systems on complex building and construction projects"
+                },
+                {
+                    "code": "CPCCBC5019",
+                    "name": "Manage building and construction business finances"
+                },
+                {
+                    "code": "CPCCBC4005",
+                    "name": "Produce labour and material schedules for ordering"
+                },
+                {
+                    "code": "CPCCBC4009",
+                    "name": "Apply legal requirements to building and construction projects"
+                },
+                {
+                    "code": "CPCCBC5007",
+                    "name": "Administer the legal obligations of a building and construction contractor"
+                },
+                {
+                    "code": "CPCCBC5013",
+                    "name": "Manage professional technical and legal reports on building and construction projects"
+                },
+                {
+                    "code": "CPCCBC4013",
+                    "name": "Prepare and evaluate tender documentation"
+                },
+                {
+                    "code": "CPCCBC4003",
+                    "name": "Select, prepare and administer a construction contract"
+                },
+                {
+                    "code": "CPCCBC5005",
+                    "name": "Select and manage building and construction contractors"
+                },
+                {
+                    "code": "CPCCBC4001",
+                    "name": "Apply building codes and standards to the construction process for Class 1 and 10 buildings"
+                },
+                {
+                    "code": "CPCCBC5001",
+                    "name": "Apply building codes and standards to the construction process for Type B construction"
+                },
+                {
+                    "code": "CPCCBC4053",
+                    "name": "Apply building codes and standards to the construction process for Class 2 to 9, Type C buildings"
+                },
+                {
+                    "code": "CPCCBC4010",
+                    "name": "Apply structural principles to residential and commercial constructions"
+                },
+                {
+                    "code": "CPCCBC5018",
+                    "name": "Apply structural principles to the construction of buildings up to 3 storeys"
+                },
+                {
+                    "code": "CPCCBC4008",
+                    "name": "Supervise site communication and administration processes for building and construction projects"
+                },
+                {
+                    "code": "CPCCBC5003",
+                    "name": "Supervise the planning of onsite building and construction work"
+                },
+                {
+                    "code": "CPCCBC4018",
+                    "name": "Apply site surveys and set-out procedures to building and construction projects"
+                }
+            ]
+        },
+
+        "elective_units": {
+            "total": 3,
+            "units": [
+                {
+                    "code": "CPCSUS5001",
+                    "name": "Develop workplace policies and procedures for sustainability"
+                },
+                {
+                    "code": "BSBPMG532",
+                    "name": "Manage project quality"
+                },
+                {
+                    "code": "CPCCCM3005",
+                    "name": "Calculate costs of construction work"
+                }
+            ]
+        }
+    },
+
+    "entry_requirements": [
+        {
+            "label": "Minimum age",
+            "value": "18 years at the time of enrolment",
+            "link": {
+                "text": "",
+                "url": ""
+            }
+            
+        },
+        {
+            "label": "English language proficiency",
+            "value": "IELTS 6.0 with a minimum of 5.5 in each module, or an.",
+            "link": {
+                "text": "equivalent accepted test recognized by the Department of Home Affairs",
+                "url": "https://immi.homeaffairs.gov.au/help-support/meeting-our-requirements/english-language"
+            }
+        },
+        {
+            "label": "Academic requirement",
+            "value": "Year 12 qualification or equivalent academic background",
+            "link": {
+                "text": "",
+                "url": ""
+            }
+        }
+    ],
+
+    "licensing_regulatory_information": {
+        "title": "Licensing & regulatory information",
+        "description": "Licensing details are available through the NSW Government regarding building and trade licences and registrations."
+    },
+
+    "career_outcomes": [
+        "Builder",
+        "General Foreperson",
+        "Building Inspector"
+    ],
+
+    "education_pathways": [
+        "Relevant bachelor degree or post-graduate certificate"
+    ],
+
+    "exit_point_award": {
+        "qualification": "CPC50220 Diploma of Building and Construction (Building)",
+        "recognition": "Australian Qualifications Framework (AQF)",
+        "completion_requirement": "Students who successfully complete all 27 units of competency will be issued with CPC50220 Diploma of Building and Construction (Building), recognised nationally under the AQF.",
+        "partial_completion": "Students who complete some but not all units may be issued with a Statement of Attainment."
+    },
+
+    "rpl_credit_transfer": {
+        "available": true,
+        "description": "Fast track your qualification by gaining credit for your existing skills and prior learning. If you have relevant experience or completed units or qualifications, indicate RPL or Credit Transfer in your application.",
+        "recognition_statement": "Australian Health and Horticulture Institute Pty Ltd recognises AQF qualifications and Statements of Attainment issued by Registered Training Organisations."
+    },
+
+    "additional_information": {
+        "student_handbook_url": "https://uti.edu.au/current-students",
+        "description": "For full terms, conditions and student life information, please refer to the Student Handbook."
+    },
+
+    "admissions": {
+        "title": "Talk to admissions",
+        "description": "Our team will help you choose an intake, prepare documents and confirm fees.",
+        "enquire_url": "https://uti.edu.au/contact"
+    },
+
+    "brochure": {
+        "title": "Course brochure",
+        "description": "Detailed course outline, units, fees and intake dates.",
+        "file_name": "CPC50220.pdf",
+        "url": "https://uti.edu.au/brochures/CPC50220.pdf"
+    },
+
+    "course_url": "https://uti.edu.au/courses/CPC50220",
+    "demand": "High"
+},
+{
+    "id": 3,
+    "code": "CHC43015",
+    "category_slug": "health-care",
+    "category_name": "Health Care",
+    "level": "Certificate IV",
+    "name": "Certificate IV in Ageing Support",
+    "slug": "chc43015-certificate-iv-in-ageing-support",
+    "image": "/industry/health-care/CHC43015.jpg",
+
+    "hero": {
+        "badge": "Community & Health",
+        "course_code": "CHC43015",
+        "title": "Certificate IV in Ageing Support",
+        "description": "Develop the skills and knowledge required to support older people across residential, home and community-based care environments."
+    },
+
+    "key_information": {
+        "duration": "52 weeks",
+        "total_units": 18,
+        "mode_of_study": "20 hrs/week (mixed)",
+        "cricos": "114269A",
+        "national_code": "CHC43015"
+    },
+
+    "course_description": "This qualification reflects the role of support workers who complete specialised tasks and functions in aged services in residential, home or community-based environments. Workers take responsibility for their own outputs within defined organisation guidelines and maintain quality service delivery through the development, facilitation and review of individualised service planning. Workers may also be required to demonstrate leadership and have limited responsibility for the organisation and the quantity and quality of outputs of others within limited parameters.",
+
+    "course_requirements": [
+        "To achieve this qualification, the candidate must complete at least 120 hours of work as detailed in the Assessment Requirements of the units of competency."
+    ],
+
+    "course_structure": {
+        "total_units": 18,
+
+        "core_units": {
+            "total": 15,
+            "units": [
+                {
+                    "code": "CHCLEG003",
+                    "name": "Manage legal and ethical compliance"
+                },
+                {
+                    "code": "CHCDIV001",
+                    "name": "Work with diverse people"
+                },
+                {
+                    "code": "CHCAGE001",
+                    "name": "Facilitate the empowerment of older people"
+                },
+                {
+                    "code": "CHCAGE005",
+                    "name": "Provide support to people living with dementia"
+                },
+                {
+                    "code": "HLTAAP001",
+                    "name": "Recognise healthy body systems"
+                },
+                {
+                    "code": "CHCAGE004",
+                    "name": "Implement interventions with older people at risk"
+                },
+                {
+                    "code": "CHCADV001",
+                    "name": "Facilitate the interests and rights of clients"
+                },
+                {
+                    "code": "CHCPAL001",
+                    "name": "Deliver care services using a palliative approach"
+                },
+                {
+                    "code": "CHCAGE003",
+                    "name": "Coordinate services for older people"
+                },
+                {
+                    "code": "CHCCCS023",
+                    "name": "Support independence and wellbeing"
+                },
+                {
+                    "code": "CHCCCS025",
+                    "name": "Support relationships with carers and families"
+                },
+                {
+                    "code": "CHCPRP001",
+                    "name": "Develop and maintain networks and collaborative partnerships"
+                },
+                {
+                    "code": "CHCCCS006",
+                    "name": "Facilitate individual service planning and delivery"
+                },
+                {
+                    "code": "CHCCCS011",
+                    "name": "Meet personal support needs"
+                },
+                {
+                    "code": "HLTWHS002",
+                    "name": "Follow safe work practices for direct client care"
+                }
+            ]
+        },
+
+        "elective_units": {
+            "total": 3,
+            "units": [
+                {
+                    "code": "HLTINF006",
+                    "name": "Apply basic principles and practices of infection prevention and control"
+                },
+                {
+                    "code": "HLTHPS006",
+                    "name": "Assist clients with medication"
+                },
+                {
+                    "code": "HLTWHS004",
+                    "name": "Manage work health and safety"
+                }
+            ]
+        }
+    },
+
+    "entry_requirements": [
+        {
+            "label": "Minimum age",
+            "value": "18 years at the time of enrolment",
+            "link": {
+                "text": "",
+                "url": ""
+            }
+        },
+        {
+            "label": "English language proficiency",
+            "value": "IELTS 6.0 with a minimum of 5.5 in each module, or an ",
+            "link": {
+        "text": "equivalent test accepted by the Department of Home Affairs",
+        "url": "https://immi.homeaffairs.gov.au/help-support/meeting-our-requirements/english-language"
+      }
+        },
+        {
+            "label": "Academic requirement",
+            "value": "Year 12 qualification or equivalent academic background",
+             "link": {
+                "text": "",
+                "url": ""
+            }
+        }
+    ],
+
+    "work_placement": {
+        "mandatory": true,
+        "hours": 120,
+        "title": "Mandatory placement",
+        "description": "To achieve this qualification, students must complete a minimum of 120 hours of supervised work placement in an approved aged care setting (residential, home or community based). Placement provides hands-on experience supporting older people, applying person-centred care, and consolidating skills learned in the classroom. UTI's Work Placement Coordinator will assist in arranging suitable host organisations and supervising progress against the Assessment Requirements of the units of competency."
+    },
+
+    "career_outcomes": [
+        "Aged Care Activity Worker",
+        "Personal Care Support Worker",
+        "Residential Care Worker",
+        "Care Service Team Leader"
+    ],
+
+    "education_pathways": [
+        "Diploma of Mental Health",
+        "Relevant bachelor degree or post-graduate certificate"
+    ],
+
+    "exit_point_award": {
+        "qualification": "CHC43015 Certificate IV in Ageing Support",
+        "recognition": "Australian Qualifications Framework (AQF)",
+        "completion_requirement": "Students who successfully complete all 18 units of competency and the mandatory 120 hours of work placement will be issued with CHC43015 Certificate IV in Ageing Support, recognised nationally under the AQF.",
+        "partial_completion": "Students who complete some but not all units may be issued with a Statement of Attainment."
+    },
+
+    "rpl_credit_transfer": {
+        "available": true,
+        "description": "Fast track your qualification by gaining credit for your existing skills and prior learning. If you have relevant experience or completed units or qualifications, indicate RPL or Credit Transfer in your application.",
+        "recognition_statement": "Australian Health and Horticulture Institute Pty Ltd recognises AQF qualifications and Statements of Attainment issued by Registered Training Organisations."
+    },
+
+    "additional_information": {
+        "student_handbook_url": "https://uti.edu.au/current-students",
+        "description": "For full terms, conditions and student life information, please refer to the Student Handbook."
+    },
+
+    "admissions": {
+        "title": "Talk to admissions",
+        "description": "Our team will help you choose an intake, prepare documents and confirm fees.",
+        "enquire_url": "https://uti.edu.au/contact"
+    },
+
+    "brochure": {
+        "title": "Course brochure",
+        "description": "Detailed course outline, units, fees and intake dates.",
+        "file_name": "CHC43015.pdf",
+        "url": "https://uti.edu.au/brochures/CHC43015.pdf"
+    },
+
+    "course_url": "https://uti.edu.au/courses/CHC43015",
+    "demand": "High"
+},
+{
+    "id": 4,
+    "code": "CHC53315",
+    "category_slug": "health-care",
+    "category_name": "Health Care",
+    "level": "Diploma",
+    "name": "Diploma of Mental Health",
+    "slug": "chc53315-diploma-of-mental-health",
+    "image": "/industry/health-care/CHC53315.jpg",
+
+    "hero": {
+        "badge": "Community & Health",
+        "course_code": "CHC53315",
+        "title": "Diploma of Mental Health",
+        "description": "Develop specialist skills and knowledge to provide services to clients experiencing mental health issues, including counselling, referral, advocacy and health promotion."
+    },
+
+    "key_information": {
+        "duration": "52 weeks",
+        "total_units": 20,
+        "mode_of_study": "20 hrs/week (mixed)",
+        "cricos": "114270H",
+        "national_code": "CHC53315"
+    },
+
+    "course_description": "This qualification reflects the role of workers who provide services to clients in relation to mental health issues. They can provide counselling, referral, advocacy and education or health promotion services. These workers are required to have high-level specialist knowledge, skills and competencies, particularly in relation to laws affecting people with mental health issues, the range of services available to them and health issues related to mental health.",
+
+    "course_requirements": [
+        "To achieve this qualification, the candidate must complete at least 160 hours of work as detailed in the Assessment Requirements of the units of competency."
+    ],
+
+    "course_structure": {
+        "total_units": 20,
+
+        "core_units": {
+            "total": 15,
+            "units": [
+                {
+                    "code": "CHCADV005",
+                    "name": "Provide systems advocacy services"
+                },
+                {
+                    "code": "CHCDIV001",
+                    "name": "Work with diverse people"
+                },
+                {
+                    "code": "CHCDIV002",
+                    "name": "Promote Aboriginal and/or Torres Strait Islander cultural safety"
+                },
+                {
+                    "code": "CHCMHS002",
+                    "name": "Establish self-directed recovery relationships"
+                },
+                {
+                    "code": "CHCMHS003",
+                    "name": "Provide recovery oriented mental health services"
+                },
+                {
+                    "code": "CHCMHS004",
+                    "name": "Work collaboratively with the care network and other services"
+                },
+                {
+                    "code": "CHCMHS005",
+                    "name": "Provide services to people with co-existing mental health and alcohol and other drugs issues"
+                },
+                {
+                    "code": "CHCMHS009",
+                    "name": "Provide early intervention, health prevention and promotion programs"
+                },
+                {
+                    "code": "CHCMHS010",
+                    "name": "Implement recovery oriented approaches to complexity"
+                },
+                {
+                    "code": "CHCMHS011",
+                    "name": "Assess and promote social, emotional and physical wellbeing"
+                },
+                {
+                    "code": "CHCMHS012",
+                    "name": "Provide support to develop wellness plans and advanced directives"
+                },
+                {
+                    "code": "CHCMHS013",
+                    "name": "Implement trauma informed care"
+                },
+                {
+                    "code": "CHCPOL003",
+                    "name": "Research and apply evidence to practice"
+                },
+                {
+                    "code": "CHCPRP003",
+                    "name": "Reflect on and improve own professional practice"
+                },
+                {
+                    "code": "HLTWHS004",
+                    "name": "Manage work health and safety"
+                }
+            ]
+        },
+
+        "elective_units": {
+            "total": 5,
+            "units": [
+                {
+                    "code": "CHCCCS017",
+                    "name": "Provide loss and grief support"
+                },
+                {
+                    "code": "CHCCCS018",
+                    "name": "Provide suicide bereavement support"
+                },
+                {
+                    "code": "HLTAAP001",
+                    "name": "Recognise healthy body systems"
+                },
+                {
+                    "code": "HLTHPS006",
+                    "name": "Assist clients with medication"
+                },
+                {
+                    "code": "BSBFIM501",
+                    "name": "Manage budgets and financial plans"
+                }
+            ]
+        }
+    },
+
+    "entry_requirements": [
+        {
+            "label": "Minimum age",
+            "value": "18 years at the time of enrolment",
+            "link": {
+        "text": "",
+        "url": ""
+      }
+        },
+        {
+            "label": "English language proficiency",
+            "value": "IELTS 6.0 with a minimum of 5.5 in each module, or ",
+            "link": {
+        "text": "equivalent test accepted by the Department of Home Affairs",
+        "url": "https://immi.homeaffairs.gov.au/help-support/meeting-our-requirements/english-language"
+      }
+        },
+        {
+            "label": "Academic requirement",
+            "value": "Year 12 qualification or equivalent academic background",
+            "link": {
+        "text": "",
+        "url": ""
+      }
+        }
+    ],
+
+    "work_placement": {
+        "mandatory": true,
+        "hours": 160,
+        "title": "Mandatory placement",
+        "description": "To achieve this qualification, students must complete a minimum of 160 hours of supervised work placement in an approved mental health service. Placement allows students to apply recovery-oriented practice, trauma-informed care, and collaborative service delivery with real clients and care networks. UTI's Work Placement Coordinator will help arrange host organisations and oversee progress against the Assessment Requirements of the units of competency."
+       
+    },
+
+    "career_outcomes": [
+        "Mental Health Outreach Worker",
+        "Welfare Support Worker",
+        "Program Service Co-ordinator",
+        "Case Manager"
+    ],
+
+    "education_pathways": [
+        "Relevant bachelor degree or post-graduate certificate"
+    ],
+
+    "exit_point_award": {
+        "qualification": "CHC53315 Diploma of Mental Health",
+        "recognition": "Australian Qualifications Framework (AQF)",
+        "completion_requirement": "Students who successfully complete all 20 units of competency and the mandatory 160 hours of work placement will be issued with CHC53315 Diploma of Mental Health, recognised nationally under the AQF.",
+        "partial_completion": "Students who complete some but not all units may be issued with a Statement of Attainment."
+    },
+
+    "rpl_credit_transfer": {
+        "available": true,
+        "description": "Fast track your qualification by gaining credit for your existing skills and prior learning. If you have relevant experience or completed units or qualifications, indicate RPL or Credit Transfer in your application.",
+        "recognition_statement": "Australian Health and Horticulture Institute Pty Ltd recognises AQF qualifications and Statements of Attainment issued by Registered Training Organisations."
+    },
+
+    "additional_information": {
+        "student_handbook_url": "https://uti.edu.au/current-students",
+        "description": "For full terms, conditions and student life information, please refer to the Student Handbook."
+    },
+
+    "admissions": {
+        "title": "Talk to admissions",
+        "description": "Our team will help you choose an intake, prepare documents and confirm fees.",
+        "enquire_url": "https://uti.edu.au/contact"
+    },
+
+    "brochure": {
+        "title": "Course brochure",
+        "description": "Detailed course outline, units, fees and intake dates.",
+        "file_name": "CHC53315.pdf",
+        "url": "https://uti.edu.au/brochures/CHC53315.pdf"
+    },
+
+    "course_url": "https://uti.edu.au/courses/CHC53315",
+    "demand": "High"
+},
+
+{
+  "id": 5,
+  "code": "BSB50120",
+  "category_slug": "business",
+  "category_name": "Business",
+  "level": "Diploma",
+  "name": "Diploma of Business",
+  "slug": "bsb50120-diploma-of-business",
+  "image": "/industry/business/BSB50120.jpg",
+  "hero": {
+    "badge": "Business",
+    "course_code": "BSB50120",
+    "title": "Diploma of Business",
+    "description": "Develop business operations, communication, resource management and leadership skills for a range of business services roles, including positions with frontline management responsibilities."
+  },
+  "key_information": {
+    "duration": "52 weeks",
+    "total_units": 12,
+    "mode_of_study": "20 hrs/week (mixed)",
+    "cricos": "114271G",
+    "national_code": "BSB50120"
+  },
+  "course_description": "This qualification reflects the role of individuals in a variety of Business Services job roles. These individuals may have frontline management accountabilities. Individuals in these roles carry out moderately complex tasks in a specialist field of expertise that requires business operations skills. They may possess substantial experience in a range of settings, but seek to further develop their skills across a wide range of business functions.",
+  "course_structure": {
+    "total_units": 12,
+    "core_units": {
+      "total": 5,
+      "units": [
+        {
+          "code": "BSBCRT511",
+          "name": "Develop critical thinking in others"
+        },
+        {
+          "code": "BSBFIN501",
+          "name": "Manage budgets and financial plans"
+        },
+        {
+          "code": "BSBOPS501",
+          "name": "Manage business resources"
+        },
+        {
+          "code": "BSBSUS511",
+          "name": "Develop workplace policies and procedures for sustainability"
+        },
+        {
+          "code": "BSBXCM501",
+          "name": "Lead communication in the workplace"
+        }
+      ]
+    },
+    "elective_units": {
+      "total": 7,
+      "units": [
+        {
+          "code": "BSBTWK503",
+          "name": "Manage meetings"
+        },
+        {
+          "code": "BSBOPS502",
+          "name": "Manage business operational plans"
+        },
+        {
+          "code": "BSBOPS504",
+          "name": "Manage business risk"
+        },
+        {
+          "code": "BSBTWK501",
+          "name": "Lead diversity and inclusion"
+        },
+        {
+          "code": "BSBSTR601",
+          "name": "Manage innovation and continuous improvement"
+        },
+        {
+          "code": "BSBWHS521",
+          "name": "Ensure a safe workplace for a work area"
+        },
+        {
+          "code": "BSBHRM525",
+          "name": "Manage recruitment and onboarding"
+        }
+      ]
+    }
+  },
+  "entry_requirements": [
+    {
+      "label": "Minimum age",
+      "value": "18 years at the time of enrolment",
+      "link": {
+        "text": "",
+        "url": ""
+      }
+    },
+    {
+      "label": "English language proficiency",
+      "value": "IELTS 6.0 with a minimum of 5.5 in each module, or ",
+      "link": {
+        "text": "equivalent test accepted by the Department of Home Affairs",
+        "url": "https://immi.homeaffairs.gov.au/help-support/meeting-our-requirements/english-language"
+      }
+    },
+    {
+      "label": "Academic requirement",
+      "value": "Year 12 qualification or equivalent academic background",
+      "link": {
+        "text": "",
+        "url": ""
+      }
+    }
+  ],
+  "career_outcomes": [
+    "Learning and Development Manager",
+    "Training Manager",
+    "Workforce Planner",
+    "RTO Education Advisor"
+  ],
+  "education_pathways": [
+    "Advanced Diploma of Business",
+    "Relevant bachelor degree or post-graduate certificate in business with a university or higher education provider"
+  ],
+  "exit_point_award": {
+    "qualification": "BSB50120 Diploma of Business",
+    "recognition": "Australian Qualifications Framework (AQF)",
+    "completion_requirement": "Students who successfully complete all 12 units of competency as stated in the Course Structure will be issued with BSB50120 Diploma of Business. This qualification is recognised nationally under the Australian Qualifications Framework (AQF).",
+    "partial_completion": "Students who complete some but not all units may be issued with a Statement of Attainment identifying the units completed."
+  },
+  "rpl_credit_transfer": {
+    "available": true,
+    "description": "Fast track your qualification by gaining credit for your existing skills and prior learning. If you have relevant experience or completed units/qualifications, indicate RPL/Credit Transfer in your application.",
+    "recognition_statement": "Australian Health and Horticulture Institute Pty Ltd recognises AQF qualifications and Statements of Attainment issued by Registered Training Organisations."
+  },
+  "additional_information": {
+    "student_handbook_url": "https://uti.edu.au/current-students",
+    "description": "For full terms, conditions and student life information, please refer to the Student Handbook."
+  },
+  "admissions": {
+    "title": "Talk to admissions",
+    "description": "Our team will help you choose an intake, prepare documents and confirm fees.",
+    "enquire_url": "https://uti.edu.au/contact"
+  },
+  "brochure": {
+    "title": "Course brochure",
+    "description": "Detailed course outline, units, fees and intake dates.",
+    "file_name": "BSB50120.pdf",
+    "url": "https://uti.edu.au/brochures/BSB50120.pdf"
+  },
+  "course_url": "https://uti.edu.au/courses/BSB50120"
+},
+
+{
+  "id": 6,
+  "code": "BSB60120",
+  "category_slug": "business",
+  "category_name": "Business",
+  "level": "Advanced Diploma",
+  "name": "Advanced Diploma of Business",
+  "slug": "bsb60120-advanced-diploma-of-business",
+  "image": "/industry/business/BSB60120.jpg",
+  "hero": {
+    "badge": "Business",
+    "course_code": "BSB60120",
+    "title": "Advanced Diploma of Business",
+    "description": "Develop advanced business, strategic leadership, financial management and organisational skills for complex business services and general management roles."
+  },
+  "key_information": {
+    "duration": "78 weeks",
+    "total_units": 10,
+    "mode_of_study": "20 hrs/week (mixed)",
+    "cricos": "112668B",
+    "national_code": "BSB60120"
+  },
+  "course_description": "This qualification reflects the role of individuals in a variety of Business Services job roles. These individuals may have general management accountabilities. Individuals in these roles carry out complex tasks in a specialist field of expertise. They may undertake technical research and analysis, and often contribute to setting the strategic direction for a work area. The qualification is suited to individuals who are responsible for the supervision and leadership of a team or work area, including managing staff performance and making staffing decisions.",
+  "course_structure": {
+    "total_units": 10,
+    "core_units": {
+      "total": 5,
+      "units": [
+        {
+          "code": "BSBCRT611",
+          "name": "Apply critical thinking for complex problem solving"
+        },
+        {
+          "code": "BSBFIN601",
+          "name": "Manage organisational finances"
+        },
+        {
+          "code": "BSBOPS601",
+          "name": "Develop and implement business plans"
+        },
+        {
+          "code": "BSBSUS601",
+          "name": "Lead corporate social responsibility"
+        },
+        {
+          "code": "BSBTEC601",
+          "name": "Review organisational digital strategy"
+        }
+      ]
+    },
+    "elective_units": {
+      "total": 5,
+      "units": [
+        {
+          "code": "BSBLDR601",
+          "name": "Lead and manage organisational change"
+        },
+        {
+          "code": "BSBINS601",
+          "name": "Manage knowledge and information"
+        },
+        {
+          "code": "BSBSTR601",
+          "name": "Manage innovation and continuous improvement"
+        },
+        {
+          "code": "BSBTWK601",
+          "name": "Develop and maintain strategic business networks"
+        },
+        {
+          "code": "BSBCMM511",
+          "name": "Communicate with influence"
+        }
+      ]
+    }
+  },
+  "entry_requirements": [
+    {
+      "label": "Minimum age",
+      "value": "18 years at the time of enrolment",
+      "link": {
+                "text": "",
+                "url": ""
+            }
+    },
+    {
+      "label": "English language proficiency",
+      "value": "IELTS 6.0 with a minimum of 5.5 in each module, or an equivalent test accepted by the Department of Home Affairs",
+      "link": {
+                "text": "equivalent accepted test recognized by the Department of Home Affairs",
+                "url": "https://immi.homeaffairs.gov.au/help-support/meeting-our-requirements/english-language"
+            }
+    },
+    {
+      "label": "Academic requirement",
+      "value": "Year 12 qualification or equivalent academic background",
+      "link": {
+                "text": "",
+                "url": ""
+            }
+    },
+    {
+      "label": "Course-specific prerequisite",
+      "value": "Completion of a Diploma or Advanced Diploma from the BSB Training Package (current or superseded equivalent versions), OR two years equivalent full-time relevant workplace experience in an operational or leadership role in an enterprise."
+    }
+  ],
+  "career_outcomes": [
+    "Business Development Manager",
+    "Business Analyst"
+  ],
+  "education_pathways": [
+    "Relevant bachelor degree or post-graduate certificate in business with a university or higher education provider"
+  ],
+  "exit_point_award": {
+    "qualification": "BSB60120 Advanced Diploma of Business",
+    "recognition": "Australian Qualifications Framework (AQF)",
+    "completion_requirement": "Students who successfully complete all 10 units of competency will be issued with BSB60120 Advanced Diploma of Business. This qualification is recognised nationally under the Australian Qualifications Framework (AQF).",
+    "partial_completion": "Students who complete some but not all units may be issued with a Statement of Attainment."
+  },
+  "rpl_credit_transfer": {
+    "available": true,
+    "description": "Fast track your qualification by gaining credit for your existing skills and prior learning. If you have relevant experience or completed units/qualifications, indicate RPL/Credit Transfer in your application.",
+    "recognition_statement": "Australian Health and Horticulture Institute Pty Ltd recognises AQF qualifications and Statements of Attainment issued by Registered Training Organisations."
+  },
+  "additional_information": {
+    "student_handbook_url": "https://uti.edu.au/current-students",
+    "description": "For full terms, conditions and student life information, please refer to the Student Handbook."
+  },
+  "admissions": {
+    "title": "Talk to admissions",
+    "description": "Our team will help you choose an intake, prepare documents and confirm fees.",
+    "enquire_url": "https://uti.edu.au/contact"
+  },
+  "brochure": {
+    "title": "Course brochure",
+    "description": "Detailed course outline, units, fees and intake dates.",
+    "file_name": "BSB60120.pdf",
+    "url": "https://uti.edu.au/brochures/BSB60120.pdf"
+  },
+  "course_url": "https://uti.edu.au/courses/BSB60120"
+}
+
+]
