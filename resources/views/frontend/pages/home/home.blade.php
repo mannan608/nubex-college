@@ -320,8 +320,7 @@
         </div>
     </section>
     <!-- Section: Online Self-Paced Study -->
-    <section
-        class="w-full py-12 sm:py-16 lg:py-20 bg-surface border-y border-slate-200/80">
+    <section class="w-full py-12 sm:py-16 lg:py-20 bg-surface border-y border-slate-200/80">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
             <div class="max-w-3xl mb-10 sm:mb-14">
@@ -458,122 +457,318 @@
         </div>
     </section>
 
-    <!-- Section 5: Recognition of Prior Learning (RPL) Section -->
-    <section class="w-full py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-5 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-                <div class="lg:col-span-5">
-                    <div class="relative rounded-2xl overflow-hidden shadow-lg bg-surface-container">
-                        <div class="w-full aspect-[4/3] overflow-hidden rounded-xl">
-                            <img alt="Australian vocational student" class="w-full h-full object-cover"
-                                src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg" />
+      <!-- SECTION 1: RPL INTRODUCTION -->
+    <section id="rpl-assessment"
+        class="relative isolate w-full overflow-hidden bg-gradient-to-b from-slate-50 via-white to-slate-50/80 py-14 sm:py-18 lg:py-24">
+        <div class="pointer-events-none absolute -left-24 top-20 h-64 w-64 rounded-full bg-[#1968b2]/[0.07] blur-3xl">
+        </div>
+        <div class="pointer-events-none absolute -right-24 bottom-10 h-64 w-64 rounded-full bg-[#182F5A]/[0.06] blur-3xl">
+        </div>
+
+        <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-14">
+                <!-- Image showcase -->
+
+                <div class="min-w-0 lg:col-span-5">
+                    <div class="relative mx-auto max-w-xl lg:max-w-none">
+
+                        <!-- Decorative Border -->
+                        <div
+                            class="absolute -left-3 -top-3 h-24 w-24 rounded-3xl border border-[#1968b2]/15 sm:-left-5 sm:-top-5 sm:h-32 sm:w-32">
                         </div>
-                        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent">
+
+                        <!-- Decorative Glow -->
+                        <div
+                            class="absolute -bottom-4 -right-3 h-28 w-28 rounded-full bg-[#1968b2]/10 blur-2xl sm:-right-5">
                         </div>
-                        <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-white/95 backdrop-blur-md">
-                            <div class="flex items-center gap-3">
+
+                        <!-- Main Image Card -->
+                        <div
+                            class="relative rounded-[1.75rem] border border-white bg-white p-2 shadow-[0_24px_70px_-30px_rgba(24,47,90,0.35)] sm:p-3">
+
+                            <!-- Square Image Container: Height follows width -->
+                            <div class="group relative aspect-square w-full overflow-hidden rounded-[1.25rem]">
+
+                                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1400&auto=format&fit=crop"
+                                    alt="Students collaborating in a vocational learning environment" loading="lazy"
+                                    class="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.03]" />
+
+                                <!-- Gradient Overlay -->
+                                <div
+                                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#0c273e]/90 via-[#0c273e]/10 to-[#0c273e]/10">
+                                </div>
+
+                                <!-- Top Badge -->
+                                <div class="absolute left-3 top-3 sm:left-5 sm:top-5">
+                                    <span
+                                        class="inline-flex max-w-full items-center gap-2 rounded-full border border-white/70 bg-white/95 px-3 py-2 text-xs font-bold text-[#182F5A] shadow-lg backdrop-blur-md sm:px-3.5">
+
+                                        <span class="material-symbols-outlined text-[18px]! text-[#1968b2]">
+                                            verified
+                                        </span>
+
+                                        <span>Skills Recognition (RPL)</span>
+                                    </span>
+                                </div>
+
+                                <!-- Bottom Floating Information Card -->
+                                <div class="absolute inset-x-3 bottom-3 sm:inset-x-5 sm:bottom-5">
+                                    <div
+                                        class="rounded-2xl border border-white/70 bg-white/95 p-3 shadow-xl backdrop-blur-xl sm:p-5">
+
+                                        <div class="flex items-start gap-3 sm:gap-4">
+
+                                            <!-- Icon -->
+                                            <div
+                                                class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#1968b2] text-white shadow-md sm:h-12 sm:w-12">
+
+                                                <span class="material-symbols-outlined text-[23px]! sm:text-[25px]!">
+                                                    workspace_premium
+                                                </span>
+                                            </div>
+
+                                            <!-- Text -->
+                                            <div class="min-w-0 flex-1">
+
+                                                <h3
+                                                    class="font-heading text-sm font-extrabold leading-snug text-[#182F5A] sm:text-base">
+                                                    Fast-Track Your Qualification
+                                                </h3>
+
+                                                <p class="mt-1 text-xs leading-relaxed text-slate-600 sm:text-sm">
+                                                    Your existing skills and workplace experience may help you work towards
+                                                    a recognised qualification.
+                                                </p>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Supporting Note -->
+                        <div class="mt-5 flex items-start gap-3 px-1 sm:px-2">
+
+                            <span
+                                class="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#1968b2]/10 text-[#1968b2]">
+
+                                <span class="material-symbols-outlined text-[17px]!">
+                                    lightbulb
+                                </span>
+                            </span>
+
+                            <p class="text-xs font-medium leading-relaxed text-slate-600 sm:text-sm">
+                                Already have industry experience? Find out whether your existing skills may be relevant to
+                                an RPL assessment.
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Introduction content -->
+                <div class="min-w-0 lg:col-span-7">
+                    <div class="flex flex-col items-start gap-5 sm:gap-6">
+                        <span
+                            class="inline-flex items-center gap-2 rounded-full border border-[#1968b2]/15 bg-[#1968b2]/[0.07] px-3.5 py-2 font-heading text-[10px] font-extrabold uppercase tracking-[0.14em] text-[#1968b2] sm:text-xs">
+                            <span class="material-symbols-outlined text-[17px]!">fact_check</span>
+                            Prior Learning Assessment
+                        </span>
+
+                        <div class="space-y-4">
+                            <h2
+                                class="max-w-2xl font-heading text-3xl font-extrabold leading-[1.15] tracking-tight text-[#182F5A] sm:text-4xl lg:text-[2.7rem]">
+                                Turn Your Work Experience Into a Recognised Qualification
+                            </h2>
+                            <p class="max-w-2xl text-sm leading-7 text-slate-600 sm:text-base sm:leading-8">
+                                Recognition of Prior Learning (RPL) is an assessment process that considers your existing
+                                skills, knowledge, informal training and relevant work experience against the requirements
+                                of a qualification. Depending on your circumstances, an RPL pathway may be available to
+                                explore.
+                            </p>
+                        </div>
+
+                        <div class="w-full rounded-2xl border border-slate-200 bg-white/80 p-4 shadow-sm sm:p-5">
+                            <div class="flex items-start gap-3">
                                 <span
-                                    class="material-symbols-outlined text-secondary text-[32px]">assignment_turned_in</span>
-                                <div>
-                                    <h4 class="font-heading text-sm font-bold text-primary">
-                                        Fast-Track Your Ambition
-                                    </h4>
-                                    <p class="text-xs text-on-surface-variant">
-                                        Turn years of practical work experience into national
-                                        certification.
+                                    class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#1968b2]/10 text-[#1968b2]">
+                                    <span class="material-symbols-outlined text-[22px]!">verified_user</span>
+                                </span>
+                                <div class="min-w-0">
+                                    <h3 class="font-heading text-sm font-bold text-[#182F5A] sm:text-base">Assessment is
+                                        based on evidence</h3>
+                                    <p class="mt-1 text-xs leading-relaxed text-slate-600 sm:text-sm">
+                                        An RPL outcome depends on formal evidence mapping and competency assessment. Work
+                                        experience alone does not guarantee a qualification.
                                     </p>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="flex w-full flex-col gap-3 pt-1 sm:flex-row sm:items-center sm:gap-5">
+                            <a href="#eligibility-checker"
+                                class="group inline-flex w-full items-center justify-center gap-2.5 rounded-xl bg-[#1968b2] px-6 py-3.5 font-heading text-sm font-bold text-white shadow-[0_8px_20px_-8px_rgba(25,104,178,0.65)] transition duration-200 hover:-translate-y-0.5 hover:bg-[#155b9d] hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1968b2] focus-visible:ring-offset-2 sm:w-auto">
+                                <span>Check Your RPL Eligibility</span>
+                                <span
+                                    class="material-symbols-outlined text-[19px]! transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
+                            </a>
+                            <div
+                                class="flex items-center justify-center gap-2 text-xs font-semibold text-slate-600 sm:justify-start sm:text-sm">
+                                <span class="material-symbols-outlined text-[21px]! text-[#1968b2]">support_agent</span>
+                                <span>Speak with an advisor</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="lg:col-span-7 flex flex-col gap-4">
-                    <div
-                        class="inline-flex items-center gap-1.5 px-3 py-1 bg-surface-container text-primary rounded-full self-start text-[10px] font-bold font-heading uppercase tracking-wider">
-                        <span>Prior Learning Assessment</span>
-                    </div>
-                    <h2 class="font-heading text-2xl sm:text-3xl font-bold text-primary">
-                        Have You Gained Skills Through Work or Experience?
-                    </h2>
-                    <p class="text-sm sm:text-base text-on-surface-variant leading-relaxed">
-                        Recognition of Prior Learning is an assessment process that
-                        considers relevant existing skills, knowledge and experience
-                        against the requirements of a nationally recognised
-                        qualification. Depending on the qualification and your
-                        circumstances, you may have a relevant RPL pathway to explore.
-                    </p>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-                        <div class="p-4 rounded-xl bg-white shadow-sm flex items-start gap-3">
-                            <span
-                                class="w-7 h-7 rounded-full bg-primary-fixed text-primary flex items-center justify-center font-bold text-xs shrink-0">01</span>
-                            <div>
-                                <h4 class="font-heading text-xs font-bold text-primary mb-1">
-                                    Submit an enquiry
-                                </h4>
-                                <p class="text-xs text-on-surface-variant">
-                                    Share your career history and outline the qualifications
-                                    that interest you.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="p-4 rounded-xl bg-white shadow-sm flex items-start gap-3">
-                            <span
-                                class="w-7 h-7 rounded-full bg-primary-fixed text-primary flex items-center justify-center font-bold text-xs shrink-0">02</span>
-                            <div>
-                                <h4 class="font-heading text-xs font-bold text-primary mb-1">
-                                    Discuss requirements
-                                </h4>
-                                <p class="text-xs text-on-surface-variant">
-                                    Evaluate competency standards alongside a qualified
-                                    educational assessor.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="p-4 rounded-xl bg-white shadow-sm flex items-start gap-3">
-                            <span
-                                class="w-7 h-7 rounded-full bg-primary-fixed text-primary flex items-center justify-center font-bold text-xs shrink-0">03</span>
-                            <div>
-                                <h4 class="font-heading text-xs font-bold text-primary mb-1">
-                                    Provide evidence
-                                </h4>
-                                <p class="text-xs text-on-surface-variant">
-                                    Collate workplace logs, references, contracts, and
-                                    relevant documentation.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="p-4 rounded-xl bg-white shadow-sm flex items-start gap-3">
-                            <span
-                                class="w-7 h-7 rounded-full bg-primary-fixed text-primary flex items-center justify-center font-bold text-xs shrink-0">04</span>
-                            <div>
-                                <h4 class="font-heading text-xs font-bold text-primary mb-1">
-                                    Receive outcome
-                                </h4>
-                                <p class="text-xs text-on-surface-variant">
-                                    Gain your formal determination from our authorised AQF
-                                    assessor.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-3 rounded-lg bg-surface-container flex items-start gap-2.5 mt-2">
-                        <span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">policy</span>
-                        <p class="text-xs text-on-surface-variant leading-relaxed">
-                            <strong>Assessment Policy:</strong> Outcome is determined
-                            strictly through formal evidence mapping and competency
-                            assessment. Experience alone does not guarantee automatic
-                            qualification issuance.
-                        </p>
-                    </div>
-                    <div class="pt-2">
-                        <a class="inline-flex items-center justify-center gap-2 font-heading font-semibold text-sm bg-primary hover:bg-primary-dark text-white w-full sm:w-fit py-2.5 px-4 md:px-6 md:py-3.5 rounded-lg shadow-sm transition-colors"
-                            href="#eligibility-checker">
-                            <span>Explore RPL Options</span>
-                            <span class="material-symbols-outlined text-[18px]!">arrow_forward</span>
-                        </a>
-                    </div>
-                </div>
+
             </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: HOW THE RPL PROCESS WORKS -->
+    <section id="rpl-process" class="w-full border-y border-slate-200/70 bg-white py-14 sm:py-18 lg:py-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+            <!-- Section heading -->
+            <div class="mx-auto mb-9 max-w-3xl text-center sm:mb-12">
+                <span
+                    class="inline-flex items-center gap-2 rounded-full border border-[#1968b2]/15 bg-[#1968b2]/[0.06] px-3.5 py-2 font-heading text-[10px] font-extrabold uppercase tracking-[0.14em] text-[#1968b2] sm:text-xs">
+                    <span class="material-symbols-outlined text-[17px]!">route</span>
+                    The Process
+                </span>
+                <h2
+                    class="mt-4 font-heading text-2xl font-extrabold tracking-tight text-[#182F5A] sm:text-3xl lg:text-4xl">
+                    How the RPL Process Works
+                </h2>
+                <p class="mx-auto mt-3 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base">
+                    A clear, evidence-based pathway to help you understand your options and take the next step.
+                </p>
+            </div>
+
+            <!-- Step cards -->
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-5">
+
+                <article
+                    class="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-slate-50/70 p-5 transition duration-300 hover:-translate-y-1 hover:border-[#1968b2]/35 hover:bg-white hover:shadow-[0_18px_45px_-28px_rgba(24,47,90,0.4)] sm:p-6">
+                    <div class="mb-5 flex items-center justify-between">
+                        <span
+                            class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#1968b2]/10 text-[#1968b2] transition-colors duration-300 group-hover:bg-[#1968b2] group-hover:text-white">
+                            <span class="material-symbols-outlined text-[24px]!">edit_document</span>
+                        </span>
+                        <span
+                            class="font-heading text-3xl font-extrabold tracking-tight text-slate-200 transition-colors group-hover:text-[#1968b2]/25">01</span>
+                    </div>
+                    <h3 class="font-heading text-base font-bold text-[#182F5A] sm:text-lg">Submit an Enquiry</h3>
+                    <p class="mt-2 flex-1 text-sm leading-6 text-slate-600">
+                        Tell us about your employment history, industry experience and the qualification you are interested
+                        in.
+                    </p>
+                    <div
+                        class="mt-5 flex items-center gap-2 border-t border-slate-200 pt-4 text-xs font-bold text-[#1968b2]">
+                        <span>Start the conversation</span>
+                        <span class="material-symbols-outlined text-[16px]!">arrow_forward</span>
+                    </div>
+                </article>
+
+                <article
+                    class="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-slate-50/70 p-5 transition duration-300 hover:-translate-y-1 hover:border-[#1968b2]/35 hover:bg-white hover:shadow-[0_18px_45px_-28px_rgba(24,47,90,0.4)] sm:p-6">
+                    <div class="mb-5 flex items-center justify-between">
+                        <span
+                            class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#1968b2]/10 text-[#1968b2] transition-colors duration-300 group-hover:bg-[#1968b2] group-hover:text-white">
+                            <span class="material-symbols-outlined text-[24px]!">forum</span>
+                        </span>
+                        <span
+                            class="font-heading text-3xl font-extrabold tracking-tight text-slate-200 transition-colors group-hover:text-[#1968b2]/25">02</span>
+                    </div>
+                    <h3 class="font-heading text-base font-bold text-[#182F5A] sm:text-lg">Discuss Your Options</h3>
+                    <p class="mt-2 flex-1 text-sm leading-6 text-slate-600">
+                        Discuss qualification requirements and possible evidence with an appropriately qualified assessor.
+                    </p>
+                    <div
+                        class="mt-5 flex items-center gap-2 border-t border-slate-200 pt-4 text-xs font-bold text-[#1968b2]">
+                        <span>Understand requirements</span>
+                        <span class="material-symbols-outlined text-[16px]!">arrow_forward</span>
+                    </div>
+                </article>
+
+                <article
+                    class="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-slate-50/70 p-5 transition duration-300 hover:-translate-y-1 hover:border-[#1968b2]/35 hover:bg-white hover:shadow-[0_18px_45px_-28px_rgba(24,47,90,0.4)] sm:p-6">
+                    <div class="mb-5 flex items-center justify-between">
+                        <span
+                            class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#1968b2]/10 text-[#1968b2] transition-colors duration-300 group-hover:bg-[#1968b2] group-hover:text-white">
+                            <span class="material-symbols-outlined text-[24px]!">folder_open</span>
+                        </span>
+                        <span
+                            class="font-heading text-3xl font-extrabold tracking-tight text-slate-200 transition-colors group-hover:text-[#1968b2]/25">03</span>
+                    </div>
+                    <h3 class="font-heading text-base font-bold text-[#182F5A] sm:text-lg">Provide Your Evidence</h3>
+                    <p class="mt-2 flex-1 text-sm leading-6 text-slate-600">
+                        Gather relevant work samples, employment records, references and other supporting documents.
+                    </p>
+                    <div
+                        class="mt-5 flex items-center gap-2 border-t border-slate-200 pt-4 text-xs font-bold text-[#1968b2]">
+                        <span>Build your evidence</span>
+                        <span class="material-symbols-outlined text-[16px]!">arrow_forward</span>
+                    </div>
+                </article>
+
+                <article
+                    class="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-slate-50/70 p-5 transition duration-300 hover:-translate-y-1 hover:border-[#1968b2]/35 hover:bg-white hover:shadow-[0_18px_45px_-28px_rgba(24,47,90,0.4)] sm:p-6">
+                    <div class="mb-5 flex items-center justify-between">
+                        <span
+                            class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#1968b2]/10 text-[#1968b2] transition-colors duration-300 group-hover:bg-[#1968b2] group-hover:text-white">
+                            <span class="material-symbols-outlined text-[24px]!">task_alt</span>
+                        </span>
+                        <span
+                            class="font-heading text-3xl font-extrabold tracking-tight text-slate-200 transition-colors group-hover:text-[#1968b2]/25">04</span>
+                    </div>
+                    <h3 class="font-heading text-base font-bold text-[#182F5A] sm:text-lg">Receive Your Outcome</h3>
+                    <p class="mt-2 flex-1 text-sm leading-6 text-slate-600">
+                        Your submitted evidence is assessed against the relevant competency requirements and an outcome is
+                        provided.
+                    </p>
+                    <div
+                        class="mt-5 flex items-center gap-2 border-t border-slate-200 pt-4 text-xs font-bold text-[#1968b2]">
+                        <span>Assessment outcome</span>
+                        <span class="material-symbols-outlined text-[16px]!">arrow_forward</span>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Policy note -->
+            {{-- <div
+                class="mx-auto mt-6 flex max-w-5xl items-start gap-3 rounded-2xl border border-slate-200 bg-slate-50 p-4 sm:mt-8 sm:gap-4 sm:p-5">
+                <span
+                    class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white text-[#1968b2] shadow-sm">
+                    <span class="material-symbols-outlined text-[22px]!">policy</span>
+                </span>
+                <div class="min-w-0">
+                    <h3 class="font-heading text-sm font-bold text-[#182F5A]">Please note</h3>
+                    <p class="mt-1 text-xs leading-relaxed text-slate-600 sm:text-sm">
+                        An RPL outcome is determined through formal evidence mapping and competency assessment. Experience
+                        alone does not guarantee the award of a qualification.
+                    </p>
+                </div>
+            </div> --}}
+
+            <!-- Bottom CTA -->
+            <div class="mt-7 flex flex-col items-center justify-center gap-3 sm:mt-9 sm:flex-row">
+                <p class="text-center text-sm text-slate-600 sm:text-left">Ready to explore whether RPL may be right for
+                    you?</p>
+                <a href="#eligibility-checker"
+                    class="group inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#1968b2] px-5 py-3 font-heading text-sm font-bold text-white shadow-md transition duration-200 hover:-translate-y-0.5 hover:bg-[#155b9d] hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1968b2] focus-visible:ring-offset-2 sm:w-auto">
+                    Check Your Eligibility
+                    <span
+                        class="material-symbols-outlined text-[18px]! transition-transform group-hover:translate-x-1">arrow_forward</span>
+                </a>
+            </div>
+
         </div>
     </section>
     <!-- Section 6: Interactive Multi-Step Eligibility Checker Section -->
@@ -1366,223 +1561,6 @@
         </div>
     </section>
 
-
-    {{-- <section class="w-full py-12 sm:py-16 lg:py-20 bg-surface-container-low overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 xl:gap-16 items-center">
-
-            <!-- Left: Image and RPL Highlight -->
-            <div class="lg:col-span-5 min-w-0">
-                <div class="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg bg-surface-container">
-
-                    <div class="relative aspect-[4/3] sm:aspect-[5/4] lg:aspect-[4/5] overflow-hidden">
-                        <img
-                            src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"
-                            alt="Australian vocational student exploring career opportunities"
-                            loading="lazy"
-                            class="w-full h-full object-cover"
-                        />
-
-                        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/10 to-transparent pointer-events-none"></div>
-
-                        <!-- Image Badge -->
-                        <div class="absolute top-4 left-4 sm:top-5 sm:left-5">
-                            <span class="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-white/95 text-primary text-xs font-bold shadow-sm backdrop-blur-sm">
-                                <span class="material-symbols-outlined text-[17px]">verified</span>
-                                Skills Recognition
-                            </span>
-                        </div>
-
-                        <!-- Image Caption -->
-                        <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-6 lg:p-7">
-                            <div class="max-w-md p-4 sm:p-5 rounded-xl sm:rounded-2xl bg-white/95 backdrop-blur-md shadow-lg">
-
-                                <div class="flex items-start gap-3">
-                                    <div class="w-11 h-11 rounded-xl bg-primary-fixed flex items-center justify-center shrink-0">
-                                        <span class="material-symbols-outlined text-primary text-[25px]">workspace_premium</span>
-                                    </div>
-
-                                    <div class="min-w-0">
-                                        <h3 class="font-heading text-sm sm:text-base font-bold text-primary">
-                                            Fast-Track Your Ambition
-                                        </h3>
-
-                                        <p class="mt-1 text-xs sm:text-sm text-on-surface-variant leading-relaxed">
-                                            Turn relevant work experience and existing skills into a pathway towards recognised qualifications.
-                                        </p>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Supporting Note -->
-                <div class="mt-4 flex items-start gap-3 px-1">
-                    <span class="material-symbols-outlined text-secondary text-xl shrink-0">info</span>
-                    <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
-                        Already have industry experience? Your existing skills may count towards your qualification.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Right: Content -->
-            <div class="lg:col-span-7 min-w-0 flex flex-col gap-5 sm:gap-6">
-
-                <!-- Eyebrow -->
-                <div class="inline-flex items-center gap-2 self-start px-3 py-1.5 rounded-full bg-surface-container text-primary text-[10px] sm:text-xs font-bold font-heading uppercase tracking-wider">
-                    <span class="material-symbols-outlined text-[16px] text-secondary">fact_check</span>
-                    Prior Learning Assessment
-                </div>
-
-                <!-- Heading -->
-                <div class="space-y-3">
-                    <h2 class="font-heading text-2xl sm:text-3xl lg:text-4xl font-extrabold text-primary tracking-tight leading-tight">
-                        Have You Gained Skills Through Work or Experience?
-                    </h2>
-
-                    <p class="text-sm sm:text-base text-on-surface-variant leading-relaxed">
-                        Recognition of Prior Learning (RPL) assesses your existing skills, knowledge and relevant experience against the requirements of a nationally recognised qualification. Depending on your circumstances, an RPL pathway may be available to you.
-                    </p>
-                </div>
-
-                <!-- Process Header -->
-                <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-2 pt-1">
-                    <div>
-                        <h3 class="font-heading text-base sm:text-lg font-bold text-primary">
-                            Your RPL Journey
-                        </h3>
-                        <p class="text-xs sm:text-sm text-on-surface-variant mt-1">
-                            Four steps to get started
-                        </p>
-                    </div>
-
-                    <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-secondary">
-                        <span class="material-symbols-outlined text-[17px]">route</span>
-                        Step-by-step process
-                    </span>
-                </div>
-
-                <!-- Process Cards -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-
-                    <!-- Step 1 -->
-                    <div class="group h-full p-4 sm:p-5 rounded-xl sm:rounded-2xl bg-white border border-outline-variant/40 shadow-sm transition-shadow hover:shadow-md">
-                        <div class="flex items-start justify-between gap-3 mb-4">
-                            <div class="w-10 h-10 rounded-xl bg-primary-fixed text-primary flex items-center justify-center shrink-0">
-                                <span class="material-symbols-outlined text-[22px]">edit_document</span>
-                            </div>
-
-                            <span class="font-heading text-2xl font-extrabold text-primary/15 leading-none">01</span>
-                        </div>
-
-                        <h4 class="font-heading text-sm sm:text-base font-bold text-primary mb-2">
-                            Submit an Enquiry
-                        </h4>
-
-                        <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
-                            Share your career history, practical experience and the qualifications that interest you.
-                        </p>
-                    </div>
-
-                    <!-- Step 2 -->
-                    <div class="group h-full p-4 sm:p-5 rounded-xl sm:rounded-2xl bg-white border border-outline-variant/40 shadow-sm transition-shadow hover:shadow-md">
-                        <div class="flex items-start justify-between gap-3 mb-4">
-                            <div class="w-10 h-10 rounded-xl bg-primary-fixed text-primary flex items-center justify-center shrink-0">
-                                <span class="material-symbols-outlined text-[22px]">forum</span>
-                            </div>
-
-                            <span class="font-heading text-2xl font-extrabold text-primary/15 leading-none">02</span>
-                        </div>
-
-                        <h4 class="font-heading text-sm sm:text-base font-bold text-primary mb-2">
-                            Discuss Requirements
-                        </h4>
-
-                        <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
-                            Discuss relevant competency requirements with a qualified educational assessor.
-                        </p>
-                    </div>
-
-                    <!-- Step 3 -->
-                    <div class="group h-full p-4 sm:p-5 rounded-xl sm:rounded-2xl bg-white border border-outline-variant/40 shadow-sm transition-shadow hover:shadow-md">
-                        <div class="flex items-start justify-between gap-3 mb-4">
-                            <div class="w-10 h-10 rounded-xl bg-primary-fixed text-primary flex items-center justify-center shrink-0">
-                                <span class="material-symbols-outlined text-[22px]">folder_open</span>
-                            </div>
-
-                            <span class="font-heading text-2xl font-extrabold text-primary/15 leading-none">03</span>
-                        </div>
-
-                        <h4 class="font-heading text-sm sm:text-base font-bold text-primary mb-2">
-                            Provide Evidence
-                        </h4>
-
-                        <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
-                            Gather relevant workplace records, references, contracts and supporting documents.
-                        </p>
-                    </div>
-
-                    <!-- Step 4 -->
-                    <div class="group h-full p-4 sm:p-5 rounded-xl sm:rounded-2xl bg-white border border-outline-variant/40 shadow-sm transition-shadow hover:shadow-md">
-                        <div class="flex items-start justify-between gap-3 mb-4">
-                            <div class="w-10 h-10 rounded-xl bg-primary-fixed text-primary flex items-center justify-center shrink-0">
-                                <span class="material-symbols-outlined text-[22px]">task_alt</span>
-                            </div>
-
-                            <span class="font-heading text-2xl font-extrabold text-primary/15 leading-none">04</span>
-                        </div>
-
-                        <h4 class="font-heading text-sm sm:text-base font-bold text-primary mb-2">
-                            Receive Your Outcome
-                        </h4>
-
-                        <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
-                            Receive an assessment outcome based on the required evidence and competency assessment.
-                        </p>
-                    </div>
-
-                </div>
-
-                <!-- Assessment Policy -->
-                <div class="flex items-start gap-3 sm:gap-4 p-4 sm:p-5 rounded-xl sm:rounded-2xl bg-surface-container border border-outline-variant/40">
-                    <div class="w-10 h-10 rounded-xl bg-white flex items-center justify-center shrink-0 shadow-sm">
-                        <span class="material-symbols-outlined text-secondary text-[22px]">policy</span>
-                    </div>
-
-                    <div class="min-w-0">
-                        <h4 class="font-heading text-sm font-bold text-primary mb-1">
-                            Important Assessment Information
-                        </h4>
-
-                        <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
-                            Assessment outcomes depend on formal evidence mapping and competency assessment. Work experience alone does not guarantee the award of a qualification.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- CTA -->
-                <div class="flex flex-col sm:flex-row sm:items-center gap-3 pt-1">
-                    <a
-                        href="#eligibility-checker"
-                        class="inline-flex w-full sm:w-fit items-center justify-center gap-2 px-5 py-3 sm:px-6 sm:py-3.5 rounded-lg bg-primary hover:bg-primary-dark text-white font-heading font-semibold text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2"
-                    >
-                        <span>Explore RPL Options</span>
-                        <span class="material-symbols-outlined text-[19px]">arrow_forward</span>
-                    </a>
-
-                    <span class="inline-flex items-center justify-center sm:justify-start gap-2 text-xs sm:text-sm text-on-surface-variant">
-                        <span class="material-symbols-outlined text-secondary text-[18px]">support_agent</span>
-                        Get guidance on your options
-                    </span>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section> --}}
 @endsection
 
 <!-- Custom Style for Connecting Line Shimmer Effect (Add to your CSS file or blade view) -->
