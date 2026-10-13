@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
 @import 'prismjs/themes/prism.min.css';
 @import 'tailwindcss';
 @plugin "flowbite/plugin";
@@ -15,9 +15,10 @@
 
 @theme {
   --font-*: initial;
-    --font-display: 'Inter', sans-serif;
-    --font-body: 'Inter', sans-serif;
-    --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+    --font-display: 'Hanken Grotesk', sans-serif;
+    --font-heading: 'Hanken Grotesk', sans-serif;
+    --font-body: 'Hanken Grotesk', sans-serif;
+    --font-mono: 'Hanken Grotesk', sans-serif;
 
   --breakpoint-*: initial;
   --breakpoint-2xsm: 375px;
@@ -1340,3 +1341,61 @@ pre[class*='language-'] {
         #f5f9fb;
 }
 
+
+  html,
+        body {
+          margin: 0;
+          padding: 0;
+        }
+        body {
+          overscroll-behavior: none;
+        }
+        main > :first-child {
+          margin-top: 0 !important;
+        }
+        main > :last-child {
+          margin-bottom: 0 !important;
+        }
+      
+      ::-webkit-scrollbar {
+        display: none;
+      }
+      @keyframes shimmerLine {
+        0% {
+          background-position: -200% 0;
+        }
+        100% {
+          background-position: 200% 0;
+        }
+      }
+      .animated-connector {
+        background: linear-gradient(
+          90deg,
+          #7fc5fe 0%,
+          #006497 50%,
+          #7fc5fe 100%
+        );
+        background-size: 200% 100%;
+        animation: shimmerLine 3s linear infinite;
+      }
+      @keyframes pulseGlow {
+        0%,
+        100% {
+          box-shadow: 0 0 0 0 rgba(0, 100, 151, 0.4);
+        }
+        50% {
+          box-shadow: 0 0 0 10px rgba(0, 100, 151, 0);
+        }
+      }
+      .glow-pulse {
+        animation: pulseGlow 2.5s infinite;
+      }
+      .course-card-transition {
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease,
+          border-color 0.25s ease;
+      }
+      .course-card-transition:hover {
+        transform: translateY(-4px);
+      }
