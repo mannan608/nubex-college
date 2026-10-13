@@ -48,16 +48,19 @@
                         Explore
                     </h4>
                     <ul class="flex flex-col gap-1.5  text-sm">
+
+                        <li class="text-neutral-500 hover:text-brand-600 transition-colors">
+                            <a href="{{ route('about') }}">Healthcare</a>
+                        </li>
+
                         <li class="text-neutral-500 hover:text-brand-600 transition-colors"><a
-                                href="{{ route('about') }}">About US</a></li>
+                                href="{{ route('courses.index') }}">Community Services</a></li>
                         <li class="text-neutral-500 hover:text-brand-600 transition-colors"><a
-                                href="{{ route('courses.index') }}">Course Finder</a></li>
+                                href="{{ route('faqs') }}">Ageing Support</a></li>
                         <li class="text-neutral-500 hover:text-brand-600 transition-colors"><a
-                                href="{{ route('faqs') }}">Explore FAQ</a></li>
+                                href="{{ route('agent-register') }}">Individual Support</a></li>
                         <li class="text-neutral-500 hover:text-brand-600 transition-colors"><a
-                                href="{{ route('agent-register') }}">Become an Agents</a></li>
-                        <li class="text-neutral-500 hover:text-brand-600 transition-colors"><a
-                                href="{{ route('international') }}">International Admissions</a></li>
+                                href="{{ route('international') }}">Leadership and Management</a></li>
                     </ul>
                 </div>
                 <div class="flex flex-col gap-3">
@@ -70,14 +73,15 @@
                                 href="{{ route('student-resources') }}">Student Handbook</a></li>
                         <li class="text-neutral-500 hover:text-brand-600 transition-colors"><a
                                 href="{{ route('student-support') }}">Fees & Payment</a></li>
-                        <li class="text-neutral-500 hover:text-brand-600 transition-colors"><a href="#prospectus">Refund Policy</a></li>
+                        <li class="text-neutral-500 hover:text-brand-600 transition-colors"><a href="#prospectus">Refund
+                                Policy</a></li>
                         <li class="text-neutral-500 hover:text-brand-600 transition-colors"><a
                                 href="{{ route('admission-fees') }}">Assessment & RPL Policy</a></li>
                         <li class="text-neutral-500 hover:text-brand-600 transition-colors"><a
                                 href="{{ route('contact') }}">Student Support Services</a></li>
-                        <li class="text-neutral-500 hover:text-brand-600 transition-colors"><a
-                                href="{{ route('contact') }}">Explore FAQ</a></li>
-                        
+                        {{-- <li class="text-neutral-500 hover:text-brand-600 transition-colors"><a
+                                href="{{ route('contact') }}">Explore FAQ</a></li> --}}
+
                     </ul>
                 </div>
                 <div class="flex flex-col gap-3">
@@ -108,7 +112,7 @@
                 </div>
             </div>
             <div class="pt-4 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-neutral-500">
-                <p>© 2025 Nubex College (UTI) Pty Ltd. All Rights Reserved.</p>
+                <p>© 2025 Nubex College Pty Ltd. All Rights Reserved.</p>
                 <div class="flex items-center gap-4 uppercase text-xs font-semibold">
                     <a class="hover:text-brand-600 transition-colors" href="#">Privacy Policy</a>
                     <a class="hover:text-brand-600 transition-colors" href="#">Terms &amp; Conditions</a>

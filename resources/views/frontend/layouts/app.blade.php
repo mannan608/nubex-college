@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="shortcut icon" href="{{asset('favicon.png')}}">
+    <link rel="shortcut icon" href="{{ asset('favicon.png') }}">
     {{-- <title>{{ $title }}</title> --}}
     <x-frontend.seo-meta :page-title="trim($__env->yieldContent('title'))" />
-    <link rel="stylesheet" href="{{ asset('css/front-end-custom.css') }}">
-     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    {{-- <link rel="stylesheet" href="{{ asset('css/front-end-custom.css') }}"> --}}
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
 
     <!-- Theme Store -->
     <script>
@@ -93,26 +96,28 @@
         })();
     </script>
 </head>
+
 <body class="min-h-screen flex flex-col">
-    
+
     @include('frontend.layouts.navbar')
 
     <main class="grow">
-       <div class="pt-18 md:pt-20 pb-0">
-         @yield('content')
-       </div>
+        <div class="pt-18 md:pt-20 pb-0">
+            @yield('content')
+        </div>
     </main>
 
     @include('frontend.layouts.footer')
-@auth
-    @if (auth()->user()->student)
-        @include('frontend.layouts.mobile-navigation')
-    @endif
-@endauth
+    @auth
+        @if (auth()->user()->student)
+            @include('frontend.layouts.mobile-navigation')
+        @endif
+    @endauth
 
     @stack('scripts')
     <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
 
 </body>
+
 </html>

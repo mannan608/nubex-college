@@ -187,7 +187,7 @@
   --color-primary: #123b5d;
   --color-primary-dark: #0c273e;
   --color-surface: #f8f9ff;
-  --color-secondary: #006497;
+  --color-secondary: #30bafa;
   --color-secondary-container: #7fc5fe;
   --color-background: #f8f9ff;
   --color-surface-container: #e5eeff;
@@ -1342,14 +1342,7 @@ pre[class*='language-'] {
 }
 
 
-  html,
-        body {
-          margin: 0;
-          padding: 0;
-        }
-        body {
-          overscroll-behavior: none;
-        }
+ 
         main > :first-child {
           margin-top: 0 !important;
         }

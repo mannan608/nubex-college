@@ -13,15 +13,15 @@ class FrontendController extends Controller
 
     public function homePage()
     {
-          $categories = json_decode(
+        $categories = json_decode(
             File::get(resource_path('data/categories.json')),
             true
         );
 
-      $courses = collect(json_decode(
-    File::get(resource_path('data/courses.json')),
-    true
-))->where('demand', 'High')->values()->all();
+        $courses = collect(json_decode(
+            File::get(resource_path('data/courses.json')),
+            true
+        ));
 
         // return $courses;
 
@@ -30,7 +30,7 @@ class FrontendController extends Controller
 
     public function aboutPage()
     {
-        
+
         return view('frontend.pages.about.about');
     }
 
@@ -38,63 +38,77 @@ class FrontendController extends Controller
     {
         return view('frontend.pages.contact');
     }
-   
+
     public function registration()
     {
         return view('frontend.pages.register');
     }
 
-      public function login()
+    public function login()
     {
         return view('frontend.pages.login');
     }
-    public function achieve(){
+    public function achieve()
+    {
         return view('frontend.pages.achieve.achieve');
     }
 
-    public function destinations(){
+    public function destinations()
+    {
         return view('frontend.pages.destinations.index');
     }
-     public function howWeWork(){
+    public function howWeWork()
+    {
         return view('frontend.pages.how-we-works.index');
     }
-    public function privacyPolicy(){
+    public function privacyPolicy()
+    {
         return view('frontend.pages.privacy-policy');
     }
-    public function termsConditions(){
+    public function termsConditions()
+    {
         return view('frontend.pages.terms-conditions');
     }
 
-    public function owner(){
+    public function owner()
+    {
         return view('frontend.pages.teams.owner');
     }
-     public function patners(){
+    public function patners()
+    {
         return view('frontend.pages.patner.index');
     }
-      public function faqs(){
+    public function faqs()
+    {
         return view('frontend.pages.faq.index');
     }
 
-        public function internationalInquiry(){
+    public function internationalInquiry()
+    {
         return view('frontend.pages.international.index');
     }
 
-    public function gsGuide(){
+    public function gsGuide()
+    {
         return view('frontend.pages.international.gs-guide');
     }
 
-    public function agentRegister(){
+    public function agentRegister()
+    {
         return view('agent.register');
     }
 
-     public function studentSupport(){
+    public function studentSupport()
+    {
         return view('frontend.pages.student-support.index');
     }
-     public function studentResources(){
+    public function studentResources()
+    {
         return view('frontend.pages.student-support.resources');
     }
 
-     public function admissionFees(){
+    public function admissionFees()
+    {
         return view('frontend.pages.admission.fees');
     }
 }
