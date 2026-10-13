@@ -16,7 +16,7 @@ npm -v
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/mannan608/open-school-education.git
+git clone https://github.com/mannan608/nubex-college.git
 cd project name
 ```
 

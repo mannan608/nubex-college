@@ -380,8 +380,8 @@
                         <div
                             class="p-4 rounded-xl bg-blue-50/70 border border-blue-100 text-blue-900 text-sm font-medium mt-4">
                             All refund requests must be submitted in writing to:
-                            <a href="mailto:support@openschooleducation.com"
-                                class="underline font-bold text-blue-700 hover:text-blue-800">support@openschooleducation.com</a>.
+                            <a href="mailto:support@nubex.com"
+                                class="underline font-bold text-blue-700 hover:text-blue-800">support@nubex.com</a>.
                         </div>
                     </section>
 
@@ -571,13 +571,13 @@
                             <div class="space-y-1 text-sm text-slate-300">
                                 <p>
                                     <span class="font-medium text-slate-400">Email:</span>
-                                    <a href="mailto:info@openschooleducation.com"
-                                        class="text-blue-400 hover:underline ml-1">info@openschool education.com</a>
+                                    <a href="mailto:admissions@nubex.edu.au"
+                                        class="text-blue-400 hover:underline ml-1">info@nubex.com</a>
                                 </p>
                                 <p>
                                     <span class="font-medium text-slate-400">Website:</span>
-                                    <a href="https://openschooleducation.com/" target="_blank"
-                                        class="text-blue-400 hover:underline ml-1">https://openschooleducation.com/</a>
+                                    <a href="https://nubex.com/" target="_blank"
+                                        class="text-blue-400 hover:underline ml-1">https://nubex.com/</a>
                                 </p>
                             </div>
                         </div>

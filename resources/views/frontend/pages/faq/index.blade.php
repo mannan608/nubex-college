@@ -60,7 +60,7 @@
                             </p>
 
 
-                            <a href="mailto:admissions@uti.edu.au"
+                            <a href="mailto:admissions@nubex.edu.au"
                                 class="group mt-6 flex items-center justify-between rounded-xl border border-brand-100 bg-brand-50 p-3.5 transition hover:border-brand-200 hover:bg-brand-100">
 
                                 <span class="flex items-center gap-3">

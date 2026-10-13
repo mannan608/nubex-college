@@ -1,6 +1,6 @@
     <!-- Comprehensive Footer -->
     <footer class="w-full bg-white ">
-        <div class="max-w-7xl mx-auto px-4 md:px-8 py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-4 md:px-8 pt-12 mb-6 md:pt-16">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 pb-6 border-b border-neutral-300">
                 <div class="lg:col-span-2 flex flex-col gap-2">
                     <div class="flex items-center gap-2">
@@ -87,12 +87,12 @@
                 <div class="flex flex-col gap-3">
                     <h4
                         class="font-display font-bold text-base uppercase tracking-tight text-brand-600 border-b border-neutral-300 pb-1">
-                        Sydney Campus
+                        Nubex Campus
                     </h4>
                     <div class="flex flex-col gap-1 text-sm text-neutral-500">
                         <p><strong class="text-brand-600">Address:</strong> 30 Campbell Street, Blacktown NSW 2148</p>
                         <p><strong class="text-brand-600">Phone:</strong> +61 2 8677 3600</p>
-                        <p><strong class="text-brand-600">Email:</strong> admissions@uti.edu.au</p>
+                        <p><strong class="text-brand-600">Email:</strong> admissions@nubex.edu.au</p>
                     </div>
                     <div class="flex space-x-3 mt-4">
                         <a href="#"
@@ -113,7 +113,7 @@
             </div>
             <div class="pt-4 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-neutral-500">
                 <p>© 2025 Nubex College Pty Ltd. All Rights Reserved.</p>
-                <div class="flex items-center gap-4 uppercase text-xs font-semibold">
+                <div class="flex items-center gap-4 uppercase text-[10px] md:text-xs font-semibold">
                     <a class="hover:text-brand-600 transition-colors" href="#">Privacy Policy</a>
                     <a class="hover:text-brand-600 transition-colors" href="#">Terms &amp; Conditions</a>
                     <a class="hover:text-brand-600 transition-colors" href="#">Complaints &amp; Appeals</a>

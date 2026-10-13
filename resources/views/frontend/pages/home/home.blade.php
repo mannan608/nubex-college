@@ -32,12 +32,12 @@
                         aligns with your experience, interests and career goals.
                     </p>
                     <div class="flex flex-wrap items-center gap-4 pt-2">
-                        <a class="inline-flex items-center justify-center gap-2 font-heading font-semibold text-sm bg-secondary hover:bg-secondary/90 text-white px-7 py-3.5 rounded-lg shadow-lg transition-all duration-200"
+                        <a class="inline-flex items-center  justify-center gap-2 font-heading font-semibold text-sm bg-secondary hover:bg-secondary/90 text-white w-full md:w-fit px-4 py-2.5 md:px-7 md:py-3.5 rounded-lg shadow-lg transition-all duration-200"
                             href="#qualifications">
                             <span>Explore Qualifications</span>
                             <span class="material-symbols-outlined text-[18px]!">arrow_forward</span>
                         </a>
-                        <a class="inline-flex items-center justify-center gap-2 font-heading font-semibold text-sm bg-white hover:bg-white text-brand-600 border border-white/20 px-6 py-3.5 rounded-lg shadow-sm backdrop-blur-sm transition-all duration-200"
+                        <a class="inline-flex items-center justify-center gap-2 font-heading font-semibold text-sm bg-white hover:bg-white text-brand-600 border border-white/20 w-full md:w-fit px-4 py-2.5 md:px-7 md:py-3.5 rounded-lg shadow-sm backdrop-blur-sm transition-all duration-200"
                             href="#eligibility-checker">
                             <span class="material-symbols-outlined text-brand-600 text-[18px]!">fact_check</span>
                             <span>Check Your Eligibility</span>
@@ -203,13 +203,14 @@
                         career progression and workplace readiness.
                     </p>
                 </div>
-                <!-- Filter buttons -->
-                <div class="flex flex-wrap items-center gap-2">
-                    <a href="#" class="text-sm text-neutral-500 hover:underline">See All Qualifications</a>
-                </div>
             </div>
             <!-- Sleek 3-Column Grid -->
-           @include('frontend.pages.industry.qualification-grid', ['qualifications' => $courses])
+            @include('frontend.pages.industry.qualification-grid', ['qualifications' => $courses])
+            <div class="flex items-center justify-center mt-8">
+                <a href=""
+                    class="w-fit px-8 py-2 bg-brand-500 text-white text-sm rounded-2xl justify-center flex items-center font-semibold">See
+                    More</a>
+            </div>
         </div>
     </section>
     <!-- Section 3: Why Choose Nubex College? -->
@@ -293,13 +294,13 @@
     <section
         class="w-full py-16 bg-gradient-to-b from-surface-container-low/80 to-surface border-y border-surface-container">
         <div class="max-w-7xl mx-auto px-5 lg:px-8">
-            <div class="max-w-3xl mb-12">             
+            <div class="max-w-3xl mb-12">
 
-                 <div
-                        class="inline-flex items-center gap-1.5 px-3 py-1 bg-secondary/10 text-brand-600 rounded-full mb-2 text-[10px] font-bold font-heading uppercase tracking-wider">
-                       <span class="material-symbols-outlined text-[16px]!">devices</span>
-                        <span>FLEXIBLE LEARNING</span>
-                    </div>
+                <div
+                    class="inline-flex items-center gap-1.5 px-3 py-1 bg-secondary/10 text-brand-600 rounded-full mb-2 text-[10px] font-bold font-heading uppercase tracking-wider">
+                    <span class="material-symbols-outlined text-[16px]!">devices</span>
+                    <span>FLEXIBLE LEARNING</span>
+                </div>
 
                 <h2 class="font-heading text-2xl sm:text-3xl font-bold text-primary tracking-tight">
                     Study at Your Own Pace, Wherever You Are
@@ -392,12 +393,12 @@
                 </div>
             </div>
             <div class="mt-8 flex flex-wrap items-center gap-4">
-                <a class="inline-flex items-center gap-2 px-6 py-3 bg-primary hover:bg-primary-dark text-white font-heading font-semibold text-sm rounded-lg shadow-sm transition-colors"
+                <a class="inline-flex items-center justify-center gap-2 w-full sm:w-fit px-4 py-2 md:px-6 md:py-3 bg-primary hover:bg-primary-dark text-white font-heading font-semibold text-sm rounded-lg shadow-sm transition-colors"
                     href="#qualifications">
                     <span>Explore Online Pathways</span>
                     <span class="material-symbols-outlined text-[18px]!">arrow_forward</span>
                 </a>
-                <a class="inline-flex items-center gap-2 px-6 py-3 bg-white hover:bg-surface-container border border-outline-variant/60 text-primary font-heading font-semibold text-sm rounded-lg shadow-sm transition-colors"
+                <a class="inline-flex items-center justify-center gap-2 w-full sm:w-fit px-4 py-2 md:px-6 md:py-3 bg-white hover:bg-surface-container border border-outline-variant/60 text-primary font-heading font-semibold text-sm rounded-lg shadow-sm transition-colors"
                     href="#eligibility-checker">
                     <span class="material-symbols-outlined text-secondary text-[18px]">download</span>
                     <span>Download Course Guide</span>
@@ -410,9 +411,11 @@
         <div class="max-w-7xl mx-auto px-5 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
                 <div class="lg:col-span-5">
-                    <div class="relative rounded-2xl overflow-hidden shadow-lg bg-surface-container h-[440px]">
-                        <img alt="Australian vocational student" class="w-full h-full object-cover"
-                            src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg" />
+                    <div class="relative rounded-2xl overflow-hidden shadow-lg bg-surface-container">
+                        <div class="w-full aspect-[4/3] overflow-hidden rounded-xl">
+                            <img alt="Australian vocational student" class="w-full h-full object-cover"
+                                src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg" />
+                        </div>
                         <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent">
                         </div>
                         <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-white/95 backdrop-blur-md">
@@ -511,7 +514,7 @@
                         </p>
                     </div>
                     <div class="pt-2">
-                        <a class="inline-flex items-center gap-2 font-heading font-semibold text-sm bg-primary hover:bg-primary-dark text-white px-6 py-3.5 rounded-lg shadow-sm transition-colors"
+                        <a class="inline-flex items-center justify-center gap-2 font-heading font-semibold text-sm bg-primary hover:bg-primary-dark text-white w-full sm:w-fit py-2.5 px-4 md:px-6 md:py-3.5 rounded-lg shadow-sm transition-colors"
                             href="#eligibility-checker">
                             <span>Explore RPL Options</span>
                             <span class="material-symbols-outlined text-[18px]!">arrow_forward</span>

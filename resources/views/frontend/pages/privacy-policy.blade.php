@@ -804,10 +804,10 @@
                         <p class="leading-relaxed">
                             You can make a complaint by emailing
                             <a
-                                href="mailto:info@openschooleducation.com"
+                                href="mailto:admissions@nubex.edu.au"
                                 class="font-bold text-blue-700 underline hover:text-blue-800"
                             >
-                                info@openschooleducation.com
+                                admissions@nubex.edu.au
                             </a>
                             with your name, contact details, and a clear description of your concern.
                         </p>
@@ -859,10 +859,10 @@
                                     </span>
 
                                     <a
-                                        href="mailto:info@openschool education.com"
+                                        href="mailto:info@nubex education.com"
                                         class="ml-1 text-blue-400 hover:underline"
                                     >
-                                        info@openschool education.com
+                                        info@nubex education.com
                                     </a>
                                 </p>
 
@@ -872,12 +872,12 @@
                                     </span>
 
                                     <a
-                                        href="https://openschooleducation.com/"
+                                        href="https://nubex.com/"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         class="ml-1 text-blue-400 hover:underline"
                                     >
-                                        https://openschooleducation.com/
+                                        https://nubex.com/
                                     </a>
                                 </p>
 

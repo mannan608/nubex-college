@@ -60,7 +60,7 @@
                                 </p>
 
                                 <p class="mt-1 break-all text-sm text-slate-500">
-                                    info@openschooleducation.com
+                                    admissions@nubex.edu.au
                                 </p>
                             </div>
                         </div>
