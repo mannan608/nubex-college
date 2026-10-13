@@ -1,19 +1,18 @@
 
  <header class="fixed top-0 left-0 w-full z-50 border-0 bg-white backdrop-blur-md dark:bg-neutral-900/95">
-     <div class="bg-secondary-50">
-         <div class="max-w-7xl mx-auto px-5 lg:px-8 flex items-center justify-between h-8 text-xs">
+     <div class="bg-surface-container-low border-b border-surface-container/60">
+         <div class="max-w-[1280px] mx-auto px-6 sm:px-10 flex items-center justify-between h-8 text-[12px]">
              <div class="flex items-center gap-2">
-                 <span class="font-bold text-neutral-500 bg-secondary-100 px-2 py-0.5 rounded tracking-wide">RTO
+                 <span class="font-bold text-primary bg-primary-fixed/60 px-2 py-0.5 rounded tracking-wide">RTO
                      46173</span>
-                 <span class="hidden sm:inline">Australian Registered Training Organisation |
+                 <span class="text-on-surface-variant hidden sm:inline">Australian Registered Training Organisation |
                      ASQA &amp; AQF
                      Compliant</span>
              </div>
-             <div class="flex items-center gap-4 font-medium">
-                 <span class="text-neutral-500">ACN: 666 035 730</span>
-                 <span class="flex items-center gap-1 text-brand-500 font-semibold">
-                    <span
-                         class="material-symbols-outlined text-sm!">verified</span>
+             <div class="flex items-center gap-4 text-on-surface-variant font-medium">
+                 <span>ACN: 666 035 730</span>
+                 <span class="flex items-center gap-1 text-secondary font-semibold"><span
+                         class="material-symbols-outlined text-[15px]">verified</span>
                      Nationally Recognised</span>
              </div>
          </div>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap');
 @import 'prismjs/themes/prism.min.css';
 @import 'tailwindcss';
 @plugin "flowbite/plugin";
@@ -163,6 +163,33 @@
   --color-theme-pink-500: #ee46bc;
 
   --color-theme-purple-500: #7a5af8;
+
+  /* Frontend semantic color palette */
+  --color-outline-variant: #c2c7cf;
+  --color-on-secondary-fixed-variant: #004b73;
+  --color-on-secondary: #ffffff;
+  --color-surface-bright: #f8f9ff;
+  --color-primary-fixed: #d0e4ff;
+  --color-surface-container-low: #eff4ff;
+  --color-surface-container-highest: #d7e3f8;
+  --color-on-tertiary: #ffffff;
+  --color-surface-container-high: #dde9fe;
+  --color-on-secondary-fixed: #001e31;
+  --color-surface-variant: #d7e3f8;
+  --color-on-surface-variant: #42474e;
+  --color-on-primary: #ffffff;
+  --color-outline: #73777f;
+  --color-secondary-fixed: #cce5ff;
+  --color-on-background: #101c2b;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-surface: #101c2b;
+  --color-primary: #123b5d;
+  --color-primary-dark: #0c273e;
+  --color-surface: #f8f9ff;
+  --color-secondary: #006497;
+  --color-secondary-container: #7fc5fe;
+  --color-background: #f8f9ff;
+  --color-surface-container: #e5eeff;
 
   --shadow-theme-md: 0px 4px 8px -2px rgba(16, 24, 40, 0.1), 0px 2px 4px -2px rgba(16, 24, 40, 0.06);
   --shadow-theme-lg: 0px 12px 16px -4px rgba(16, 24, 40, 0.08),

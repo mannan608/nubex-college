@@ -1,963 +1,2283 @@
 @extends('frontend.layouts.app')
 
 @section('content')
-    <section class="relative overflow-hidden bg-brand-25">
-        {{-- Existing mesh background utility --}}
-        <div class="absolute inset-0 mesh-background"></div>
-
-        <div class="relative mx-auto w-full max-w-7xl px-4 py-10 sm:px-6 md:py-14 lg:px-8 lg:py-20">
-
-            <div class="grid grid-cols-1 items-stretch gap-10 lg:grid-cols-12 lg:gap-12">
-
-                {{-- ====================================================
-                HERO CONTENT
-            ===================================================== --}}
-                <div class="flex flex-col justify-between lg:col-span-7">
-
-                    <div class="flex flex-col gap-5">
-
-                        {{-- Regulatory badges --}}
-                        <div class="flex flex-wrap items-center gap-2 animate-hero-left hero-stagger-1">
-
-                            <span
-                                class="inline-flex items-center gap-2 rounded-lg bg-brand-500 px-3 py-1.5  text-[11px] font-bold uppercase tracking-wide text-neutral-25">
-
-                                <span class="h-2 w-2 rounded-full bg-secondary-300"></span>
-
-                                CRICOS 04111E • Sydney Campus
-
-                            </span>
-
-                            <span
-                                class="inline-flex items-center rounded-lg border border-neutral-200 bg-neutral-50 px-3 py-1.5  text-[11px] font-bold uppercase tracking-wide text-neutral-800">
-
-                                RTO 45975
-
-                            </span>
-
-                        </div>
-
-
-                        {{-- Main headline --}}
-                        <div class="flex flex-col gap-2 pt-1 animate-hero-left hero-stagger-2">
-
-                            <h1
-                                class="font-display text-4xl font-extrabold uppercase leading-[1.04] tracking-tight text-neutral-950 sm:text-5xl lg:text-6xl">
-
-                                Build the Career
-
-                            </h1>
-
-                            <div class="inline-block self-start -rotate-1 rounded-md bg-brand-500 px-4 py-1.5 sm:px-5">
-
-                                <span
-                                    class="font-display text-4xl font-extrabold uppercase leading-[1.04] tracking-tight text-neutral-25 sm:text-5xl lg:text-6xl">
-
-                                    You Came For
-
-                                </span>
-
-                            </div>
-
-                        </div>
-
-
-                        {{-- Hero description --}}
-                        <p class="max-w-2xl pt-1 text-base leading-7 text-neutral-600 md:text-lg md:leading-8 max-w-xl animate-hero-left hero-stagger-3">
-
-                            Nubex College trains tomorrow's tradies, carers, technicians and leaders —
-                            with hands-on courses, expert assessors and pathways into real Australian jobs.
-
-                        </p>
-
-                    </div>
-
-
-                    {{-- =================================================
-                    HERO CTA + TRUST
-                ================================================== --}}
-                    <div class="flex flex-col gap-7 pt-8 lg:pt-12">
-
-                        <div class="flex flex-col gap-3 sm:flex-row sm:flex-wrap animate-hero-left hero-stagger-4">
-
-                            {{-- Primary CTA --}}
-                            <a href="{{ route('courses.index') }}"
-                                class="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-brand-500 px-6 py-3  text-xs font-bold uppercase tracking-wide text-neutral-25 transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-brand-600 hover:shadow-theme-md focus:outline-none focus:ring-4 focus:ring-brand-500/20">
-
-                                Browse All Courses
-
-                                <span class="material-symbols-outlined text-lg">
-                                    arrow_forward
-                                </span>
-
-                            </a>
-
-
-                            {{-- Secondary CTA --}}
-                            <a href="{{ route('international') }}"
-                                class="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg border border-brand-500 bg-neutral-25 px-6 py-3  text-xs font-bold uppercase tracking-wide text-brand-500 transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-brand-50 hover:shadow-theme-sm focus:outline-none focus:ring-4 focus:ring-brand-500/10">
-
-                                <span class="material-symbols-outlined text-lg">
-                                    menu_book
-                                </span>
-
-                                International Student
-
-                            </a>
-
-                        </div>
-
-
-                        {{-- Trust indicators --}}
-                        <div class="grid w-full max-w-2xl grid-cols-1 gap-5 border-t border-brand-200 pt-6 sm:grid-cols-2 animate-hero-left hero-stagger-5">
-
-                            <div class="flex items-start gap-3">
-
-                                <span class="material-symbols-outlined mt-0.5 text-2xl font-bold text-secondary-500">
-                                    verified
-                                </span>
-
-                                <div class="flex flex-col gap-0.5">
-
-                                    <span class=" text-[11px] font-bold uppercase tracking-wide text-neutral-900">
-                                        Nationally Recognised
-                                    </span>
-
-                                    <span class="text-xs leading-5 text-neutral-600">
-                                        AQF Level 3 to 6 verified
-                                    </span>
-
-                                </div>
-
-                            </div>
-
-
-                            <div class="flex items-start gap-3">
-
-                                <span class="material-symbols-outlined mt-0.5 text-2xl font-bold text-secondary-500">
-                                    handshake
-                                </span>
-
-                                <div class="flex flex-col gap-0.5">
-
-                                    <span class=" text-[11px] font-bold uppercase tracking-wide text-neutral-900">
-                                        Work Placements
-                                    </span>
-
-                                    <span class="text-xs leading-5 text-neutral-600">
-                                        NSW host employer network
-                                    </span>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                {{-- ====================================================
-                HERO VISUAL
-            ===================================================== --}}
+     <!-- Section 1: Hero Section -->
+        <section
+          class="relative w-full overflow-hidden bg-gradient-to-br from-[#0c273e] via-[#123b5d] to-[#081b2c] py-14 lg:py-20 text-white border-b border-white/10 shadow-inner"
+        >
+          <div
+            class="absolute inset-0 opacity-10 bg-[radial-gradient(#d0e4ff_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none"
+          ></div>
+          <div
+            class="absolute top-0 right-1/4 w-[450px] h-[450px] bg-secondary/25 rounded-full blur-3xl pointer-events-none"
+          ></div>
+          <div
+            class="absolute bottom-0 left-10 w-[350px] h-[350px] bg-primary-fixed/15 rounded-full blur-3xl pointer-events-none"
+          ></div>
+          <div class="max-w-[1280px] mx-auto px-6 sm:px-10 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+              <!-- Left Column -->
+              <div class="lg:col-span-7 flex flex-col gap-5 z-10">
                 <div
-                    class="flex flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-25 shadow-theme-lg lg:col-span-5 animate-hero-right">
-
-                    {{-- Browser-style header --}}
-                    <div class="flex items-center justify-between border-b border-neutral-200 bg-neutral-50 px-4 py-3">
-
-                        <div class="flex items-center gap-2">
-
-                            <span class="h-2.5 w-2.5 rounded-full bg-error-500"></span>
-
-                            <span class="h-2.5 w-2.5 rounded-full bg-warning-400"></span>
-
-                            <span class="h-2.5 w-2.5 rounded-full bg-success-500"></span>
-
-                        </div>
-
-                    </div>
-
-
-                    {{-- IMPORTANT:
-                     Existing seamless crossfade hero slider preserved --}}
-                    @include('frontend.pages.home.section.hero-slider')
-
-
-                    {{-- Technical information --}}
-                    <div
-                        class="grid grid-cols-3 divide-x divide-neutral-200 border-t border-neutral-200 bg-neutral-25 text-center">
-
-                        <div class="px-2 py-4">
-
-                            <span class="block font-display text-lg font-extrabold text-brand-500">
-                                40:60
-                            </span>
-
-                            <span class=" text-[9px] font-bold uppercase tracking-wide text-neutral-600">
-                                Theory / Hands-on
-                            </span>
-
-                        </div>
-
-
-                        <div class="px-2 py-4">
-
-                            <span class="block font-display text-lg font-extrabold text-brand-500">
-                                100%
-                            </span>
-
-                            <span class=" text-[9px] font-bold uppercase tracking-wide text-neutral-600">
-                                ASQA Compliant
-                            </span>
-
-                        </div>
-
-
-                        <div class="px-2 py-4">
-
-                            <span class="block font-display text-lg font-extrabold text-brand-500">
-                                AUST
-                            </span>
-
-                            <span class=" text-[9px] font-bold uppercase tracking-wide text-neutral-600">
-                                Government Code
-                            </span>
-
-                        </div>
-
-                    </div>
-
+                  class="inline-flex items-center gap-2 self-start px-3.5 py-1.5 bg-white/10 backdrop-blur-md text-secondary-container border border-white/15 rounded-full shadow-sm text-xs font-bold tracking-wider uppercase font-heading"
+                >
+                  <span
+                    class="material-symbols-outlined text-[16px] text-secondary-container"
+                    >school</span
+                  >
+                  <span>YOUR NEXT STEP STARTS HERE</span>
                 </div>
-
-            </div>
-
-        </div>
-
-    </section>
-    {{-- STATISTICS --}}
-    <section class="w-full bg-neutral-25 py-10 md:py-12 lg:py-14">
-
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-
-            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6 stagger">
-
-
-                {{-- Accreditation --}}
-                <div
-                    class="flex flex-col justify-between rounded-2xl border border-neutral-200 bg-neutral-25 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg reveal-scale">
-
-                    <div class="flex items-center justify-between border-b border-neutral-200 pb-3">
-
-                        <span class=" text-[10px] font-bold uppercase tracking-widest text-neutral-600">
-                            Accreditation
-                        </span>
-
-                        <span class="h-2.5 w-2.5 rounded-full bg-brand-500"></span>
-
-                    </div>
-
-                    <div class="flex items-baseline gap-2 py-5">
-
-                        <span class="font-display text-4xl font-extrabold tracking-tight text-brand-500">
-                            12+
-                        </span>
-
-                        <span class=" text-[10px] font-bold uppercase tracking-wide text-secondary-600">
-                            Nationally Accredited
-                        </span>
-
-                    </div>
-
-                    <p class="text-sm leading-6 text-neutral-600">
-                        Certificate III, IV and Advanced Diploma awards recognised across Australia.
-                    </p>
-
-                </div>
-
-
-                {{-- Location --}}
-                <div
-                    class="flex flex-col justify-between rounded-2xl border border-neutral-200 bg-neutral-25 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg reveal-scale">
-
-                    <div class="flex items-center justify-between border-b border-neutral-200 pb-3">
-
-                        <span class=" text-[10px] font-bold uppercase tracking-widest text-neutral-600">
-                            Location
-                        </span>
-
-                        <span class="h-2.5 w-2.5 rounded-full bg-brand-500"></span>
-
-                    </div>
-
-                    <div class="flex items-baseline gap-2 py-5">
-
-                        <span class="font-display text-4xl font-extrabold tracking-tight text-brand-500">
-                            01
-                        </span>
-
-                        <span class=" text-[10px] font-bold uppercase tracking-wide text-secondary-600">
-                            Sydney Campus
-                        </span>
-
-                    </div>
-
-                    <p class="text-sm leading-6 text-neutral-600">
-                        High-spec workshops, clinical simulation suites and a transport-connected campus.
-                    </p>
-
-                </div>
-
-
-                {{-- Industry --}}
-                <div
-                    class="flex flex-col justify-between rounded-2xl border border-neutral-200 bg-neutral-25 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg reveal-scale">
-
-                    <div class="flex items-center justify-between border-b border-neutral-200 pb-3">
-
-                        <span class=" text-[10px] font-bold uppercase tracking-widest text-neutral-600">
-                            Industry Sectors
-                        </span>
-
-                        <span class="h-2.5 w-2.5 rounded-full bg-brand-500"></span>
-
-                    </div>
-
-                    <div class="flex items-baseline gap-2 py-5">
-
-                        <span class="font-display text-4xl font-extrabold tracking-tight text-brand-500">
-                            03
-                        </span>
-
-                        <span class=" text-[10px] font-bold uppercase tracking-wide text-secondary-600">
-                            High-Demand Hubs
-                        </span>
-
-                    </div>
-
-                    <p class="text-sm leading-6 text-neutral-600">
-                        Carpentry & Building, Aged & Community Care, Leadership & Operations.
-                    </p>
-
-                </div>
-
-
-                {{-- Visa --}}
-                <div
-                    class="flex flex-col justify-between rounded-2xl border border-neutral-200 bg-neutral-25 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg reveal-scale">
-
-                    <div class="flex items-center justify-between border-b border-neutral-200 pb-3">
-
-                        <span class=" text-[10px] font-bold uppercase tracking-widest text-neutral-600">
-                            Visa Status
-                        </span>
-
-                        <span class="h-2.5 w-2.5 rounded-full bg-brand-500"></span>
-
-                    </div>
-
-                    <div class="flex items-baseline gap-2 py-5">
-
-                        <span class="font-display text-4xl font-extrabold tracking-tight text-brand-500">
-                            100%
-                        </span>
-
-                        <span class=" text-[10px] font-bold uppercase tracking-wide text-secondary-600">
-                            CRICOS Student Visa
-                        </span>
-
-                    </div>
-
-                    <p class="text-sm leading-6 text-neutral-600">
-                        International study confirmation of enrolment (CoE) issuance support.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-    {{--  MARQUEE --}}
-    @include('frontend.pages.home.section.marquee')
-
-
-    {{-- ACADEMIC DISCIPLINES --}}
-    <section class="bg-brand-100 py-12 md:py-14 lg:py-18">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-
-            <div class="mb-8 flex flex-col justify-between gap-5 border-b border-brand-200 pb-5 md:flex-row md:items-end">
-
-                <div class="reveal">
-
-                    <span class=" text-[10px] font-bold uppercase tracking-[0.18em] text-secondary-600">
-                        01 Academic Disciplines
-                    </span>
-
-                    <h2
-                        class="mt-2 max-w-3xl text-xl font-extrabold uppercase leading-tight tracking-tight text-neutral-950 md:text-2xl lg:text-3xl">
-                        A course for the career you imagine
-                    </h2>
-
-                </div>
-
-
-                <a href="{{ route('courses.index') }}"
-                    class="reveal delay-150 inline-flex items-center gap-1.5 self-start  text-xs font-bold uppercase tracking-wide text-brand-600 underline decoration-brand-300 underline-offset-4 transition-colors duration-300 hover:text-secondary-600 hover:decoration-secondary-400 md:self-auto">
-
-                    All Disciplines
-
-                    <span class="material-symbols-outlined text-sm">
-                        north_east
-                    </span>
-
-                </a>
-
-            </div>
-
-
-            <div class="grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-8 stagger">
-
-                {{-- Card 1 --}}
-                @foreach ($categories as $category)
-                    <div onclick="window.location.href='{{ route('category-courses', ['categoryslug' => $category['slug']]) }}'"
-                        class="group flex flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-25 shadow-theme-xs transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-theme-lg cursor-pointer reveal-scale">
-
-                        <div class="relative h-56 overflow-hidden border-b border-neutral-200 bg-neutral-100">
-
-                            <img src="{{ asset($category['image']) }}" alt="Australian carpenter apprentice framing timber"
-                                class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
-
-                            <div
-                                class="absolute left-3 top-3 rounded-md bg-brand-500 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wide text-neutral-25">
-
-                                {{ $category['short_name'] }}
-
-                            </div>
-
-                            <div
-                                class="absolute bottom-3 right-3 rounded-md border border-neutral-200 bg-neutral-25 px-2 py-1 text-[9px] font-bold uppercase tracking-wide text-neutral-800">
-
-                                2 Qualifications
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="flex flex-1 flex-col justify-between gap-6 p-6">
-
-                            <div class="flex flex-col gap-3">
-
-                                <h3
-                                    class="font-display text-xl font-bold uppercase leading-tight tracking-tight text-brand-500">
-
-                                    {{ $category['name'] }}
-
-                                </h3>
-
-                                <p class="text-sm leading-6 text-neutral-600 line-clamp-2">
-
-                                    {{ $category['description'] }}
-
-                                </p>
-
-                            </div>
-
-
-                            <div class="flex items-center justify-between border-t border-neutral-200 pt-5">
-
-                                <div>
-
-                                    <span class="block text-[9px] font-bold uppercase tracking-wide text-neutral-500">
-                                        Duration
-                                    </span>
-
-                                    <span class="text-xs font-bold text-neutral-900">
-                                        1–2 Years
-                                    </span>
-
-                                </div>
-
-
-                                {{-- Existing Explore link --}}
-                                <a href="{{ route('category-courses', ['categoryslug' => $category['slug']]) }}"
-                                    onclick="event.stopPropagation();"
-                                    class="inline-flex items-center gap-1.5 rounded-lg bg-brand-500 px-3.5 py-2 text-[10px] font-bold uppercase tracking-wide text-neutral-25 transition-all duration-300 hover:bg-brand-600 hover:shadow-theme-sm">
-
-                                    Explore Trade
-
-                                    <span class="material-symbols-outlined text-sm">
-                                        arrow_forward
-                                    </span>
-
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-                @endforeach
-            </div>
-
-        </div>
-    </section>
-
-    {{-- MOST-ENROLLED QUALIFICATIONS --}}
-    <section id="courses" class="w-full bg-neutral-50 py-12 md:py-14 lg:py-18">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-
-            <div
-                class="mb-8 flex flex-col justify-between gap-5 border-b border-neutral-200 pb-5 md:flex-row md:items-end">
-
-                <div class="reveal">
-
-                    <span class=" text-[10px] font-bold uppercase tracking-[0.18em] text-secondary-600">
-                        02 Intake Selection 2025
-                    </span>
-
-                    <h2
-                        class="mt-2 text-xl font-extrabold uppercase leading-tight tracking-tight text-neutral-950 md:text-2xl lg:text-3xl">
-                        Most-Enrolled Qualifications
-                    </h2>
-
-                    <p class="mt-2 max-w-2xl text-sm leading-6 text-neutral-600">
-                        Direct pathway qualifications aligning with current New South Wales skills shortage priority lists.
-                    </p>
-
-                </div>
-
-
-                <div class="flex flex-wrap items-center gap-2 reveal delay-100">
-
+                <h1
+                  class="font-heading text-3xl sm:text-4xl lg:text-[50px] lg:leading-[58px] text-white tracking-tight font-extrabold drop-shadow-sm"
+                >
+                  Build Your Skills.<br /><span class="text-secondary-container"
+                    >Advance Your Future.</span
+                  >
+                </h1>
+                <p
+                  class="text-base sm:text-lg text-slate-200 max-w-2xl leading-relaxed"
+                >
+                  Explore vocational qualifications in business leadership,
+                  community services, individual support, mental health and
+                  allied health assistance. Discover a training pathway that
+                  aligns with your experience, interests and career goals.
+                </p>
+                <div class="flex flex-wrap items-center gap-4 pt-2">
+                  <a
+                    class="inline-flex items-center justify-center gap-2 font-heading font-semibold text-sm bg-secondary hover:bg-secondary/90 text-white px-7 py-3.5 rounded-lg shadow-lg transition-all duration-200"
+                    href="#qualifications"
+                  >
+                    <span>Explore Qualifications</span>
+                    <span class="material-symbols-outlined text-[18px]"
+                      >arrow_forward</span
+                    >
+                  </a>
+                  <a
+                    class="inline-flex items-center justify-center gap-2 font-heading font-semibold text-sm bg-white/10 hover:bg-white/15 text-white border border-white/20 px-6 py-3.5 rounded-lg shadow-sm backdrop-blur-sm transition-all duration-200"
+                    href="#eligibility-checker"
+                  >
                     <span
-                        class="rounded-lg border border-neutral-200 bg-neutral-25 px-3 py-1.5  text-[10px] font-bold uppercase tracking-wide text-neutral-700">
-                        Term 2: May 2025
-                    </span>
-
-                    <span
-                        class="rounded-lg bg-brand-500 px-3 py-1.5  text-[10px] font-bold uppercase tracking-wide text-neutral-25">
-                        Term 3: Jul 2025
-                    </span>
-
+                      class="material-symbols-outlined text-secondary-container text-[18px]"
+                      >fact_check</span
+                    >
+                    <span>Check Your Eligibility</span>
+                  </a>
                 </div>
-
-            </div>
-            <div class="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-6 stagger">
-
-                @foreach ($courses as $course)
-                <div onclick="window.location.href='{{ route('course.show', ['courseslug' => $course['slug']]) }}'"
-                    class="flex cursor-pointer flex-col justify-between gap-5 rounded-2xl border border-neutral-200 bg-neutral-25 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg reveal-scale">
-
-                    <div class="flex flex-col gap-4">
-
-                        <div class="flex flex-wrap items-center justify-between gap-2">
-
-                            <span class=" text-[10px] font-bold uppercase tracking-wider text-secondary-600">
-                                National Code: {{ $course['code'] }}
-                            </span>
-
-                            <span
-                                class="rounded-md bg-success-50 px-2.5 py-1  text-[9px] font-bold uppercase tracking-wide text-success-700">
-                                {{ $course['category_name'] }}
-                            </span>
-
-                        </div>
-
-
-                        <h4 class="font-display text-xl font-bold uppercase leading-tight tracking-tight text-brand-500">
-                            {{ $course['name'] }}
-                        </h4>
-
-
-                        <p class="text-sm leading-6 text-neutral-600 line-clamp-2">
-                            {{ $course['hero']['description'] }}
-                        </p>
-
-
-                        <div class="grid grid-cols-3 gap-3 rounded-xl border-y border-neutral-200 bg-neutral-50 px-4 py-4">
-
-                            <div>
-
-                                <span class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
-                                    Duration
-                                </span>
-
-                                <span class=" text-xs font-bold text-neutral-900">
-                                    {{ $course['key_information']['duration'] }}
-                                </span>
-
-                            </div>
-
-
-                            <div>
-
-                                <span class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
-                                    Study Load
-                                </span>
-
-                                <span class=" text-xs font-bold text-neutral-900">
-                                     {{ $course['key_information']['mode_of_study'] }}
-                                </span>
-
-                            </div>
-
-
-                            <div>
-
-                                <span class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
-                                    Total Units
-                                </span>
-
-                                <span class=" text-xs font-bold text-neutral-900">
-                                    {{ $course['key_information']['total_units'] }}
-                                </span>
-
-                            </div>
-
-                        </div>
-
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-6 mt-2 border-t border-white/10 text-xs"
+                >
+                  <div
+                    class="flex items-center gap-2.5 p-3 rounded-lg bg-white/5 border border-white/10 backdrop-blur-sm"
+                  >
+                    <span
+                      class="material-symbols-outlined text-secondary-container text-[20px]"
+                      >verified</span
+                    >
+                    <span class="text-slate-100 font-medium leading-tight"
+                      >Australian Registered Training Organisation</span
+                    >
+                  </div>
+                  <div
+                    class="flex items-center gap-2.5 p-3 rounded-lg bg-white/5 border border-white/10 backdrop-blur-sm"
+                  >
+                    <span
+                      class="material-symbols-outlined text-secondary-container text-[20px]"
+                      >workspace_premium</span
+                    >
+                    <span class="text-slate-100 font-medium leading-tight"
+                      >Nationally Recognised Qualifications</span
+                    >
+                  </div>
+                  <div
+                    class="flex items-center gap-2.5 p-3 rounded-lg bg-white/5 border border-white/10 backdrop-blur-sm"
+                  >
+                    <span
+                      class="material-symbols-outlined text-secondary-container text-[20px]"
+                      >support_agent</span
+                    >
+                    <span class="text-slate-100 font-medium leading-tight"
+                      >Student Support and Guidance</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Right Column: Replaced Image with pristine Fast Enquiry Form -->
+              <div class="lg:col-span-5 relative flex flex-col justify-center">
+                <div
+                  class="relative z-20 bg-white text-on-surface p-6 sm:p-7 rounded-2xl shadow-2xl border border-white/40"
+                >
+                  <div
+                    class="flex items-center justify-between pb-3 border-b border-surface-container mb-4"
+                  >
+                    <div>
+                      <h2 class="font-heading text-lg font-bold text-primary">
+                        Find the Right Qualification
+                      </h2>
+                      <p class="text-xs text-secondary font-semibold">
+                        Fast Advisor Assessment • RTO 46173
+                      </p>
                     </div>
                     <div
-                        class="flex flex-col gap-3 border-t border-neutral-200 pt-4 sm:flex-row sm:items-center sm:justify-between">
-
-                        <span class=" text-[10px] text-neutral-500">
-                            CRICOS CODE: {{ $course['key_information']['cricos'] }}
-                        </span>
-
-                        <a href="{{ route('course.show', ['courseslug' => $course['slug']]) }}"
-                            class="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-lg bg-brand-500 px-4 py-2  text-[10px] font-bold uppercase tracking-wide text-neutral-25 transition-all duration-300 hover:bg-brand-600 hover:shadow-theme-sm focus:outline-none focus:ring-4 focus:ring-brand-500/20">
-
-                            Course Details
-
-                            <span class="material-symbols-outlined text-sm">
-                                chevron_right
-                            </span>
-
-                        </a>
-
+                      class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary"
+                    >
+                      <span class="material-symbols-outlined text-[22px]"
+                        >explore</span
+                      >
                     </div>
-                </div>
-                @endforeach
-              
-            </div>
-        </div>
-    </section>
-
-    {{-- PROSPECTUS / LEAD CAPTURE --}}
-    <section id="prospectus" class="mx-auto w-full max-w-7xl px-4 py-12 sm:px-6 md:py-14 lg:px-8 lg:py-18">
-        <div
-            class="grid grid-cols-1 overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-25 shadow-theme-lg lg:grid-cols-12 reveal">
-            {{--  LEFT CONTENT --}}
-            <div class="flex flex-col justify-between gap-8 bg-brand-50 p-6 md:p-10 lg:col-span-7">
-
-                <div class="flex flex-col gap-5">
-
-                    <div class="flex flex-wrap items-center gap-2">
-
-                        <span class=" text-[10px] font-bold uppercase tracking-widest text-secondary-600">
-                            Documentation & Intakes
-                        </span>
-
-                        <span class="text-neutral-400">/</span>
-
-                        <span class=" text-[10px] font-bold uppercase tracking-widest text-neutral-700">
-                            2025 Calendar
-                        </span>
-
+                  </div>
+                  <p class="text-xs text-on-surface-variant mb-4">
+                    Tell us what you are interested in, and our qualified team
+                    will help guide your training pathway.
+                  </p>
+                  <form
+                    class="flex flex-col gap-3"
+                    id="hero-quick-enquiry"
+                    onsubmit="
+                      event.preventDefault();
+                      alert(
+                        'Thank you for reaching out. A Nubex College advisor will contact you within 1 business day.',
+                      );
+                      this.reset();
+                    "
+                  >
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                      <div>
+                        <label
+                          class="text-xs font-semibold text-on-surface block mb-1"
+                          >Full Name</label
+                        >
+                        <input
+                          class="w-full px-3 py-2 text-xs rounded-lg bg-surface-container-low text-on-surface border border-outline-variant/60 focus:outline-none focus:border-secondary focus:bg-white"
+                          placeholder="Sarah Jenkins"
+                          required=""
+                          type="text"
+                        />
+                      </div>
+                      <div>
+                        <label
+                          class="text-xs font-semibold text-on-surface block mb-1"
+                          >Mobile Number</label
+                        >
+                        <input
+                          class="w-full px-3 py-2 text-xs rounded-lg bg-surface-container-low text-on-surface border border-outline-variant/60 focus:outline-none focus:border-secondary focus:bg-white"
+                          placeholder="0400 000 000"
+                          required=""
+                          type="tel"
+                        />
+                      </div>
                     </div>
-
-
-                    <h3
-                        class="max-w-2xl font-extrabold uppercase leading-tight tracking-tight text-brand-500 text-xl  md:text-2xl lg:text-3xl">
-                        Download the Official 2025 Course Booklet & Fee Schedule
-                    </h3>
-
-
-                    <p class="max-w-2xl text-sm leading-6 text-neutral-600 md:text-base md:leading-7">
-                        Receive the official institutional prospectus detailing competency unit descriptions,
-                        articulation pathways, tuition breakdowns and Department of Home Affairs student visa
-                        requirements.
-                    </p>
-
-
-                    <div class="flex flex-col gap-4 pt-1">
-
-                        <div class="flex items-start gap-3">
-
-                            <span class="material-symbols-outlined mt-0.5 text-xl font-bold text-secondary-500">
-                                check_circle
-                            </span>
-
-                            <span class="text-sm leading-6 text-neutral-800">
-                                <strong class="font-semibold">
-                                    Transparent Fee Schedules:
-                                </strong>
-                                Material costs, uniform fees and flexible quarterly instalment timetables.
-                            </span>
-
-                        </div>
-
-
-                        <div class="flex items-start gap-3">
-
-                            <span class="material-symbols-outlined mt-0.5 text-xl font-bold text-secondary-500">
-                                check_circle
-                            </span>
-
-                            <span class="text-sm leading-6 text-neutral-800">
-                                <strong class="font-semibold">
-                                    CRICOS & ESOS Standards:
-                                </strong>
-                                Mandatory hours, attendance compliance tracking and English proficiency thresholds.
-                            </span>
-
-                        </div>
-
-
-                        <div class="flex items-start gap-3">
-
-                            <span class="material-symbols-outlined mt-0.5 text-xl font-bold text-secondary-500">
-                                check_circle
-                            </span>
-
-                            <span class="text-sm leading-6 text-neutral-800">
-                                <strong class="font-semibold">
-                                    Work Placement Agreements:
-                                </strong>
-                                Approved employer networks in Western Sydney and regional NSW.
-                            </span>
-
-                        </div>
-
+                    <div>
+                      <label
+                        class="text-xs font-semibold text-on-surface block mb-1"
+                        >Email Address</label
+                      >
+                      <input
+                        class="w-full px-3 py-2 text-xs rounded-lg bg-surface-container-low text-on-surface border border-outline-variant/60 focus:outline-none focus:border-secondary focus:bg-white"
+                        placeholder="s.jenkins@example.com.au"
+                        required=""
+                        type="email"
+                      />
                     </div>
-
-                </div>
-
-
-                <div
-                    class="flex flex-wrap items-center gap-x-3 gap-y-2 border-t border-brand-200 pt-5  text-[9px] font-bold uppercase tracking-wide text-neutral-600">
-
-                    <div class="flex items-center gap-1.5">
-
-                        <span class="material-symbols-outlined text-base">
-                            picture_as_pdf
-                        </span>
-
-                        <span>
-                            PDF (3.8 MB)
-                        </span>
-
-                    </div>
-
-                    <span class="text-neutral-400">•</span>
-
-                    <span>
-                        Updated: January 2025
-                    </span>
-
-                    <span class="text-neutral-400">•</span>
-
-                    <span>
-                        Verified ASQA VET
-                    </span>
-
-                </div>
-
-            </div>
-            {{-- RIGHT FORM --}}
-            <div class="flex flex-col justify-center bg-neutral-25 p-6 md:p-10 lg:col-span-5">
-
-                <form class="flex flex-col gap-5"
-                    onsubmit="event.preventDefault(); alert('Course prospectus PDF has been dispatched to your email address.');">
-
-
-                    {{-- Form heading --}}
-                    <div class="border-b border-neutral-200 pb-4">
-
-                        <span class="font-display text-lg font-bold uppercase tracking-tight text-brand-500">
-                            Instant Access
-                        </span>
-
-                        <p class="mt-1  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
-                            Direct dispatch to your primary inbox
-                        </p>
-
-                    </div>
-
-
-                    {{-- Name --}}
-                    <div class="flex flex-col gap-2">
-
-                        <label for="full-name" class=" text-[10px] font-bold uppercase tracking-wide text-neutral-800">
-                            Full Legal Name *
-                        </label>
-
-                        <input id="full-name" type="text" required placeholder="e.g. Alex Henderson"
-                            class="h-11 w-full rounded-lg border border-neutral-300 bg-neutral-25 px-4 py-2.5  text-sm text-neutral-900 placeholder:text-neutral-400 transition-all duration-200 focus:border-brand-400 focus:bg-neutral-25 focus:outline-none focus:ring-4 focus:ring-brand-500/10" />
-
-                    </div>
-
-
-                    {{-- Email --}}
-                    <div class="flex flex-col gap-2">
-
-                        <label for="email" class=" text-[10px] font-bold uppercase tracking-wide text-neutral-800">
-                            Email Address *
-                        </label>
-
-                        <input id="email" type="email" required placeholder="name@example.com"
-                            class="h-11 w-full rounded-lg border border-neutral-300 bg-neutral-25 px-4 py-2.5  text-sm text-neutral-900 placeholder:text-neutral-400 transition-all duration-200 focus:border-brand-400 focus:bg-neutral-25 focus:outline-none focus:ring-4 focus:ring-brand-500/10" />
-
-                    </div>
-
-
-                    {{-- Interest --}}
-                    <div class="flex flex-col gap-2">
-
-                        <label for="area-interest"
-                            class=" text-[10px] font-bold uppercase tracking-wide text-neutral-800">
-                            Area of Interest *
-                        </label>
-
-                        <select id="area-interest" required
-                            class="h-11 w-full rounded-lg border border-neutral-300 bg-neutral-25 px-4 py-2.5  text-sm text-neutral-900 transition-all duration-200 focus:border-brand-400 focus:bg-neutral-25 focus:outline-none focus:ring-4 focus:ring-brand-500/10">
-
-                            <option value="">
-                                Select study stream...
-                            </option>
-
-                            <option value="trade">
-                                Trade: Carpentry & Building Construction
-                            </option>
-
-                            <option value="health">
-                                Health: Aged Care & Mental Health Support
-                            </option>
-
-                            <option value="business">
-                                Business: Leadership & Operational Management
-                            </option>
-
-                            <option value="all">
-                                Full Comprehensive Multi-Discipline Guide
-                            </option>
-
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                      <div>
+                        <label
+                          class="text-xs font-semibold text-on-surface block mb-1"
+                          >Target Qualification</label
+                        >
+                        <select
+                          class="w-full px-3 py-2 text-xs rounded-lg bg-surface-container-low text-on-surface border border-outline-variant/60 focus:outline-none focus:border-secondary focus:bg-white"
+                          required=""
+                        >
+                          <option disabled="" selected="" value="">
+                            Select course...
+                          </option>
+                          <option value="BSB50420">
+                            BSB50420 - Dip Leadership &amp; Mgt
+                          </option>
+                          <option value="BSB60420">
+                            BSB60420 - Adv Dip Leadership &amp; Mgt
+                          </option>
+                          <option value="CHC33021">
+                            CHC33021 - Cert III Individual Support
+                          </option>
+                          <option value="CHC43015">
+                            CHC43015 - Cert IV Ageing Support
+                          </option>
+                          <option value="CHC43315">
+                            CHC43315 - Cert IV Mental Health
+                          </option>
+                          <option value="CHC52025">
+                            CHC52025 - Dip Community Services
+                          </option>
+                          <option value="HLT33021">
+                            HLT33021 - Cert III Allied Health
+                          </option>
                         </select>
-
+                      </div>
+                      <div>
+                        <label
+                          class="text-xs font-semibold text-on-surface block mb-1"
+                          >Preferred Pathway</label
+                        >
+                        <select
+                          class="w-full px-3 py-2 text-xs rounded-lg bg-surface-container-low text-on-surface border border-outline-variant/60 focus:outline-none focus:border-secondary focus:bg-white"
+                          required=""
+                        >
+                          <option disabled="" selected="" value="">
+                            Select mode...
+                          </option>
+                          <option value="online">Online Self-Paced</option>
+                          <option value="blended">Blended Learning</option>
+                          <option value="workplace">Workplace Based</option>
+                          <option value="rpl">
+                            Recognition of Prior Learning (RPL)
+                          </option>
+                        </select>
+                      </div>
                     </div>
-
-
-                    {{-- Visa checkbox --}}
-                    <div class="flex items-start gap-2.5 pt-1">
-
-                        <input id="student-visa" type="checkbox"
-                            class="mt-0.5 h-4 w-4 rounded border-neutral-300 accent-brand-500" />
-
-                        <label for="student-visa" class="cursor-pointer select-none text-xs leading-5 text-neutral-600">
-
-                            I require Australian Subclass 500 Student Visa guidance.
-
-                        </label>
-
+                    <div class="flex items-start gap-2 pt-1">
+                      <input
+                        class="mt-0.5 rounded text-primary focus:ring-secondary"
+                        id="hero-consent"
+                        required=""
+                        type="checkbox"
+                      />
+                      <label
+                        class="text-[11px] leading-tight text-on-surface-variant cursor-pointer"
+                        for="hero-consent"
+                      >
+                        I consent to Nubex College contacting me regarding
+                        course details in accordance with the Privacy Act 1988.
+                      </label>
                     </div>
-
-
-                    {{-- Submit --}}
-                    <button type="submit"
-                        class="mt-1 inline-flex min-h-12 w-full items-center justify-center rounded-lg bg-brand-500 px-4 py-3  text-xs font-bold uppercase tracking-wide text-neutral-25 transition-all duration-300 hover:bg-brand-600 hover:shadow-theme-lg focus:outline-none focus:ring-4 focus:ring-brand-500/20">
-
-                        Download Course Booklet (PDF)
-
-                        <span class="ml-1">
-                            →
-                        </span>
-
+                    <button
+                      class="mt-2 w-full py-3 bg-secondary hover:bg-secondary/90 text-white font-heading font-semibold text-sm rounded-lg shadow-md transition-all flex items-center justify-center gap-2"
+                      type="submit"
+                    >
+                      <span>Request Free Consultation</span>
+                      <span class="material-symbols-outlined text-[16px]"
+                        >send</span
+                      >
                     </button>
-
-                </form>
-
+                  </form>
+                </div>
+              </div>
             </div>
-        </div>
-    </section>
+          </div>
+        </section>
 
-    {{-- ADMISSIONS CTA --}}
-    <section class="w-full py-8 md:py-12 lg:py-16">
-        <div class="mx-auto max-w-7xl px-6 py-10 sm:px-8 sm:py-12 lg:px-10 lg:py-14 bg-brand-800 text-neutral-25 rounded-2xl lg:rounded-3xl reveal-scale">
-
-            <div class="flex flex-col items-center justify-between gap-8 lg:flex-row">
-
-
-                {{-- CTA content --}}
-                <div class="flex max-w-3xl flex-col gap-3 text-center lg:text-left">
-
-                    <div class="flex items-center justify-center gap-2 lg:justify-start">
-
-                        <span class="relative flex h-2.5 w-2.5">
-
-                            <span
-                                class="absolute inline-flex h-full w-full animate-ping rounded-full bg-secondary-400 opacity-75">
-                            </span>
-
-                            <span class="relative inline-flex h-2.5 w-2.5 rounded-full bg-secondary-300">
-                            </span>
-
-                        </span>
-
-
-                        <span class=" text-[10px] font-bold uppercase tracking-widest text-secondary-300">
-                            Admissions Advisors On Call
-                        </span>
-
+         <!-- Section 2: Explore Qualifications Section (Sleek, Concise, Animated Grid) -->
+        <section class="w-full py-16 bg-surface" id="qualifications">
+          <div class="max-w-[1280px] mx-auto px-6 sm:px-10">
+            <div
+              class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4"
+            >
+              <div>
+                <div
+                  class="inline-flex items-center gap-1.5 px-3 py-1 bg-surface-container-high text-primary rounded-full mb-2 text-xs font-bold font-heading uppercase tracking-wider"
+                >
+                  <span
+                    class="material-symbols-outlined text-[15px] text-secondary"
+                    >school</span
+                  >
+                  <span>Accredited Programs</span>
+                </div>
+                <h2
+                  class="font-heading text-2xl sm:text-3xl font-bold text-primary"
+                >
+                  Explore Our Qualifications
+                </h2>
+                <p class="text-sm text-on-surface-variant max-w-2xl mt-1">
+                  Nationally accredited vocational qualifications tailored for
+                  career progression and workplace readiness.
+                </p>
+              </div>
+              <!-- Filter buttons -->
+              <div
+                class="flex flex-wrap items-center gap-2"
+                id="course-filter-container"
+              >
+                <button
+                  class="course-filter-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-primary text-white transition-all shadow-sm"
+                  data-filter="all"
+                  onclick="filterCourses('all')"
+                  type="button"
+                >
+                  All Disciplines
+                </button>
+                <button
+                  class="course-filter-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-all"
+                  data-filter="community"
+                  onclick="filterCourses('community')"
+                  type="button"
+                >
+                  Community Services &amp; Care
+                </button>
+                <button
+                  class="course-filter-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-all"
+                  data-filter="business"
+                  onclick="filterCourses('business')"
+                  type="button"
+                >
+                  Business &amp; Leadership
+                </button>
+                <button
+                  class="course-filter-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-all"
+                  data-filter="health"
+                  onclick="filterCourses('health')"
+                  type="button"
+                >
+                  Allied Health
+                </button>
+              </div>
+            </div>
+            <!-- Sleek 3-Column Grid -->
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+              id="qualifications-grid"
+            >
+              <!-- Card 1 -->
+              <div
+                class="course-card course-card-transition bg-white border border-outline-variant/40 rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:border-secondary/50 flex flex-col justify-between"
+                data-category="business"
+              >
+                <div>
+                  <div
+                    class="relative h-40 w-full overflow-hidden bg-surface-container"
+                  >
+                    <img
+                      alt="BSB50420 Diploma of Leadership and Management"
+                      class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                      src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"
+                    />
+                    <div
+                      class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"
+                    ></div>
+                    <div
+                      class="absolute top-3 left-3 bg-white/95 px-2 py-0.5 rounded shadow-sm text-xs font-bold text-primary font-heading"
+                    >
+                      BSB50420
                     </div>
-
-
+                    <div
+                      class="absolute top-3 right-3 bg-primary text-white px-2 py-0.5 rounded text-[11px] font-semibold"
+                    >
+                      AQF Level 5
+                    </div>
+                  </div>
+                  <div class="p-5">
                     <h3
-                        class="font-display text-3xl font-extrabold uppercase leading-tight tracking-tight text-neutral-25 md:text-4xl lg:text-5xl">
-                        Have Questions About Enrolment?
+                      class="font-heading text-base font-bold text-primary mb-1.5"
+                    >
+                      Diploma of Leadership and Management
                     </h3>
-
-
-                    <p class="max-w-2xl text-sm leading-6 text-brand-100 md:text-base md:leading-7">
-                        Speak directly with an accredited course counsellor about entry criteria, RPL
-                        (Recognition of Prior Learning) and campus workshop walkthroughs.
+                    <p
+                      class="text-xs text-on-surface-variant mb-3 line-clamp-2"
+                    >
+                      Develop management authority to guide initiatives,
+                      orchestrate teams, oversee operational plans, and foster
+                      innovation.
                     </p>
-
-                </div>
-
-
-                {{-- CTA actions --}}
-                <div class="flex w-full shrink-0 flex-col items-stretch gap-3 sm:w-auto sm:flex-row sm:items-center">
-
-
-                    {{-- Phone --}}
-                    <div class="rounded-xl border border-brand-500 bg-brand-900 px-5 py-3 text-center">
-
-                        <span class="block  text-[9px] font-bold uppercase tracking-widest text-brand-200">
-                            Direct Sydney Line
-                        </span>
-
-                        <span class="mt-1 block font-display text-xl font-extrabold tracking-wide text-neutral-25">
-                            +61 2 8677 3600
-                        </span>
-
+                    <div class="flex flex-wrap gap-1.5">
+                      <span
+                        class="inline-flex items-center gap-1 text-[11px] text-secondary bg-surface-container px-2 py-0.5 rounded font-medium"
+                        ><span class="material-symbols-outlined text-[12px]"
+                          >laptop_mac</span
+                        >
+                        Online &amp; Blended</span
+                      >
+                      <span
+                        class="inline-flex items-center gap-1 text-[11px] text-secondary bg-surface-container px-2 py-0.5 rounded font-medium"
+                        ><span class="material-symbols-outlined text-[12px]"
+                          >psychology</span
+                        >
+                        RPL Available</span
+                      >
                     </div>
-
-
-                    {{-- Campus tour --}}
-                    <a href="{{ route('contact') }}"
-                        class="inline-flex min-h-12 items-center justify-center rounded-xl bg-secondary-300 px-6 py-3  text-xs font-extrabold uppercase tracking-wide text-brand-950 transition-all duration-300 hover:-translate-y-0.5 hover:bg-secondary-200 hover:shadow-theme-lg focus:outline-none focus:ring-4 focus:ring-secondary-300/30">
-
-                        Book Free Campus Tour
-
-                    </a>
-
+                  </div>
                 </div>
+                <div
+                  class="p-4 pt-0 flex items-center justify-between gap-2 border-t border-surface-container/60 mt-auto"
+                >
+                  <a
+                    class="flex-1 py-2 px-3 bg-surface-container-low hover:bg-surface-container text-primary text-xs font-semibold rounded-lg text-center transition-colors"
+                    href="#eligibility-checker"
+                    >View Course</a
+                  >
+                  <a
+                    class="flex-1 py-2 px-3 bg-primary hover:bg-primary-dark text-white text-xs font-semibold rounded-lg text-center transition-colors shadow-sm"
+                    href="#eligibility-checker"
+                    >Check Eligibility</a
+                  >
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div
+                class="course-card course-card-transition bg-white border border-outline-variant/40 rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:border-secondary/50 flex flex-col justify-between"
+                data-category="business"
+              >
+                <div>
+                  <div
+                    class="relative h-40 w-full overflow-hidden bg-surface-container"
+                  >
+                    <img
+                      alt="BSB60420 Advanced Diploma"
+                      class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                      src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"
+                    />
+                    <div
+                      class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"
+                    ></div>
+                    <div
+                      class="absolute top-3 left-3 bg-white/95 px-2 py-0.5 rounded shadow-sm text-xs font-bold text-primary font-heading"
+                    >
+                      BSB60420
+                    </div>
+                    <div
+                      class="absolute top-3 right-3 bg-primary text-white px-2 py-0.5 rounded text-[11px] font-semibold"
+                    >
+                      AQF Level 6
+                    </div>
+                  </div>
+                  <div class="p-5">
+                    <h3
+                      class="font-heading text-base font-bold text-primary mb-1.5"
+                    >
+                      Advanced Diploma of Leadership &amp; Management
+                    </h3>
+                    <p
+                      class="text-xs text-on-surface-variant mb-3 line-clamp-2"
+                    >
+                      Master enterprise strategy, corporate governance,
+                      financial planning, and organizational change for senior
+                      executive roles.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5">
+                      <span
+                        class="inline-flex items-center gap-1 text-[11px] text-secondary bg-surface-container px-2 py-0.5 rounded font-medium"
+                        ><span class="material-symbols-outlined text-[12px]"
+                          >corporate_fare</span
+                        >
+                        Senior Exec</span
+                      >
+                      <span
+                        class="inline-flex items-center gap-1 text-[11px] text-secondary bg-surface-container px-2 py-0.5 rounded font-medium"
+                        ><span class="material-symbols-outlined text-[12px]"
+                          >psychology</span
+                        >
+                        RPL Available</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="p-4 pt-0 flex items-center justify-between gap-2 border-t border-surface-container/60 mt-auto"
+                >
+                  <a
+                    class="flex-1 py-2 px-3 bg-surface-container-low hover:bg-surface-container text-primary text-xs font-semibold rounded-lg text-center transition-colors"
+                    href="#eligibility-checker"
+                    >View Course</a
+                  >
+                  <a
+                    class="flex-1 py-2 px-3 bg-primary hover:bg-primary-dark text-white text-xs font-semibold rounded-lg text-center transition-colors shadow-sm"
+                    href="#eligibility-checker"
+                    >Check Eligibility</a
+                  >
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div
+                class="course-card course-card-transition bg-white border border-outline-variant/40 rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:border-secondary/50 flex flex-col justify-between"
+                data-category="community"
+              >
+                <div>
+                  <div
+                    class="relative h-40 w-full overflow-hidden bg-surface-container"
+                  >
+                    <img
+                      alt="CHC33021 Cert III Individual Support"
+                      class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                      src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"
+                    />
+                    <div
+                      class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"
+                    ></div>
+                    <div
+                      class="absolute top-3 left-3 bg-white/95 px-2 py-0.5 rounded shadow-sm text-xs font-bold text-primary font-heading"
+                    >
+                      CHC33021
+                    </div>
+                    <div
+                      class="absolute top-3 right-3 bg-primary text-white px-2 py-0.5 rounded text-[11px] font-semibold"
+                    >
+                      AQF Level 3
+                    </div>
+                  </div>
+                  <div class="p-5">
+                    <h3
+                      class="font-heading text-base font-bold text-primary mb-1.5"
+                    >
+                      Certificate III in Individual Support
+                    </h3>
+                    <p
+                      class="text-xs text-on-surface-variant mb-3 line-clamp-2"
+                    >
+                      Qualify for high-demand frontline care roles across aged
+                      care and disability support with person-centred care
+                      skills.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5">
+                      <span
+                        class="inline-flex items-center gap-1 text-[11px] text-secondary bg-surface-container px-2 py-0.5 rounded font-medium"
+                        ><span class="material-symbols-outlined text-[12px]"
+                          >diversity_3</span
+                        >
+                        Ageing &amp; Disability</span
+                      >
+                      <span
+                        class="inline-flex items-center gap-1 text-[11px] text-secondary bg-surface-container px-2 py-0.5 rounded font-medium"
+                        ><span class="material-symbols-outlined text-[12px]"
+                          >work_history</span
+                        >
+                        Practical Placement</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="p-4 pt-0 flex items-center justify-between gap-2 border-t border-surface-container/60 mt-auto"
+                >
+                  <a
+                    class="flex-1 py-2 px-3 bg-surface-container-low hover:bg-surface-container text-primary text-xs font-semibold rounded-lg text-center transition-colors"
+                    href="#eligibility-checker"
+                    >View Course</a
+                  >
+                  <a
+                    class="flex-1 py-2 px-3 bg-primary hover:bg-primary-dark text-white text-xs font-semibold rounded-lg text-center transition-colors shadow-sm"
+                    href="#eligibility-checker"
+                    >Check Eligibility</a
+                  >
+                </div>
+              </div>
+              <!-- Card 4 -->
+              <div
+                class="course-card course-card-transition bg-white border border-outline-variant/40 rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:border-secondary/50 flex flex-col justify-between"
+                data-category="community"
+              >
+                <div>
+                  <div
+                    class="relative h-40 w-full overflow-hidden bg-surface-container"
+                  >
+                    <img
+                      alt="CHC43015 Cert IV Ageing Support"
+                      class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                      src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"
+                    />
+                    <div
+                      class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"
+                    ></div>
+                    <div
+                      class="absolute top-3 left-3 bg-white/95 px-2 py-0.5 rounded shadow-sm text-xs font-bold text-primary font-heading"
+                    >
+                      CHC43015
+                    </div>
+                    <div
+                      class="absolute top-3 right-3 bg-primary text-white px-2 py-0.5 rounded text-[11px] font-semibold"
+                    >
+                      AQF Level 4
+                    </div>
+                  </div>
+                  <div class="p-5">
+                    <h3
+                      class="font-heading text-base font-bold text-primary mb-1.5"
+                    >
+                      Certificate IV in Ageing Support
+                    </h3>
+                    <p
+                      class="text-xs text-on-surface-variant mb-3 line-clamp-2"
+                    >
+                      Step into specialized care leadership, individualized
+                      service plans, dementia support, and holistic residential
+                      supervision.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5">
+                      <span
+                        class="inline-flex items-center gap-1 text-[11px] text-secondary bg-surface-container px-2 py-0.5 rounded font-medium"
+                        ><span class="material-symbols-outlined text-[12px]"
+                          >elderly</span
+                        >
+                        Ageing Care</span
+                      >
+                      <span
+                        class="inline-flex items-center gap-1 text-[11px] text-secondary bg-surface-container px-2 py-0.5 rounded font-medium"
+                        ><span class="material-symbols-outlined text-[12px]"
+                          >psychology</span
+                        >
+                        RPL Available</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="p-4 pt-0 flex items-center justify-between gap-2 border-t border-surface-container/60 mt-auto"
+                >
+                  <a
+                    class="flex-1 py-2 px-3 bg-surface-container-low hover:bg-surface-container text-primary text-xs font-semibold rounded-lg text-center transition-colors"
+                    href="#eligibility-checker"
+                    >View Course</a
+                  >
+                  <a
+                    class="flex-1 py-2 px-3 bg-primary hover:bg-primary-dark text-white text-xs font-semibold rounded-lg text-center transition-colors shadow-sm"
+                    href="#eligibility-checker"
+                    >Check Eligibility</a
+                  >
+                </div>
+              </div>
+              <!-- Card 5 -->
+              <div
+                class="course-card course-card-transition bg-white border border-outline-variant/40 rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:border-secondary/50 flex flex-col justify-between"
+                data-category="community"
+              >
+                <div>
+                  <div
+                    class="relative h-40 w-full overflow-hidden bg-surface-container"
+                  >
+                    <img
+                      alt="CHC43315 Cert IV Mental Health"
+                      class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                      src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"
+                    />
+                    <div
+                      class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"
+                    ></div>
+                    <div
+                      class="absolute top-3 left-3 bg-white/95 px-2 py-0.5 rounded shadow-sm text-xs font-bold text-primary font-heading"
+                    >
+                      CHC43315
+                    </div>
+                    <div
+                      class="absolute top-3 right-3 bg-primary text-white px-2 py-0.5 rounded text-[11px] font-semibold"
+                    >
+                      AQF Level 4
+                    </div>
+                  </div>
+                  <div class="p-5">
+                    <h3
+                      class="font-heading text-base font-bold text-primary mb-1.5"
+                    >
+                      Certificate IV in Mental Health
+                    </h3>
+                    <p
+                      class="text-xs text-on-surface-variant mb-3 line-clamp-2"
+                    >
+                      Deliver non-clinical recovery-oriented support, community
+                      outreach, and compassionate early interventions.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5">
+                      <span
+                        class="inline-flex items-center gap-1 text-[11px] text-secondary bg-surface-container px-2 py-0.5 rounded font-medium"
+                        ><span class="material-symbols-outlined text-[12px]"
+                          >volunteer_activism</span
+                        >
+                        Recovery Oriented</span
+                      >
+                      <span
+                        class="inline-flex items-center gap-1 text-[11px] text-secondary bg-surface-container px-2 py-0.5 rounded font-medium"
+                        ><span class="material-symbols-outlined text-[12px]"
+                          >health_and_safety</span
+                        >
+                        Mental Health</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="p-4 pt-0 flex items-center justify-between gap-2 border-t border-surface-container/60 mt-auto"
+                >
+                  <a
+                    class="flex-1 py-2 px-3 bg-surface-container-low hover:bg-surface-container text-primary text-xs font-semibold rounded-lg text-center transition-colors"
+                    href="#eligibility-checker"
+                    >View Course</a
+                  >
+                  <a
+                    class="flex-1 py-2 px-3 bg-primary hover:bg-primary-dark text-white text-xs font-semibold rounded-lg text-center transition-colors shadow-sm"
+                    href="#eligibility-checker"
+                    >Check Eligibility</a
+                  >
+                </div>
+              </div>
+              <!-- Card 6 -->
+              <div
+                class="course-card course-card-transition bg-white border border-outline-variant/40 rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:border-secondary/50 flex flex-col justify-between"
+                data-category="community"
+              >
+                <div>
+                  <div
+                    class="relative h-40 w-full overflow-hidden bg-surface-container"
+                  >
+                    <img
+                      alt="CHC52025 Diploma of Community Services"
+                      class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                      src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"
+                    />
+                    <div
+                      class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"
+                    ></div>
+                    <div
+                      class="absolute top-3 left-3 bg-white/95 px-2 py-0.5 rounded shadow-sm text-xs font-bold text-primary font-heading"
+                    >
+                      CHC52025
+                    </div>
+                    <div
+                      class="absolute top-3 right-3 bg-primary text-white px-2 py-0.5 rounded text-[11px] font-semibold"
+                    >
+                      AQF Level 5
+                    </div>
+                  </div>
+                  <div class="p-5">
+                    <h3
+                      class="font-heading text-base font-bold text-primary mb-1.5"
+                    >
+                      Diploma of Community Services
+                    </h3>
+                    <p
+                      class="text-xs text-on-surface-variant mb-3 line-clamp-2"
+                    >
+                      Equip yourself to design and manage client-centred social
+                      programs, complex casework, and crisis interventions.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5">
+                      <span
+                        class="inline-flex items-center gap-1 text-[11px] text-secondary bg-surface-container px-2 py-0.5 rounded font-medium"
+                        ><span class="material-symbols-outlined text-[12px]"
+                          >groups</span
+                        >
+                        Case Management</span
+                      >
+                      <span
+                        class="inline-flex items-center gap-1 text-[11px] text-secondary bg-surface-container px-2 py-0.5 rounded font-medium"
+                        ><span class="material-symbols-outlined text-[12px]"
+                          >psychology</span
+                        >
+                        RPL Available</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="p-4 pt-0 flex items-center justify-between gap-2 border-t border-surface-container/60 mt-auto"
+                >
+                  <a
+                    class="flex-1 py-2 px-3 bg-surface-container-low hover:bg-surface-container text-primary text-xs font-semibold rounded-lg text-center transition-colors"
+                    href="#eligibility-checker"
+                    >View Course</a
+                  >
+                  <a
+                    class="flex-1 py-2 px-3 bg-primary hover:bg-primary-dark text-white text-xs font-semibold rounded-lg text-center transition-colors shadow-sm"
+                    href="#eligibility-checker"
+                    >Check Eligibility</a
+                  >
+                </div>
+              </div>
+              <!-- Card 7 -->
+              <div
+                class="course-card course-card-transition bg-white border border-outline-variant/40 rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:border-secondary/50 flex flex-col justify-between"
+                data-category="health"
+              >
+                <div>
+                  <div
+                    class="relative h-40 w-full overflow-hidden bg-surface-container"
+                  >
+                    <img
+                      alt="HLT33021 Cert III Allied Health"
+                      class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                      src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"
+                    />
+                    <div
+                      class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"
+                    ></div>
+                    <div
+                      class="absolute top-3 left-3 bg-white/95 px-2 py-0.5 rounded shadow-sm text-xs font-bold text-primary font-heading"
+                    >
+                      HLT33021
+                    </div>
+                    <div
+                      class="absolute top-3 right-3 bg-primary text-white px-2 py-0.5 rounded text-[11px] font-semibold"
+                    >
+                      AQF Level 3
+                    </div>
+                  </div>
+                  <div class="p-5">
+                    <h3
+                      class="font-heading text-base font-bold text-primary mb-1.5"
+                    >
+                      Certificate III in Allied Health Assistance
+                    </h3>
+                    <p
+                      class="text-xs text-on-surface-variant mb-3 line-clamp-2"
+                    >
+                      Assist physiotherapists and occupational therapists across
+                      rehabilitation centers, hospitals, and clinical spaces.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5">
+                      <span
+                        class="inline-flex items-center gap-1 text-[11px] text-secondary bg-surface-container px-2 py-0.5 rounded font-medium"
+                        ><span class="material-symbols-outlined text-[12px]"
+                          >local_hospital</span
+                        >
+                        Clinical Practice</span
+                      >
+                      <span
+                        class="inline-flex items-center gap-1 text-[11px] text-secondary bg-surface-container px-2 py-0.5 rounded font-medium"
+                        ><span class="material-symbols-outlined text-[12px]"
+                          >healing</span
+                        >
+                        Allied Health</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="p-4 pt-0 flex items-center justify-between gap-2 border-t border-surface-container/60 mt-auto"
+                >
+                  <a
+                    class="flex-1 py-2 px-3 bg-surface-container-low hover:bg-surface-container text-primary text-xs font-semibold rounded-lg text-center transition-colors"
+                    href="#eligibility-checker"
+                    >View Course</a
+                  >
+                  <a
+                    class="flex-1 py-2 px-3 bg-primary hover:bg-primary-dark text-white text-xs font-semibold rounded-lg text-center transition-colors shadow-sm"
+                    href="#eligibility-checker"
+                    >Check Eligibility</a
+                  >
+                </div>
+              </div>
             </div>
-        </div>
-    </section>
+          </div>
+        </section>
+        <!-- Section 3: Why Choose Nubex College? -->
+        <section class="w-full py-16 bg-surface-bright" id="about">
+          <div class="max-w-[1280px] mx-auto px-6 sm:px-10">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+              <div
+                class="inline-flex items-center gap-1.5 px-3 py-1 bg-primary-fixed/50 text-primary rounded-full mb-2 text-xs font-bold font-heading uppercase tracking-wider"
+              >
+                <span>The Nubex Difference</span>
+              </div>
+              <h2
+                class="font-heading text-2xl sm:text-3xl font-bold text-primary"
+              >
+                Why Choose Nubex College?
+              </h2>
+              <p class="text-sm text-on-surface-variant mt-2">
+                We combine ASQA regulatory discipline with tailored student
+                mentorship, equipping every learner for meaningful career
+                progression.
+              </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div
+                class="p-6 rounded-xl bg-white shadow-sm hover:shadow-md transition-all border border-surface-container"
+              >
+                <div
+                  class="w-12 h-12 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center mb-4"
+                >
+                  <span class="material-symbols-outlined text-[26px]"
+                    >alt_route</span
+                  >
+                </div>
+                <h3 class="font-heading text-base font-bold text-primary mb-2">
+                  Clear Training Pathways
+                </h3>
+                <p class="text-xs text-on-surface-variant leading-relaxed">
+                  Understand the available qualifications and requirements
+                  before making a commitment.
+                </p>
+              </div>
+              <div
+                class="p-6 rounded-xl bg-white shadow-sm hover:shadow-md transition-all border border-surface-container"
+              >
+                <div
+                  class="w-12 h-12 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center mb-4"
+                >
+                  <span class="material-symbols-outlined text-[26px]"
+                    >forum</span
+                  >
+                </div>
+                <h3 class="font-heading text-base font-bold text-primary mb-2">
+                  Guidance Throughout Your Journey
+                </h3>
+                <p class="text-xs text-on-surface-variant leading-relaxed">
+                  Make it easy to ask questions and receive course information
+                  at every step.
+                </p>
+              </div>
+              <div
+                class="p-6 rounded-xl bg-white shadow-sm hover:shadow-md transition-all border border-surface-container"
+              >
+                <div
+                  class="w-12 h-12 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center mb-4"
+                >
+                  <span class="material-symbols-outlined text-[26px]"
+                    >architecture</span
+                  >
+                </div>
+                <h3 class="font-heading text-base font-bold text-primary mb-2">
+                  Relevant Vocational Learning
+                </h3>
+                <p class="text-xs text-on-surface-variant leading-relaxed">
+                  Accurate knowledge and competencies addressed by each
+                  qualification in real Australian workplaces.
+                </p>
+              </div>
+              <div
+                class="p-6 rounded-xl bg-white shadow-sm hover:shadow-md transition-all border border-surface-container"
+              >
+                <div
+                  class="w-12 h-12 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center mb-4"
+                >
+                  <span class="material-symbols-outlined text-[26px]"
+                    >visibility</span
+                  >
+                </div>
+                <h3 class="font-heading text-base font-bold text-primary mb-2">
+                  Transparent Information
+                </h3>
+                <p class="text-xs text-on-surface-variant leading-relaxed">
+                  Course requirements, fees, policies, student rights and
+                  guidelines are fully transparent.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Section 4: NEW SECTION - Online Self-Paced Study (Placed right before Prior Learning Assessment) -->
+        <section
+          class="w-full py-16 bg-gradient-to-b from-surface-container-low/80 to-surface border-y border-surface-container"
+          id="online-study"
+        >
+          <div class="max-w-[1280px] mx-auto px-6 sm:px-10">
+            <div class="max-w-3xl mb-12">
+              <div
+                class="inline-flex items-center gap-1.5 px-3 py-1 bg-secondary/10 text-secondary rounded-full mb-3 text-xs font-bold font-heading uppercase tracking-wider"
+              >
+                <span class="material-symbols-outlined text-[16px]"
+                  >devices</span
+                >
+                <span>FLEXIBLE LEARNING</span>
+              </div>
+              <h2
+                class="font-heading text-2xl sm:text-3xl font-bold text-primary tracking-tight"
+              >
+                Study at Your Own Pace, Wherever You Are
+              </h2>
+              <p class="text-base text-on-surface-variant mt-3 leading-relaxed">
+                Balance your study around work, family, and life commitments
+                with Nubex College's comprehensive online learning portal.
+                Access high-quality digital course materials, interactive
+                assessments, and one-on-one trainer support whenever suits you
+                best.
+              </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div
+                class="p-6 rounded-2xl bg-white border border-outline-variant/50 shadow-sm hover:shadow-md hover:border-secondary/40 transition-all flex flex-col justify-between"
+              >
+                <div>
+                  <div
+                    class="w-12 h-12 rounded-xl bg-secondary-fixed/50 text-secondary flex items-center justify-center mb-4"
+                  >
+                    <span class="material-symbols-outlined text-[26px]"
+                      >cloud_sync</span
+                    >
+                  </div>
+                  <h3 class="font-heading text-sm font-bold text-primary mb-2">
+                    24/7 Portal Access
+                  </h3>
+                  <p class="text-xs text-on-surface-variant leading-relaxed">
+                    Cloud learning platform with lectures, curated resources,
+                    digital workbooks, and real-time progress tracking
+                    accessible anytime.
+                  </p>
+                </div>
+                <div
+                  class="mt-4 pt-3 border-t border-surface-container-low text-[11px] font-semibold text-secondary"
+                >
+                  Always Accessible
+                </div>
+              </div>
+              <div
+                class="p-6 rounded-2xl bg-white border border-outline-variant/50 shadow-sm hover:shadow-md hover:border-secondary/40 transition-all flex flex-col justify-between"
+              >
+                <div>
+                  <div
+                    class="w-12 h-12 rounded-xl bg-secondary-fixed/50 text-secondary flex items-center justify-center mb-4"
+                  >
+                    <span class="material-symbols-outlined text-[26px]"
+                      >support_agent</span
+                    >
+                  </div>
+                  <h3 class="font-heading text-sm font-bold text-primary mb-2">
+                    Dedicated Assessor Support
+                  </h3>
+                  <p class="text-xs text-on-surface-variant leading-relaxed">
+                    Direct messaging and scheduled video sessions with certified
+                    Australian trainers dedicated to coaching your success.
+                  </p>
+                </div>
+                <div
+                  class="mt-4 pt-3 border-t border-surface-container-low text-[11px] font-semibold text-secondary"
+                >
+                  1-on-1 Mentorship
+                </div>
+              </div>
+              <div
+                class="p-6 rounded-2xl bg-white border border-outline-variant/50 shadow-sm hover:shadow-md hover:border-secondary/40 transition-all flex flex-col justify-between"
+              >
+                <div>
+                  <div
+                    class="w-12 h-12 rounded-xl bg-secondary-fixed/50 text-secondary flex items-center justify-center mb-4"
+                  >
+                    <span class="material-symbols-outlined text-[26px]"
+                      >workspaces</span
+                    >
+                  </div>
+                  <h3 class="font-heading text-sm font-bold text-primary mb-2">
+                    Workplace Integration
+                  </h3>
+                  <p class="text-xs text-on-surface-variant leading-relaxed">
+                    Structured self-paced logbooks, simulated workplace
+                    assessments, and projects matching authentic industry tasks.
+                  </p>
+                </div>
+                <div
+                  class="mt-4 pt-3 border-t border-surface-container-low text-[11px] font-semibold text-secondary"
+                >
+                  Industry Connected
+                </div>
+              </div>
+              <div
+                class="p-6 rounded-2xl bg-white border border-outline-variant/50 shadow-sm hover:shadow-md hover:border-secondary/40 transition-all flex flex-col justify-between"
+              >
+                <div>
+                  <div
+                    class="w-12 h-12 rounded-xl bg-secondary-fixed/50 text-secondary flex items-center justify-center mb-4"
+                  >
+                    <span class="material-symbols-outlined text-[26px]"
+                      >event_available</span
+                    >
+                  </div>
+                  <h3 class="font-heading text-sm font-bold text-primary mb-2">
+                    Flexible Milestones
+                  </h3>
+                  <p class="text-xs text-on-surface-variant leading-relaxed">
+                    Set your own weekly milestones within national qualification
+                    timeframes to achieve your goals on your personal schedule.
+                  </p>
+                </div>
+                <div
+                  class="mt-4 pt-3 border-t border-surface-container-low text-[11px] font-semibold text-secondary"
+                >
+                  Self-Paced Timeline
+                </div>
+              </div>
+            </div>
+            <div class="mt-8 flex flex-wrap items-center gap-4">
+              <a
+                class="inline-flex items-center gap-2 px-6 py-3 bg-primary hover:bg-primary-dark text-white font-heading font-semibold text-sm rounded-lg shadow-sm transition-colors"
+                href="#qualifications"
+              >
+                <span>Explore Online Pathways</span>
+                <span class="material-symbols-outlined text-[18px]"
+                  >arrow_forward</span
+                >
+              </a>
+              <a
+                class="inline-flex items-center gap-2 px-6 py-3 bg-white hover:bg-surface-container border border-outline-variant/60 text-primary font-heading font-semibold text-sm rounded-lg shadow-sm transition-colors"
+                href="#eligibility-checker"
+              >
+                <span
+                  class="material-symbols-outlined text-secondary text-[18px]"
+                  >download</span
+                >
+                <span>Download Course Guide</span>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- Section 5: Recognition of Prior Learning (RPL) Section -->
+        <section class="w-full py-16 bg-surface-container-low">
+          <div class="max-w-[1280px] mx-auto px-6 sm:px-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+              <div class="lg:col-span-5">
+                <div
+                  class="relative rounded-2xl overflow-hidden shadow-lg bg-surface-container h-[440px]"
+                >
+                  <img
+                    alt="Australian vocational student"
+                    class="w-full h-full object-cover"
+                    src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"
+                  ></div>
+                  <div
+                    class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-white/95 backdrop-blur-md"
+                  >
+                    <div class="flex items-center gap-3">
+                      <span
+                        class="material-symbols-outlined text-secondary text-[32px]"
+                        >assignment_turned_in</span
+                      >
+                      <div>
+                        <h4 class="font-heading text-sm font-bold text-primary">
+                          Fast-Track Your Ambition
+                        </h4>
+                        <p class="text-xs text-on-surface-variant">
+                          Turn years of practical work experience into national
+                          certification.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="lg:col-span-7 flex flex-col gap-4">
+                <div
+                  class="inline-flex items-center gap-1.5 px-3 py-1 bg-surface-container text-primary rounded-full self-start text-xs font-bold font-heading uppercase tracking-wider"
+                >
+                  <span>Prior Learning Assessment</span>
+                </div>
+                <h2
+                  class="font-heading text-2xl sm:text-3xl font-bold text-primary"
+                >
+                  Have You Gained Skills Through Work or Experience?
+                </h2>
+                <p
+                  class="text-sm sm:text-base text-on-surface-variant leading-relaxed"
+                >
+                  Recognition of Prior Learning is an assessment process that
+                  considers relevant existing skills, knowledge and experience
+                  against the requirements of a nationally recognised
+                  qualification. Depending on the qualification and your
+                  circumstances, you may have a relevant RPL pathway to explore.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                  <div
+                    class="p-4 rounded-xl bg-white shadow-sm flex items-start gap-3"
+                  >
+                    <span
+                      class="w-7 h-7 rounded-full bg-primary-fixed text-primary flex items-center justify-center font-bold text-xs shrink-0"
+                      >01</span
+                    >
+                    <div>
+                      <h4
+                        class="font-heading text-xs font-bold text-primary mb-1"
+                      >
+                        Submit an enquiry
+                      </h4>
+                      <p class="text-xs text-on-surface-variant">
+                        Share your career history and outline the qualifications
+                        that interest you.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="p-4 rounded-xl bg-white shadow-sm flex items-start gap-3"
+                  >
+                    <span
+                      class="w-7 h-7 rounded-full bg-primary-fixed text-primary flex items-center justify-center font-bold text-xs shrink-0"
+                      >02</span
+                    >
+                    <div>
+                      <h4
+                        class="font-heading text-xs font-bold text-primary mb-1"
+                      >
+                        Discuss requirements
+                      </h4>
+                      <p class="text-xs text-on-surface-variant">
+                        Evaluate competency standards alongside a qualified
+                        educational assessor.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="p-4 rounded-xl bg-white shadow-sm flex items-start gap-3"
+                  >
+                    <span
+                      class="w-7 h-7 rounded-full bg-primary-fixed text-primary flex items-center justify-center font-bold text-xs shrink-0"
+                      >03</span
+                    >
+                    <div>
+                      <h4
+                        class="font-heading text-xs font-bold text-primary mb-1"
+                      >
+                        Provide evidence
+                      </h4>
+                      <p class="text-xs text-on-surface-variant">
+                        Collate workplace logs, references, contracts, and
+                        relevant documentation.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="p-4 rounded-xl bg-white shadow-sm flex items-start gap-3"
+                  >
+                    <span
+                      class="w-7 h-7 rounded-full bg-primary-fixed text-primary flex items-center justify-center font-bold text-xs shrink-0"
+                      >04</span
+                    >
+                    <div>
+                      <h4
+                        class="font-heading text-xs font-bold text-primary mb-1"
+                      >
+                        Receive outcome
+                      </h4>
+                      <p class="text-xs text-on-surface-variant">
+                        Gain your formal determination from our authorised AQF
+                        assessor.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="p-3 rounded-lg bg-surface-container flex items-start gap-2.5 mt-2"
+                >
+                  <span
+                    class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5"
+                    >policy</span
+                  >
+                  <p class="text-xs text-on-surface-variant leading-relaxed">
+                    <strong>Assessment Policy:</strong> Outcome is determined
+                    strictly through formal evidence mapping and competency
+                    assessment. Experience alone does not guarantee automatic
+                    qualification issuance.
+                  </p>
+                </div>
+                <div class="pt-2">
+                  <a
+                    class="inline-flex items-center gap-2 font-heading font-semibold text-sm bg-primary hover:bg-primary-dark text-white px-6 py-3.5 rounded-lg shadow-sm transition-colors"
+                    href="#eligibility-checker"
+                  >
+                    <span>Explore RPL Options</span>
+                    <span class="material-symbols-outlined text-[18px]"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Section 6: Interactive Multi-Step Eligibility Checker Section -->
+        <section class="w-full py-16 bg-surface" id="eligibility-checker">
+          <div class="max-w-[960px] mx-auto px-6 sm:px-10">
+            <div class="text-center mb-8">
+              <div
+                class="inline-flex items-center gap-1.5 px-3 py-1 bg-surface-container-high text-primary rounded-full mb-2 text-xs font-bold font-heading uppercase tracking-wider"
+              >
+                <span>Fast Evaluation Tool</span>
+              </div>
+              <h2
+                class="font-heading text-2xl sm:text-3xl font-bold text-primary"
+              >
+                Let's Find the Right Pathway for You
+              </h2>
+              <p class="text-sm text-on-surface-variant max-w-xl mx-auto mt-2">
+                Complete our short self-assessment to discover which national
+                qualification and study delivery best fits your career
+                background.
+              </p>
+            </div>
+            <div
+              class="bg-white rounded-2xl p-6 sm:p-8 shadow-md border border-surface-container"
+            >
+              <div class="mb-6">
+                <div
+                  class="flex items-center justify-between text-xs text-on-surface-variant mb-2"
+                >
+                  <span class="font-semibold text-primary" id="step-label"
+                    >Step 1 of 4: Qualification of Interest</span
+                  >
+                  <span id="step-percentage">25% Completed</span>
+                </div>
+                <div
+                  class="w-full h-2 bg-surface-container rounded-full overflow-hidden"
+                >
+                  <div
+                    class="h-full bg-secondary rounded-full transition-all duration-300 w-1/4"
+                    id="step-progress-bar"
+                  ></div>
+                </div>
+              </div>
+              <form
+                id="wizard-form"
+                onsubmit="
+                  event.preventDefault();
+                  nextStep();
+                "
+              >
+                <!-- Step 1 -->
+                <div class="wizard-step flex flex-col gap-4" id="step-1">
+                  <h3 class="font-heading text-base font-bold text-primary">
+                    Which qualification do you want to explore?
+                  </h3>
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <label
+                      class="flex items-start gap-3 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors"
+                    >
+                      <input
+                        checked=""
+                        class="mt-1"
+                        name="target_qual"
+                        type="radio"
+                        value="BSB50420"
+                      />
+                      <div>
+                        <span
+                          class="text-xs font-bold text-secondary block font-heading"
+                          >BSB50420</span
+                        >
+                        <span class="text-xs font-semibold text-primary"
+                          >Diploma of Leadership and Management</span
+                        >
+                      </div>
+                    </label>
+                    <label
+                      class="flex items-start gap-3 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors"
+                    >
+                      <input
+                        class="mt-1"
+                        name="target_qual"
+                        type="radio"
+                        value="BSB60420"
+                      />
+                      <div>
+                        <span
+                          class="text-xs font-bold text-secondary block font-heading"
+                          >BSB60420</span
+                        >
+                        <span class="text-xs font-semibold text-primary"
+                          >Advanced Diploma of Leadership</span
+                        >
+                      </div>
+                    </label>
+                    <label
+                      class="flex items-start gap-3 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors"
+                    >
+                      <input
+                        class="mt-1"
+                        name="target_qual"
+                        type="radio"
+                        value="CHC33021"
+                      />
+                      <div>
+                        <span
+                          class="text-xs font-bold text-secondary block font-heading"
+                          >CHC33021</span
+                        >
+                        <span class="text-xs font-semibold text-primary"
+                          >Certificate III in Individual Support</span
+                        >
+                      </div>
+                    </label>
+                    <label
+                      class="flex items-start gap-3 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors"
+                    >
+                      <input
+                        class="mt-1"
+                        name="target_qual"
+                        type="radio"
+                        value="CHC43015"
+                      />
+                      <div>
+                        <span
+                          class="text-xs font-bold text-secondary block font-heading"
+                          >CHC43015</span
+                        >
+                        <span class="text-xs font-semibold text-primary"
+                          >Certificate IV in Ageing Support</span
+                        >
+                      </div>
+                    </label>
+                    <label
+                      class="flex items-start gap-3 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors"
+                    >
+                      <input
+                        class="mt-1"
+                        name="target_qual"
+                        type="radio"
+                        value="CHC43315"
+                      />
+                      <div>
+                        <span
+                          class="text-xs font-bold text-secondary block font-heading"
+                          >CHC43315</span
+                        >
+                        <span class="text-xs font-semibold text-primary"
+                          >Certificate IV in Mental Health</span
+                        >
+                      </div>
+                    </label>
+                    <label
+                      class="flex items-start gap-3 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors"
+                    >
+                      <input
+                        class="mt-1"
+                        name="target_qual"
+                        type="radio"
+                        value="CHC52025"
+                      />
+                      <div>
+                        <span
+                          class="text-xs font-bold text-secondary block font-heading"
+                          >CHC52025</span
+                        >
+                        <span class="text-xs font-semibold text-primary"
+                          >Diploma of Community Services</span
+                        >
+                      </div>
+                    </label>
+                    <label
+                      class="flex items-start gap-3 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors sm:col-span-2"
+                    >
+                      <input
+                        class="mt-1"
+                        name="target_qual"
+                        type="radio"
+                        value="HLT33021"
+                      />
+                      <div>
+                        <span
+                          class="text-xs font-bold text-secondary block font-heading"
+                          >HLT33021</span
+                        >
+                        <span class="text-xs font-semibold text-primary"
+                          >Certificate III in Allied Health Assistance</span
+                        >
+                      </div>
+                    </label>
+                  </div>
+                </div>
+                <!-- Step 2 -->
+                <div class="wizard-step hidden flex flex-col gap-4" id="step-2">
+                  <h3 class="font-heading text-base font-bold text-primary">
+                    Your Practical Background &amp; Preferences
+                  </h3>
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                      <label
+                        class="text-xs font-semibold text-on-surface block mb-1"
+                        >Australian Industry Experience</label
+                      >
+                      <select
+                        class="w-full px-3 py-2 rounded-lg bg-surface-container-low text-on-surface text-xs focus:outline-none"
+                      >
+                        <option value="none">
+                          Less than 1 year / New to industry
+                        </option>
+                        <option value="1-2">
+                          1 to 2 years relevant experience
+                        </option>
+                        <option value="3-5">
+                          3 to 5 years solid experience
+                        </option>
+                        <option value="5+">
+                          5+ years senior or supervisor experience
+                        </option>
+                      </select>
+                    </div>
+                    <div>
+                      <label
+                        class="text-xs font-semibold text-on-surface block mb-1"
+                        >Highest Australian Qualification Held</label
+                      >
+                      <select
+                        class="w-full px-3 py-2 rounded-lg bg-surface-container-low text-on-surface text-xs focus:outline-none"
+                      >
+                        <option value="year12">
+                          Year 12 / Secondary School
+                        </option>
+                        <option value="cert3">Certificate III</option>
+                        <option value="cert4">Certificate IV</option>
+                        <option value="diploma">
+                          Diploma / Advanced Diploma
+                        </option>
+                        <option value="degree">
+                          Bachelor Degree or Higher
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div>
+                    <label
+                      class="text-xs font-semibold text-on-surface block mb-1.5"
+                      >Preferred Study Mode</label
+                    >
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs">
+                      <label
+                        class="p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container flex items-center gap-2 cursor-pointer"
+                      >
+                        <input
+                          checked=""
+                          name="learning_mode"
+                          type="radio"
+                          value="blended"
+                        />
+                        <span>Blended Learning</span>
+                      </label>
+                      <label
+                        class="p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container flex items-center gap-2 cursor-pointer"
+                      >
+                        <input
+                          name="learning_mode"
+                          type="radio"
+                          value="workplace"
+                        />
+                        <span>Workplace Training</span>
+                      </label>
+                      <label
+                        class="p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container flex items-center gap-2 cursor-pointer"
+                      >
+                        <input name="learning_mode" type="radio" value="rpl" />
+                        <span>RPL Assessment Only</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <!-- Step 3 -->
+                <div class="wizard-step hidden flex flex-col gap-4" id="step-3">
+                  <h3 class="font-heading text-base font-bold text-primary">
+                    Supporting Evidence Indicator
+                  </h3>
+                  <p class="text-xs text-on-surface-variant">
+                    Tick any documents or records you currently have access to:
+                  </p>
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+                    <label
+                      class="flex items-center gap-2.5 p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer"
+                    >
+                      <input
+                        checked=""
+                        class="rounded text-primary"
+                        name="evidence"
+                        type="checkbox"
+                        value="resume"
+                      />
+                      <span>Current Resume / CV</span>
+                    </label>
+                    <label
+                      class="flex items-center gap-2.5 p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer"
+                    >
+                      <input
+                        class="rounded text-primary"
+                        name="evidence"
+                        type="checkbox"
+                        value="contracts"
+                      />
+                      <span>Employment Contracts / Duties</span>
+                    </label>
+                    <label
+                      class="flex items-center gap-2.5 p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer"
+                    >
+                      <input
+                        class="rounded text-primary"
+                        name="evidence"
+                        type="checkbox"
+                        value="payslips"
+                      />
+                      <span>Recent Payslips / Work Letters</span>
+                    </label>
+                    <label
+                      class="flex items-center gap-2.5 p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer"
+                    >
+                      <input
+                        class="rounded text-primary"
+                        name="evidence"
+                        type="checkbox"
+                        value="certificates"
+                      />
+                      <span>Prior Certificates or Transcripts</span>
+                    </label>
+                  </div>
+                  <div
+                    class="p-2.5 bg-surface-container-high/60 rounded-lg flex items-center gap-2 text-xs text-on-surface-variant"
+                  >
+                    <span
+                      class="material-symbols-outlined text-secondary text-[18px]"
+                      >info</span
+                    >
+                    <span
+                      >Document upload is not required now. Our assessor will
+                      guide you through evidence collection later.</span
+                    >
+                  </div>
+                </div>
+                <!-- Step 4 -->
+                <div class="wizard-step hidden flex flex-col gap-4" id="step-4">
+                  <h3 class="font-heading text-base font-bold text-primary">
+                    Where should we send your pathway summary?
+                  </h3>
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                      <label
+                        class="text-xs font-semibold text-on-surface block mb-1"
+                        >Full Legal Name</label
+                      >
+                      <input
+                        class="w-full px-3 py-2 rounded-lg bg-surface-container-low text-on-surface text-xs focus:outline-none"
+                        id="wiz_name"
+                        placeholder="Marcus Vance"
+                        required=""
+                        type="text"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        class="text-xs font-semibold text-on-surface block mb-1"
+                        >Mobile Contact</label
+                      >
+                      <input
+                        class="w-full px-3 py-2 rounded-lg bg-surface-container-low text-on-surface text-xs focus:outline-none"
+                        id="wiz_phone"
+                        placeholder="0412 345 678"
+                        required=""
+                        type="tel"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <label
+                      class="text-xs font-semibold text-on-surface block mb-1"
+                      >Email Address</label
+                    >
+                    <input
+                      class="w-full px-3 py-2 rounded-lg bg-surface-container-low text-on-surface text-xs focus:outline-none"
+                      id="wiz_email"
+                      placeholder="marcus.vance@gmail.com"
+                      required=""
+                      type="email"
+                    />
+                  </div>
+                  <div
+                    class="flex items-start gap-2 pt-1 text-xs text-on-surface-variant"
+                  >
+                    <input
+                      checked=""
+                      class="mt-0.5 rounded text-primary"
+                      id="wiz_consent"
+                      required=""
+                      type="checkbox"
+                    />
+                    <label for="wiz_consent"
+                      >I confirm the information supplied is accurate and agree
+                      to receive enrolment consultation from Nubex College (RTO
+                      46173).</label
+                    >
+                  </div>
+                </div>
+                <!-- Success Preview -->
+                <div
+                  class="hidden flex flex-col items-center justify-center text-center py-10 gap-2"
+                  id="wizard-success"
+                >
+                  <div
+                    class="w-14 h-14 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center mb-2"
+                  >
+                    <span class="material-symbols-outlined text-[32px]"
+                      >task_alt</span
+                    >
+                  </div>
+                  <h3 class="font-heading text-lg font-bold text-primary">
+                    Enquiry Received!
+                  </h3>
+                  <p class="text-xs text-on-surface max-w-md">
+                    Thank you for your enquiry. Our team will review the
+                    information provided and explain next steps within one
+                    business day.
+                  </p>
+                  <span class="text-xs font-mono text-secondary mt-1 font-bold"
+                    >CONFIRMATION REF: NBX-2025-ELIG</span
+                  >
+                  <button
+                    class="mt-3 px-5 py-2 rounded-lg bg-surface-container text-primary text-xs font-semibold hover:bg-surface-container-high"
+                    onclick="resetWizard()"
+                    type="button"
+                  >
+                    Submit Another Enquiry
+                  </button>
+                </div>
+                <!-- Navigation Buttons -->
+                <div
+                  class="flex items-center justify-between pt-6 mt-4 border-t border-surface-container/60"
+                  id="wizard-controls"
+                >
+                  <button
+                    class="hidden px-4 py-2 rounded-lg bg-surface-container-low text-primary text-xs font-semibold hover:bg-surface-container transition-colors"
+                    id="prev-btn"
+                    onclick="prevStep()"
+                    type="button"
+                  >
+                    Back
+                  </button>
+                  <div class="ml-auto">
+                    <button
+                      class="inline-flex items-center gap-2 px-6 py-2.5 bg-primary hover:bg-primary-dark text-white font-heading font-semibold text-xs rounded-lg shadow-sm transition-colors"
+                      id="next-btn"
+                      onclick="nextStep()"
+                      type="button"
+                    >
+                      <span>Continue</span>
+                      <span class="material-symbols-outlined text-[16px]"
+                        >arrow_forward</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+        <!-- Section 7: FULLY ANIMATED "How to Get Started" Timeline -->
+        <section
+          class="w-full py-20 bg-surface-bright relative overflow-hidden"
+        >
+          <div class="max-w-[1280px] mx-auto px-6 sm:px-10 relative z-10">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+              <div
+                class="inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-secondary-fixed text-on-secondary-fixed rounded-full mb-3 text-xs font-bold font-heading uppercase tracking-wider"
+              >
+                <span
+                  class="material-symbols-outlined text-[16px] text-secondary"
+                  >trending_up</span
+                >
+                <span>Clear Roadmap</span>
+              </div>
+              <h2
+                class="font-heading text-2xl sm:text-3xl font-bold text-primary"
+              >
+                How to Get Started
+              </h2>
+              <p class="text-sm text-on-surface-variant mt-2">
+                A transparent, stress-free route from initial enquiry through to
+                official training orientation.
+              </p>
+            </div>
+            <!-- Animated 3-Step Grid with Connecting Flow Lines -->
+            <div class="relative grid grid-cols-1 md:grid-cols-3 gap-8">
+              <!-- Animated Connecting Shimmer Line (Desktop) -->
+              <div
+                class="hidden md:block absolute top-[50px] left-[15%] right-[15%] h-1 animated-connector rounded-full z-0 pointer-events-none"
+              ></div>
+              <!-- Step 1 -->
+              <div
+                class="group relative z-10 p-7 rounded-2xl bg-white border border-outline-variant/50 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between"
+              >
+                <div>
+                  <div class="flex items-center justify-between mb-6">
+                    <div class="relative flex items-center justify-center">
+                      <div
+                        class="w-14 h-14 rounded-2xl bg-primary text-white flex items-center justify-center font-heading text-xl font-extrabold shadow-md glow-pulse transition-transform duration-300 group-hover:scale-110"
+                      >
+                        01
+                      </div>
+                      <span class="absolute -top-1 -right-1 flex h-3.5 w-3.5">
+                        <span
+                          class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-container opacity-75"
+                        ></span>
+                        <span
+                          class="relative inline-flex rounded-full h-3.5 w-3.5 bg-secondary"
+                        ></span>
+                      </span>
+                    </div>
+                    <div
+                      class="w-11 h-11 rounded-xl bg-surface-container-low group-hover:bg-secondary/10 flex items-center justify-center text-secondary transition-colors"
+                    >
+                      <span class="material-symbols-outlined text-[24px]"
+                        >manage_search</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-fixed/40 text-on-secondary-fixed text-[11px] font-semibold tracking-wider uppercase mb-2"
+                  >
+                    Step One
+                  </div>
+                  <h3
+                    class="font-heading text-lg font-bold text-primary mb-2 group-hover:text-secondary transition-colors"
+                  >
+                    Explore
+                  </h3>
+                  <p class="text-xs text-on-surface-variant leading-relaxed">
+                    Browse qualifications and review relevant course
+                    information, units of competency, delivery locations, and
+                    career outcomes.
+                  </p>
+                </div>
+                <div
+                  class="mt-6 pt-4 border-t border-surface-container-low text-xs font-semibold text-secondary flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                >
+                  <span>Find your qualification</span>
+                  <span class="material-symbols-outlined text-[16px]"
+                    >arrow_forward</span
+                  >
+                </div>
+              </div>
+              <!-- Step 2 -->
+              <div
+                class="group relative z-10 p-7 rounded-2xl bg-white border border-outline-variant/50 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between"
+              >
+                <div>
+                  <div class="flex items-center justify-between mb-6">
+                    <div class="relative flex items-center justify-center">
+                      <div
+                        class="w-14 h-14 rounded-2xl bg-primary text-white flex items-center justify-center font-heading text-xl font-extrabold shadow-md glow-pulse transition-transform duration-300 group-hover:scale-110"
+                      >
+                        02
+                      </div>
+                      <span class="absolute -top-1 -right-1 flex h-3.5 w-3.5">
+                        <span
+                          class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-container opacity-75"
+                        ></span>
+                        <span
+                          class="relative inline-flex rounded-full h-3.5 w-3.5 bg-secondary"
+                        ></span>
+                      </span>
+                    </div>
+                    <div
+                      class="w-11 h-11 rounded-xl bg-surface-container-low group-hover:bg-secondary/10 flex items-center justify-center text-secondary transition-colors"
+                    >
+                      <span class="material-symbols-outlined text-[24px]"
+                        >contact_support</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-fixed/40 text-on-secondary-fixed text-[11px] font-semibold tracking-wider uppercase mb-2"
+                  >
+                    Step Two
+                  </div>
+                  <h3
+                    class="font-heading text-lg font-bold text-primary mb-2 group-hover:text-secondary transition-colors"
+                  >
+                    Enquire
+                  </h3>
+                  <p class="text-xs text-on-surface-variant leading-relaxed">
+                    Submit an enquiry or discuss qualification requirements with
+                    our college admissions advisors and expert RPL assessment
+                    team.
+                  </p>
+                </div>
+                <div
+                  class="mt-6 pt-4 border-t border-surface-container-low text-xs font-semibold text-secondary flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                >
+                  <span>Speak with an advisor</span>
+                  <span class="material-symbols-outlined text-[16px]"
+                    >arrow_forward</span
+                  >
+                </div>
+              </div>
+              <!-- Step 3 -->
+              <div
+                class="group relative z-10 p-7 rounded-2xl bg-white border border-outline-variant/50 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between"
+              >
+                <div>
+                  <div class="flex items-center justify-between mb-6">
+                    <div class="relative flex items-center justify-center">
+                      <div
+                        class="w-14 h-14 rounded-2xl bg-secondary text-white flex items-center justify-center font-heading text-xl font-extrabold shadow-md glow-pulse transition-transform duration-300 group-hover:scale-110"
+                      >
+                        03
+                      </div>
+                      <span class="absolute -top-1 -right-1 flex h-3.5 w-3.5">
+                        <span
+                          class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-container opacity-75"
+                        ></span>
+                        <span
+                          class="relative inline-flex rounded-full h-3.5 w-3.5 bg-secondary"
+                        ></span>
+                      </span>
+                    </div>
+                    <div
+                      class="w-11 h-11 rounded-xl bg-surface-container-low group-hover:bg-secondary/10 flex items-center justify-center text-secondary transition-colors"
+                    >
+                      <span class="material-symbols-outlined text-[24px]"
+                        >how_to_reg</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-fixed/40 text-on-secondary-fixed text-[11px] font-semibold tracking-wider uppercase mb-2"
+                  >
+                    Step Three
+                  </div>
+                  <h3
+                    class="font-heading text-lg font-bold text-primary mb-2 group-hover:text-secondary transition-colors"
+                  >
+                    Apply
+                  </h3>
+                  <p class="text-xs text-on-surface-variant leading-relaxed">
+                    Follow our straightforward enrolment review once you have
+                    received verified course recommendations and fee plans.
+                  </p>
+                </div>
+                <div
+                  class="mt-6 pt-4 border-t border-surface-container-low text-xs font-semibold text-secondary flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                >
+                  <span>Commence learning</span>
+                  <span class="material-symbols-outlined text-[16px]"
+                    >arrow_forward</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Section 8: Student Experience & Compliance -->
+        <section class="w-full py-16 bg-surface-container-low">
+          <div class="max-w-[1280px] mx-auto px-6 sm:px-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+              <div class="lg:col-span-6 flex flex-col gap-4">
+                <div
+                  class="inline-flex items-center gap-1.5 px-3 py-1 bg-surface-container text-primary rounded-full self-start text-xs font-bold font-heading uppercase tracking-wider"
+                >
+                  <span>Student Wellbeing &amp; Compliance</span>
+                </div>
+                <h2
+                  class="font-heading text-2xl sm:text-3xl font-bold text-primary"
+                >
+                  Student Support &amp; Educational Transparency
+                </h2>
+                <p class="text-sm text-on-surface-variant leading-relaxed">
+                  At Nubex College, student equity, academic rigor, and
+                  supportive mentoring are core obligations. Every prospective
+                  and enrolled student has direct, unfettered access to support
+                  networks and administrative clarity.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                  <div class="p-4 rounded-xl bg-white">
+                    <span
+                      class="material-symbols-outlined text-secondary text-[22px] mb-1"
+                      >psychology_alt</span
+                    >
+                    <h4 class="font-heading text-xs font-bold text-primary">
+                      LLN Assistance
+                    </h4>
+                    <p class="text-xs text-on-surface-variant mt-1">
+                      Targeted language, literacy and numeracy coaching designed
+                      to support your course progression.
+                    </p>
+                  </div>
+                  <div class="p-4 rounded-xl bg-white">
+                    <span
+                      class="material-symbols-outlined text-secondary text-[22px] mb-1"
+                      >accessible_forward</span
+                    >
+                    <h4 class="font-heading text-xs font-bold text-primary">
+                      Accessibility Plans
+                    </h4>
+                    <p class="text-xs text-on-surface-variant mt-1">
+                      Reasonable adjustments for learners living with
+                      disabilities or ongoing health conditions.
+                    </p>
+                  </div>
+                  <div class="p-4 rounded-xl bg-white">
+                    <span
+                      class="material-symbols-outlined text-secondary text-[22px] mb-1"
+                      >menu_book</span
+                    >
+                    <h4 class="font-heading text-xs font-bold text-primary">
+                      Student Handbook
+                    </h4>
+                    <p class="text-xs text-on-surface-variant mt-1">
+                      Comprehensive rights, responsibilities, grievance
+                      procedures and operational guidelines.
+                    </p>
+                  </div>
+                  <div class="p-4 rounded-xl bg-white">
+                    <span
+                      class="material-symbols-outlined text-secondary text-[22px] mb-1"
+                      >account_balance</span
+                    >
+                    <h4 class="font-heading text-xs font-bold text-primary">
+                      Transparent Fees
+                    </h4>
+                    <p class="text-xs text-on-surface-variant mt-1">
+                      Transparent schedule of tuition, payment terms, and clear
+                      refund policies prior to enrolment.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="lg:col-span-6">
+                <div
+                  class="p-6 sm:p-8 rounded-2xl bg-white shadow-md flex flex-col gap-4 border border-surface-container"
+                >
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="w-12 h-12 rounded-xl bg-primary text-white flex items-center justify-center"
+                    >
+                      <span class="material-symbols-outlined text-[24px]"
+                        >verified_user</span
+                      >
+                    </div>
+                    <div>
+                      <h3 class="font-heading text-base font-bold text-primary">
+                        ASQA Regulatory Standards
+                      </h3>
+                      <span class="text-xs font-mono text-secondary"
+                        >RTO CODE: 46173 | ABN: 22 666 035 730</span
+                      >
+                    </div>
+                  </div>
+                  <p class="text-xs text-on-surface-variant leading-relaxed">
+                    Nubex College Pty Ltd complies with the Standards for
+                    Registered Training Organisations (RTOs) 2015. We maintain
+                    strict validation cycles across all qualifications, ensuring
+                    our training packages reflect current Australian workplace
+                    requirements.
+                  </p>
+                  <div class="space-y-2 pt-2">
+                    <a
+                      class="p-3 rounded-lg bg-surface-container-low hover:bg-surface-container flex items-center justify-between text-xs font-semibold text-primary transition-colors"
+                      href="#"
+                    >
+                      <span>Student Complaints &amp; Appeals Policy</span>
+                      <span
+                        class="material-symbols-outlined text-secondary text-[18px]"
+                        >download</span
+                      >
+                    </a>
+                    <a
+                      class="p-3 rounded-lg bg-surface-container-low hover:bg-surface-container flex items-center justify-between text-xs font-semibold text-primary transition-colors"
+                      href="#"
+                    >
+                      <span>Fees, Refunds &amp; Cancellations Guidelines</span>
+                      <span
+                        class="material-symbols-outlined text-secondary text-[18px]"
+                        >download</span
+                      >
+                    </a>
+                    <a
+                      class="p-3 rounded-lg bg-surface-container-low hover:bg-surface-container flex items-center justify-between text-xs font-semibold text-primary transition-colors"
+                      href="#"
+                    >
+                      <span>RPL &amp; Credit Transfer Framework</span>
+                      <span
+                        class="material-symbols-outlined text-secondary text-[18px]"
+                        >download</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Section 9: Frequently Asked Questions -->
+        <section class="w-full py-16 bg-surface">
+          <div class="max-w-[880px] mx-auto px-6 sm:px-10">
+            <div class="text-center mb-10">
+              <div
+                class="inline-flex items-center gap-1.5 px-3 py-1 bg-surface-container-high text-primary rounded-full mb-2 text-xs font-bold font-heading uppercase tracking-wider"
+              >
+                <span>Got Questions?</span>
+              </div>
+              <h2
+                class="font-heading text-2xl sm:text-3xl font-bold text-primary"
+              >
+                Frequently Asked Questions
+              </h2>
+              <p class="text-sm text-on-surface-variant mt-2">
+                Direct, transparent answers regarding admissions, training
+                packages, documentation and policies.
+              </p>
+            </div>
+            <div class="flex flex-col gap-3" id="faq-accordion">
+              <div
+                class="faq-item rounded-xl bg-white shadow-sm border border-surface-container overflow-hidden"
+              >
+                <button
+                  class="faq-toggle w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 font-heading text-sm font-semibold text-primary"
+                  type="button"
+                >
+                  <span>1. What qualifications does Nubex College offer?</span>
+                  <span
+                    class="material-symbols-outlined faq-icon text-secondary transition-transform"
+                    >expand_more</span
+                  >
+                </button>
+                <div
+                  class="faq-content hidden px-4 sm:px-5 pb-5 text-xs text-on-surface-variant leading-relaxed"
+                >
+                  Nubex College delivers nationally recognized qualifications
+                  including:
+                  <ul class="list-disc pl-5 mt-2 space-y-1">
+                    <li>BSB50420 — Diploma of Leadership and Management</li>
+                    <li>
+                      BSB60420 — Advanced Diploma of Leadership and Management
+                    </li>
+                    <li>CHC33021 — Certificate III in Individual Support</li>
+                    <li>CHC43015 — Certificate IV in Ageing Support</li>
+                    <li>CHC43315 — Certificate IV in Mental Health</li>
+                    <li>CHC52025 — Diploma of Community Services</li>
+                    <li>
+                      HLT33021 — Certificate III in Allied Health Assistance
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="faq-item rounded-xl bg-white shadow-sm border border-surface-container overflow-hidden"
+              >
+                <button
+                  class="faq-toggle w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 font-heading text-sm font-semibold text-primary"
+                  type="button"
+                >
+                  <span>2. What is Recognition of Prior Learning?</span>
+                  <span
+                    class="material-symbols-outlined faq-icon text-secondary transition-transform"
+                    >expand_more</span
+                  >
+                </button>
+                <div
+                  class="faq-content hidden px-4 sm:px-5 pb-5 text-xs text-on-surface-variant leading-relaxed"
+                >
+                  Recognition of Prior Learning (RPL) acknowledges competencies
+                  gained through work and life experience. Candidates submit
+                  evidence mapping their existing capabilities directly against
+                  unit of competency benchmarks.
+                </div>
+              </div>
+              <div
+                class="faq-item rounded-xl bg-white shadow-sm border border-surface-container overflow-hidden"
+              >
+                <button
+                  class="faq-toggle w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 font-heading text-sm font-semibold text-primary"
+                  type="button"
+                >
+                  <span
+                    >3. How do I know which qualification is right for me?</span
+                  >
+                  <span
+                    class="material-symbols-outlined faq-icon text-secondary transition-transform"
+                    >expand_more</span
+                  >
+                </button>
+                <div
+                  class="faq-content hidden px-4 sm:px-5 pb-5 text-xs text-on-surface-variant leading-relaxed"
+                >
+                  Our admissions advisors evaluate your prior career journey and
+                  goals to recommend an optimal qualification. You can also use
+                  our interactive Eligibility Checker on this page.
+                </div>
+              </div>
+              <div
+                class="faq-item rounded-xl bg-white shadow-sm border border-surface-container overflow-hidden"
+              >
+                <button
+                  class="faq-toggle w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 font-heading text-sm font-semibold text-primary"
+                  type="button"
+                >
+                  <span>4. What documents might be required?</span>
+                  <span
+                    class="material-symbols-outlined faq-icon text-secondary transition-transform"
+                    >expand_more</span
+                  >
+                </button>
+                <div
+                  class="faq-content hidden px-4 sm:px-5 pb-5 text-xs text-on-surface-variant leading-relaxed"
+                >
+                  Enrolment typically requires government-issued photo
+                  identification, a Unique Student Identifier (USI), and prior
+                  academic transcripts. For RPL, resumes, references, and work
+                  samples may also be requested.
+                </div>
+              </div>
+              <div
+                class="faq-item rounded-xl bg-white shadow-sm border border-surface-container overflow-hidden"
+              >
+                <button
+                  class="faq-toggle w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 font-heading text-sm font-semibold text-primary"
+                  type="button"
+                >
+                  <span>5. How can I find course fees and duration?</span>
+                  <span
+                    class="material-symbols-outlined faq-icon text-secondary transition-transform"
+                    >expand_more</span
+                  >
+                </button>
+                <div
+                  class="faq-content hidden px-4 sm:px-5 pb-5 text-xs text-on-surface-variant leading-relaxed"
+                >
+                  Course fees and durations differ depending on your selected
+                  delivery mode. Contact our admissions team or request a course
+                  guide; all fee schedules are transparently disclosed before
+                  enrolment.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Section 10: Final Conversion Section -->
+        <section
+          class="w-full py-16 bg-primary text-white relative overflow-hidden"
+        >
+          <div
+            class="max-w-[1280px] mx-auto px-6 sm:px-10 relative z-10 text-center"
+          >
+            <div class="max-w-3xl mx-auto flex flex-col items-center gap-4">
+              <div
+                class="inline-flex items-center gap-2 px-3 py-1 bg-white/10 backdrop-blur-md rounded-full text-secondary-container text-xs font-bold font-heading uppercase tracking-wider"
+              >
+                <span class="material-symbols-outlined text-[16px]"
+                  >school</span
+                >
+                <span>Start Your Learning Journey</span>
+              </div>
+              <h2
+                class="font-heading text-3xl sm:text-4xl font-bold tracking-tight text-white"
+              >
+                Ready to Explore Your Next Opportunity?
+              </h2>
+              <p
+                class="text-sm sm:text-base text-slate-200 max-w-2xl leading-relaxed"
+              >
+                Explore our qualifications or contact Nubex College to discuss
+                available training pathways and application requirements.
+              </p>
+              <div
+                class="flex flex-wrap items-center justify-center gap-4 pt-2"
+              >
+                <a
+                  class="inline-flex items-center justify-center gap-2 font-heading font-semibold text-sm bg-white hover:bg-slate-100 text-primary px-7 py-3.5 rounded-lg shadow-md transition-colors"
+                  href="#qualifications"
+                >
+                  <span>Explore Qualifications</span>
+                  <span class="material-symbols-outlined text-[18px]"
+                    >arrow_forward</span
+                  >
+                </a>
+                <a
+                  class="inline-flex items-center justify-center gap-2 font-heading font-semibold text-sm bg-transparent hover:bg-white/10 text-white px-7 py-3.5 rounded-lg shadow-sm transition-colors border border-white/30"
+                  href="#hero-quick-enquiry"
+                >
+                  <span class="material-symbols-outlined text-[18px]"
+                    >contact_phone</span
+                  >
+                  <span>Contact Our Team</span>
+                </a>
+              </div>
+              <div
+                class="mt-4 pt-4 flex flex-wrap items-center justify-center gap-2 font-mono text-xs text-slate-300"
+              >
+                <span>Nubex College Pty Ltd</span>
+                <span>•</span>
+                <span>RTO 46173</span>
+                <span>•</span>
+                <span>ACN 666 035 730</span>
+              </div>
+            </div>
+          </div>
+        </section>
+ 
 @endsection
