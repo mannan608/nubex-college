@@ -1350,9 +1350,9 @@ pre[class*='language-'] {
           margin-bottom: 0 !important;
         }
       
-      ::-webkit-scrollbar {
+      /* ::-webkit-scrollbar {
         display: none;
-      }
+      } */
       @keyframes shimmerLine {
         0% {
           background-position: -200% 0;
