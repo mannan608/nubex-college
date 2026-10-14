@@ -34,7 +34,7 @@
              </div>
          </div>
      </div>
-     <div class="p-4 pt-0 flex items-center justify-between gap-2  mt-auto">
+     <div class="p-4 pt-0 flex items-center justify-between gap-4  mt-auto">
          <a class="flex-1 py-2 px-3 bg-surface-container-low hover:bg-surface-container text-primary text-xs font-semibold rounded-lg text-center transition-colors"
              href="#eligibility-checker">View Course</a>
          <a class="flex-1 py-2 px-3 bg-primary hover:bg-primary-dark text-white text-xs font-semibold rounded-lg text-center transition-colors shadow-sm"

@@ -106,11 +106,11 @@
             <a href="{{ route('courses.index') }}"
                 class="{{ request()->routeIs('courses.index') ? 'text-neutral-600 font-medium' : 'text-neutral-600' }}">Our
                 Qualifications</a>
-            <a href="{{ route('international') }}"
-                class="{{ request()->routeIs('international') ? 'text-neutral-600 font-medium' : 'text-neutral-600' }}">Online Study</a>
-            <a href="{{ route('student-support') }}"
+            <a href=""
+                class="{{ request()->routeIs('online-study') ? 'text-neutral-600 font-medium' : 'text-neutral-600' }}">Online Study</a>
+            <a href=""
                 class="{{ request()->routeIs('student-support') ? 'text-neutral-600 font-medium' : 'text-neutral-600' }}">Students</a>
-            <a href="{{ route('agent-register') }}"
+            <a href="{{ route('contact') }}"
                 class="{{ request()->routeIs('agent-register') ? 'text-neutral-600 font-medium' : 'text-neutral-600' }}">Contact Us</a>
 
 

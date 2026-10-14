@@ -21,11 +21,11 @@ Route::get('/generate-sitemap', [SitemapController::class, 'generate']);
 
 //static pages
 Route::get('/', [FrontendController::class, 'homePage'])->name('home');
-Route::get('/how-we-works', [FrontendController::class, 'howWeWork'])->name('how-we-works');
-Route::get('/patners', [FrontendController::class, 'patners'])->name('patners');
+// Route::get('/how-we-works', [FrontendController::class, 'howWeWork'])->name('how-we-works');
+// Route::get('/patners', [FrontendController::class, 'patners'])->name('patners');
 Route::get('/about', [FrontendController::class, 'aboutPage'])->name('about');
 Route::get('/contact', [FrontendController::class, 'contactPage'])->name('contact');
-Route::get('/faqs', [FrontendController::class, 'faqs'])->name('faqs');
+// Route::get('/faqs', [FrontendController::class, 'faqs'])->name('faqs');
 Route::get('/privacy-policy', [FrontendController::class, 'privacyPolicy'])->name('privacy-policy');
 Route::get('/terms-conditions', [FrontendController::class, 'termsConditions'])->name('terms-conditions');
 
@@ -35,10 +35,7 @@ Route::get('/courses', [IndustryController::class, 'index'])->name('courses.inde
 Route::get('/courses/categories/{categoryslug}', [IndustryController::class, 'categoryCourses'])->name('category-courses');
 Route::get('/courses/{courseslug}', [IndustryController::class, 'show'])->name('course.show');
 
-Route::get('/international-inquiry', [FrontendController::class, 'internationalInquiry'])->name('international');
-Route::get('/gs-guide', [FrontendController::class, 'gsGuide'])->name('gs-guide');
 
-Route::get('/agent-register', [FrontendController::class, 'agentRegister'])->name('agent-register');
 Route::get('/student-support', [FrontendController::class, 'studentSupport'])->name('student-support');
 Route::get('/student-resources', [FrontendController::class, 'studentResources'])->name('student-resources');
 Route::get('/admission-fees', [FrontendController::class, 'admissionFees'])->name('admission-fees');
