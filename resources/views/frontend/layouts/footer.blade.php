@@ -209,7 +209,7 @@
                             <span>WhatsApp Us</span>
                         </a>
                         <a class="inline-flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-lg bg-brand-600 hover:bg-brand-700 text-white text-xs font-semibold transition-all shadow-sm"
-                            href="#hero-quick-enquiry">
+                            href="{{ route('contact')}}">
                             <span class="material-symbols-outlined text-[15px]!">calendar_month</span>
                             <span>Book a Meeting</span>
                         </a>
@@ -228,8 +228,8 @@
                 &copy; 2026 Nubex College Pty Ltd. All rights reserved.
             </div>
             <div class="flex items-center gap-6">
-                <a class="hover:text-slate-900 transition-colors" href="#">Privacy Policy</a>
-                <a class="hover:text-slate-900 transition-colors" href="#">Website Terms</a>
+                <a class="hover:text-slate-900 transition-colors" href="{{ route('privacy-policy')}}">Privacy Policy</a>
+                <a class="hover:text-slate-900 transition-colors" href="{{ route('terms-conditions')}}">Website Terms</a>
                 <a class="hover:text-slate-900 transition-colors" href="#">Accessibility</a>
             </div>
         </div>

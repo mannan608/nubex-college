@@ -89,7 +89,7 @@
                 </a>
                 <div
                     class="w-9 h-9 rounded-full bg-surface-container text-primary flex items-center justify-center shrink-0">
-                    <span class="material-symbols-outlined text-[20px]">person</span>
+                    <span class="material-symbols-outlined text-[20px]!">person</span>
                 </div>
             </div>
         </div>
