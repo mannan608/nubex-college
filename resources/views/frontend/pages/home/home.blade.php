@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
 @section('content')
     <!-- Section 1: Hero Section ? -->
-    @include('frontend.pages.home.section.hero')
+    @include('frontend.pages.home.section.hero', ['qualifications' => $qualifications])
 
     <!-- Section 2: Qualifications Section ? -->
     <section class="w-full py-12 sm:py-16 lg:py-20 bg-surface" id="qualifications">
@@ -20,9 +20,9 @@
                 </div>
             </div>
             <!-- Sleek 3-Column Grid Partial -->
-            @include('frontend.pages.industry.qualification-grid', ['qualifications' => $courses]) <!-- Action / View All CTA -->
+            @include('frontend.pages.industry.qualification-grid', ['qualifications' => $qualifications]) 
 
-            @if (isset($courses) && count($courses) > 0)
+            @if (isset($qualifications) && count($qualifications) > 0)
                 <div class="flex items-center justify-center mt-10 sm:mt-12"> <a href=""
                         class="inline-flex items-center justify-center gap-2 px-8 py-3 bg-brand-500 hover:bg-[#155b9d] text-white text-sm font-semibold font-heading rounded-xl shadow-sm hover:shadow-md active:scale-95 transition-all duration-200 group">
                         <span>See More Qualifications</span> <span

@@ -18,14 +18,14 @@ class FrontendController extends Controller
             true
         );
 
-        $courses = collect(json_decode(
+        $qualifications = collect(json_decode(
             File::get(resource_path('data/courses.json')),
             true
         ));
 
         // return $courses;
 
-        return view('frontend.pages.home.home', compact('categories', 'courses'));
+        return view('frontend.pages.home.home', compact('categories', 'qualifications'));
     }
 
     public function aboutPage()

@@ -14,7 +14,7 @@ class IndustryController extends Controller
             true
         );
 
-        $courses = json_decode(
+        $qualifications = json_decode(
             File::get(resource_path('data/courses.json')),
             true
         );
@@ -22,7 +22,7 @@ class IndustryController extends Controller
         return view('frontend.pages.industry.index', [
             'category' => null,
             'categories' => $categories,
-            'courses' => $courses,
+            'qualifications' => $qualifications,
         ]);
     }
 

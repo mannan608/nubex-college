@@ -1,26 +1,37 @@
 @extends('frontend.layouts.app')
 
 @section('content')
-    <section class="relative overflow-hidden bg-brand-25">
-        {{-- Existing mesh background utility --}}
-        <div class="absolute inset-0 mesh-background"></div>
+   <section
+        class="relative w-full overflow-hidden bg-gradient-to-br from-[#0c273e] via-[#123b5d] to-[#081b2c] text-white border-b border-white/10 shadow-inner">
+        <!-- Background Pattern Effect -->
+        <div
+            class="absolute inset-0 opacity-10 bg-[radial-gradient(#d0e4ff_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none">
+        </div>
+
+        <!-- Glow Effects -->
+        <div
+            class="absolute top-0 right-1/4 w-[300px] h-[300px] lg:w-[450px] lg:h-[450px] bg-secondary/25 rounded-full blur-3xl pointer-events-none">
+        </div>
+        <div
+            class="absolute bottom-0 left-10 w-[250px] h-[250px] lg:w-[350px] lg:h-[350px] bg-primary-fixed/15 rounded-full blur-3xl pointer-events-none">
+        </div>
 
         <div class="relative mx-auto w-full max-w-7xl px-4 py-10 sm:px-6 md:py-12 lg:px-8 lg:py-16">
             <!-- Course Title -->
             <div class="max-w-4xl animate-hero-left">
 
                 <span
-                    class="mb-3 inline-block font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-secondary-600">
-                    About UTI
+                    class="mb-3 inline-block font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-white">
+                    About Us
                 </span>
 
                 <h1
-                    class="mb-5 font-heading text-4xl font-bold leading-[1.05] tracking-tight text-neutral-950 sm:text-5xl lg:text-6xl">
+                    class="mb-5 font-heading text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-5xl lg:text-6xl">
                     About Nubex College
                 </h1>
 
-                <p class="max-w-2xl text-sm leading-7 text-neutral-600 sm:text-base">
-                    Nubex College (UTI) is a CRICOS-registered RTO delivering nationally recognised
+                <p class="max-w-2xl text-sm leading-7 text-white sm:text-base">
+                    Nubex College is a CRICOS-registered RTO delivering nationally recognised
                     qualifications across trade, health and business.
                 </p>
 
@@ -239,192 +250,6 @@
 
                     </div>
                 </article>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="relative overflow-hidden bg-slate-950 py-14 text-white sm:py-16 lg:py-20">
-
-
-        {{-- Background accents --}}
-        <div class="pointer-events-none absolute -left-40 top-20 h-80 w-80 rounded-full bg-brand-600/10 blur-3xl">
-        </div>
-
-        <div class="pointer-events-none absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-brand-500/10 blur-3xl">
-        </div>
-
-
-        <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-
-            <div class="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:items-start lg:gap-16">
-
-
-                {{-- Left Content --}}
-                <div class="lg:col-span-5 reveal-left">
-
-                    <div
-                        class="mb-5 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-brand-400">
-                        <span class="h-px w-8 bg-brand-400"></span>
-                        Why UTI
-                    </div>
-
-                    <h2 class="max-w-xl text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
-                       CRICOS.
-
-                        <span class="block font-light italic text-slate-400 text-2xl md:text-3xl">
-                           Registered Industry
-                        </span>
-                    </h2>
-
-                    <p class="mt-6 max-w-lg text-sm leading-7 text-slate-400 sm:text-base">
-                        A practical learning environment designed around recognised
-                        qualifications, industry expectations and meaningful career pathways.
-                    </p>
-
-                    {{-- Small trust indicator --}}
-                    <div class="mt-8 flex items-center gap-3">
-
-                        <div class="flex -space-x-2">
-                            <span
-                                class="flex h-9 w-9 items-center justify-center rounded-full border-2 border-slate-950 bg-brand-600 text-xs font-bold">
-                                U
-                            </span>
-
-                            <span
-                                class="flex h-9 w-9 items-center justify-center rounded-full border-2 border-slate-950 bg-brand-600 text-xs font-bold">
-                               T
-                            </span>
-
-                            <span
-                                class="flex h-9 w-9 items-center justify-center rounded-full border-2 border-slate-950 bg-slate-700 text-xs font-bold">
-                                I
-                            </span>
-                        </div>
-
-                        <div>
-                            <p class="text-sm font-semibold text-slate-200">
-                                Recognised & industry-focused
-                            </p>
-
-                            <p class="text-xs text-slate-500">
-                                Built around practical outcomes
-                            </p>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                {{-- Right Features --}}
-                <div class="lg:col-span-7">
-
-                    <div class="divide-y divide-white/10 rounded-3xl border border-white/10 bg-white/[0.03] px-5 sm:px-7 stagger">
-
-                        {{-- Item 01 --}}
-                        <div class="group flex gap-5 py-7 sm:gap-7 sm:py-8 reveal">
-
-                            <div class="shrink-0">
-                                <span
-                                    class="flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-white/5 font-mono text-sm font-semibold text-brand-400 transition-all duration-300 group-hover:border-brand-400/30 group-hover:bg-brand-400/10">
-                                    01
-                                </span>
-                            </div>
-
-                            <div class="min-w-0">
-                                <div class="flex flex-wrap items-center gap-2">
-                                    <h3 class="text-lg font-semibold text-white sm:text-xl">
-                                        CRICOS-registered courses
-                                    </h3>
-
-                                    <span
-                                        class="rounded-full bg-brand-400/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-brand-400">
-                                        Recognised
-                                    </span>
-                                </div>
-
-                                <p class="mt-2 max-w-2xl text-sm leading-6 text-slate-400">
-                                    All qualifications meet ASQA and CRICOS standards for international students.
-                                </p>
-                            </div>
-
-                        </div>
-
-
-                        {{-- Item 02 --}}
-                        <div class="group flex gap-5 py-7 sm:gap-7 sm:py-8 reveal">
-
-                            <div class="shrink-0">
-                                <span
-                                    class="flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-white/5 font-mono text-sm font-semibold text-brand-400 transition-all duration-300 group-hover:border-brand-400/30 group-hover:bg-brand-400/10">
-                                    02
-                                </span>
-                            </div>
-
-                            <div class="min-w-0">
-                                <h3 class="text-lg font-semibold text-white sm:text-xl">
-                                    One Sydney campus
-                                </h3>
-
-                                <p class="mt-2 max-w-2xl text-sm leading-6 text-slate-400">
-                                    North Parramatta — purpose-built classrooms, workshops and labs.
-                                </p>
-                            </div>
-
-                        </div>
-
-
-                        {{-- Item 03 --}}
-                        <div class="group flex gap-5 py-7 sm:gap-7 sm:py-8 reveal">
-
-                            <div class="shrink-0">
-                                <span
-                                    class="flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-white/5 font-mono text-sm font-semibold text-brand-400 transition-all duration-300 group-hover:border-brand-400/30 group-hover:bg-brand-400/10">
-                                    03
-                                </span>
-                            </div>
-
-                            <div class="min-w-0">
-                                <h3 class="text-lg font-semibold text-white sm:text-xl">
-                                    Pathways that work
-                                </h3>
-
-                                <p class="mt-2 max-w-2xl text-sm leading-6 text-slate-400">
-                                    Direct articulation into higher qualifications and Australian employment.
-                                </p>
-                            </div>
-
-                        </div>
-
-
-                        {{-- Item 04 --}}
-                        <div class="group flex gap-5 py-7 sm:gap-7 sm:py-8 reveal">
-
-                            <div class="shrink-0">
-                                <span
-                                    class="flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-white/5 font-mono text-sm font-semibold text-brand-400 transition-all duration-300 group-hover:border-brand-400/30 group-hover:bg-brand-400/10">
-                                    04
-                                </span>
-                            </div>
-
-                            <div class="min-w-0">
-                                <h3 class="text-lg font-semibold text-white sm:text-xl">
-                                    Experienced trainers
-                                </h3>
-
-                                <p class="mt-2 max-w-2xl text-sm leading-6 text-slate-400">
-                                    Experienced trainers with current industry credentials.
-                                </p>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
 
             </div>
 

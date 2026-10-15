@@ -56,7 +56,7 @@
                     Home
                 </a>
 
-                <a href="#qualifications"
+                <a href="qualifications"
                     class="px-4 py-2 rounded-lg transition-colors
                      {{ request()->routeIs('qualifications') ? 'font-heading text-primary bg-surface-container' : 'text-on-surface-variant hover:text-primary hover:bg-surface-container-low' }}">
                     Qualifications
@@ -103,8 +103,8 @@
             <a href="{{ route('about') }}"
                 class="{{ request()->routeIs('about') ? 'text-neutral-600 font-medium' : 'text-neutral-600' }}">About
                 Us</a>
-            <a href="{{ route('courses.index') }}"
-                class="{{ request()->routeIs('courses.index') ? 'text-neutral-600 font-medium' : 'text-neutral-600' }}">Our
+            <a href="{{ route('qualifications') }}"
+                class="{{ request()->routeIs('qualifications') ? 'text-neutral-600 font-medium' : 'text-neutral-600' }}">Our
                 Qualifications</a>
             <a href=""
                 class="{{ request()->routeIs('online-study') ? 'text-neutral-600 font-medium' : 'text-neutral-600' }}">Online Study</a>

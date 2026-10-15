@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Student\StudentController;
 use App\Http\Controllers\Frontend\CheckEligibilityController;
 use App\Http\Controllers\Frontend\ContactController;
+use App\Http\Controllers\Frontend\EnrollController;
 use App\Http\Controllers\Frontend\FrontendController;
 use App\Http\Controllers\Frontend\IndustryController;
 use App\Http\Controllers\Student\ProfileController;
@@ -31,7 +32,7 @@ Route::get('/terms-conditions', [FrontendController::class, 'termsConditions'])-
 
 Route::post('/inquiry-us', [ContactController::class, 'store'])->name('contact.store');
 
-Route::get('/courses', [IndustryController::class, 'index'])->name('courses.index');
+Route::get('/qualifications', [IndustryController::class, 'index'])->name('qualifications');
 Route::get('/courses/categories/{categoryslug}', [IndustryController::class, 'categoryCourses'])->name('category-courses');
 Route::get('/courses/{courseslug}', [IndustryController::class, 'show'])->name('course.show');
 
@@ -46,6 +47,10 @@ Route::get('/check-eligibility', [CheckEligibilityController::class, 'index'])
 
 Route::post('/eligibility/submit', [CheckEligibilityController::class, 'submit'])
     ->name('eligibility.submit');
+Route::post('/enroll', [EnrollController::class, 'enroll'])
+    ->name('enroll');
+// Route::post('/enroll', [EnrollController::class, 'store'])->name('enroll.store');
+
 
 //student routes
 Route::prefix('student')

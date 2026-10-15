@@ -1,6 +1,7 @@
 [
   {
     "code": "BSB50120",
+    "category_id": 1,
     "aqf_level": "AQF Level 5",
     "title": "Diploma of Leadership and Management",
     "image": "/industry/business/BSB50120.jpg",
@@ -12,6 +13,7 @@
   },
   {
     "code": "CHC43015",
+    "category_id": 2,
     "aqf_level": "AQF Level 5",
     "title": "Diploma of Business",
     "image": "/industry/health-care/CHC43015.jpg",
@@ -23,6 +25,7 @@
   },
   {
     "code": "CPC30220",
+    "category_id": 3,
     "aqf_level": "AQF Level 5",
     "title": "Diploma of Information Technology",
     "image": "/industry/trade-vocational/CPC30220.jpg",
@@ -34,6 +37,7 @@
   },
   {
     "code": "CHC52021",
+    "category_id": 1,
     "aqf_level": "AQF Level 5",
     "title": "Diploma of Community Services",
     "image": "/industry/qua-1.jpg",
