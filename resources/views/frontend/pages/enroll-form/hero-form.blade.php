@@ -4,36 +4,23 @@
 
     <input type="hidden" name="form_type" value="consultation">
 
-    {{-- Success / General Error Message --}}
-    @if (session('success'))
-        <div class="rounded-lg border border-green-200 bg-green-50 p-3 text-sm text-green-700"
-             role="status" aria-live="polite">
-            {{ session('success') }}
-        </div>
-    @endif
-
-    @if (session('error'))
-        <div class="rounded-lg border border-red-200 bg-red-50 p-3 text-sm text-red-700"
-             role="alert">
-            {{ session('error') }}
-        </div>
-    @endif
-
-    {{-- Validation Summary --}}
-    @if ($errors->any())
-        <div class="rounded-lg border border-red-200 bg-red-50 p-3 text-sm text-red-700"
-             role="alert" aria-live="assertive">
-            <p class="font-semibold mb-1">
-                Please correct the following errors:
-            </p>
-
-            <ul class="list-disc pl-5 space-y-1">
-                @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
-    @endif
+ 
+{{-- Success Message --}}
+@if (session('success'))
+    <div
+        x-data="{ show: true }"
+        x-init="setTimeout(() => show = false, 3500)"
+        x-show="show"
+        x-transition:leave="transition ease-in duration-500"
+        x-transition:leave-start="opacity-100"
+        x-transition:leave-end="opacity-0"
+        class="rounded-lg border border-green-200 bg-green-50 p-3 text-sm text-green-700"
+        role="status"
+        aria-live="polite"
+    >
+        {{ session('success') }}
+    </div>
+@endif
 
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <div>

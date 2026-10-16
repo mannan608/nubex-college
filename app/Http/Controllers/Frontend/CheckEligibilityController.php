@@ -32,10 +32,12 @@ class CheckEligibilityController extends Controller
                     ->where('category_slug', $industry['slug'])
                     ->map(fn (array $course) => [
                         'code' => $course['code'],
-                        'name' => $course['name'],
+                        'name' => $course['title'],
                     ])
                     ->values(),
             ]);
+
+        // return $coursesByIndustry;
 
         return view(
             'frontend.pages.check-eligibility.index',
