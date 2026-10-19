@@ -87,10 +87,10 @@
                     class="hidden md:flex text-xs uppercase bg-brand-600 text-white px-4 py-2 lg:px-6 lg:py-2.5 rounded-lg font-medium hover:bg-brand-600 transition">
                     Check Eligibility
                 </a>
-                <div
+                {{-- <div
                     class="w-9 h-9 rounded-full bg-surface-container text-primary flex items-center justify-center shrink-0">
                     <span class="material-symbols-outlined text-[20px]!">person</span>
-                </div>
+                </div> --}}
             </div>
         </div>
 

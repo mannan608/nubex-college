@@ -1,3 +1,9 @@
+@php
+    $qualifications = json_decode(
+        File::get(resource_path('data/courses.json')),
+        true
+    ) ?? [];
+@endphp
 <footer class="w-full bg-white text-slate-700 border-t border-slate-200" id="contact">
     <div class="max-w-7xl mx-auto px-6 sm:px-10 pt-16 pb-10">
 
@@ -55,62 +61,22 @@
                     Qualifications
                 </h3>
                 <ul class="flex flex-col gap-2.5 text-xs">
-                    <li>
-                        <a class="text-slate-600 hover:text-slate-900 transition-colors flex items-center gap-2 group"
-                            href="#qualifications">
-                            <span
-                                class="font-mono text-brand-700 bg-slate-50 border border-slate-200 px-1.5 py-0.5 rounded text-[10px] group-hover:border-slate-300">BSB50420</span>
-                            <span>Diploma of Leadership &amp; Mgt</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="text-slate-600 hover:text-slate-900 transition-colors flex items-center gap-2 group"
-                            href="#qualifications">
-                            <span
-                                class="font-mono text-brand-700 bg-slate-50 border border-slate-200 px-1.5 py-0.5 rounded text-[10px] group-hover:border-slate-300">BSB60420</span>
-                            <span>Adv Diploma of Leadership</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="text-slate-600 hover:text-slate-900 transition-colors flex items-center gap-2 group"
-                            href="#qualifications">
-                            <span
-                                class="font-mono text-brand-700 bg-slate-50 border border-slate-200 px-1.5 py-0.5 rounded text-[10px] group-hover:border-slate-300">CHC33021</span>
-                            <span>Cert III in Individual Support</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="text-slate-600 hover:text-slate-900 transition-colors flex items-center gap-2 group"
-                            href="#qualifications">
-                            <span
-                                class="font-mono text-brand-700 bg-slate-50 border border-slate-200 px-1.5 py-0.5 rounded text-[10px] group-hover:border-slate-300">CHC43015</span>
-                            <span>Cert IV in Ageing Support</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="text-slate-600 hover:text-slate-900 transition-colors flex items-center gap-2 group"
-                            href="#qualifications">
-                            <span
-                                class="font-mono text-brand-700 bg-slate-50 border border-slate-200 px-1.5 py-0.5 rounded text-[10px] group-hover:border-slate-300">CHC43315</span>
-                            <span>Cert IV in Mental Health</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="text-slate-600 hover:text-slate-900 transition-colors flex items-center gap-2 group"
-                            href="#qualifications">
-                            <span
-                                class="font-mono text-brand-700 bg-slate-50 border border-slate-200 px-1.5 py-0.5 rounded text-[10px] group-hover:border-slate-300">CHC52025</span>
-                            <span>Diploma of Community Services</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="text-slate-600 hover:text-slate-900 transition-colors flex items-center gap-2 group"
-                            href="#qualifications">
-                            <span
-                                class="font-mono text-brand-700 bg-slate-50 border border-slate-200 px-1.5 py-0.5 rounded text-[10px] group-hover:border-slate-300">HLT33021</span>
-                            <span>Cert III in Allied Health</span>
-                        </a>
-                    </li>
+                    @foreach ($qualifications as $qualification)
+                        <li>
+                            <a class="text-slate-600 hover:text-slate-900 transition-colors flex items-center gap-2 group"
+                                href="{{ url('/qualifications/' . $qualification['slug']) }}">
+
+                                <span
+                                    class="font-mono text-brand-700 bg-slate-50 border border-slate-200 px-1.5 py-0.5 rounded text-[10px] group-hover:border-slate-300 shrink-0">
+                                    {{ $qualification['code'] }}
+                                </span>
+
+                                <span>
+                                    {{ $qualification['title'] }}
+                                </span>
+                            </a>
+                        </li>
+                    @endforeach
                 </ul>
             </div>
 
@@ -160,17 +126,15 @@
 
                 <div class="flex items-center justify-center gap-4">
                     <!-- Partner Card 1 -->
-                    <div
-                        class="group flex items-center justify-center  transition-all duration-300 transform">
-                        <img class="max-h-10 w-auto object-contain "
-                            src="{{ asset('patner_1.png') }}" alt="Partner logo" loading="lazy" />
+                    <div class="group flex items-center justify-center  transition-all duration-300 transform">
+                        <img class="max-h-10 w-auto object-contain " src="{{ asset('patner_1.png') }}"
+                            alt="Partner logo" loading="lazy" />
                     </div>
 
                     <!-- Partner Card 2 -->
-                    <div
-                        class="group flex items-center justify-center  transition-all duration-300 transform">
-                        <img class="max-h-10 w-auto object-contain "
-                            src="{{ asset('patner_2.png') }}" alt="Partner logo" loading="lazy" />
+                    <div class="group flex items-center justify-center  transition-all duration-300 transform">
+                        <img class="max-h-10 w-auto object-contain " src="{{ asset('patner_2.png') }}"
+                            alt="Partner logo" loading="lazy" />
                     </div>
                 </div>
 
@@ -209,7 +173,7 @@
                             <span>WhatsApp Us</span>
                         </a>
                         <a class="inline-flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-lg bg-brand-600 hover:bg-brand-700 text-white text-xs font-semibold transition-all shadow-sm"
-                            href="{{ route('contact')}}">
+                            href="{{ route('contact') }}">
                             <span class="material-symbols-outlined text-[15px]!">calendar_month</span>
                             <span>Book a Meeting</span>
                         </a>
@@ -220,7 +184,7 @@
 
         </div>
 
-        
+
 
         <!-- Bottom Legal Bar -->
         <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
@@ -228,8 +192,10 @@
                 &copy; 2026 Nubex College Pty Ltd. All rights reserved.
             </div>
             <div class="flex items-center gap-6">
-                <a class="hover:text-slate-900 transition-colors" href="{{ route('privacy-policy')}}">Privacy Policy</a>
-                <a class="hover:text-slate-900 transition-colors" href="{{ route('terms-conditions')}}">Website Terms</a>
+                <a class="hover:text-slate-900 transition-colors" href="{{ route('privacy-policy') }}">Privacy
+                    Policy</a>
+                <a class="hover:text-slate-900 transition-colors" href="{{ route('terms-conditions') }}">Website
+                    Terms</a>
                 <a class="hover:text-slate-900 transition-colors" href="#">Accessibility</a>
             </div>
         </div>
