@@ -64,7 +64,7 @@
                     @foreach ($qualifications as $qualification)
                         <li>
                             <a class="text-slate-600 hover:text-slate-900 transition-colors flex items-center gap-2 group"
-                                href="{{ url('/qualifications/' . $qualification['slug']) }}">
+                                href="{{ route('course.show', ['courseslug' => $qualification['slug']]) }}">
 
                                 <span
                                     class="font-mono text-brand-700 bg-slate-50 border border-slate-200 px-1.5 py-0.5 rounded text-[10px] group-hover:border-slate-300 shrink-0">
