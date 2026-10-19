@@ -61,11 +61,11 @@
                         </p>
                     </div>
 
-                    <a href="#qualifications"
+                    {{-- <a href="#qualifications"
                         class="mt-6 pt-4 border-t border-slate-100 text-xs font-bold text-brand-500 flex items-center gap-1.5 group-hover:translate-x-1 transition-transform duration-200">
                         <span>Find your qualification</span>
                         <span class="material-symbols-outlined text-[16px]!">arrow_forward</span>
-                    </a>
+                    </a> --}}
                 </div>
 
                 <!-- Step 2 -->
@@ -104,11 +104,11 @@
                         </p>
                     </div>
 
-                    <a href="#eligibility-checker"
+                    {{-- <a href="#eligibility-checker"
                         class="mt-6 pt-4 border-t border-slate-100 text-xs font-bold text-brand-500 flex items-center gap-1.5 group-hover:translate-x-1 transition-transform duration-200">
                         <span>Speak with an advisor</span>
                         <span class="material-symbols-outlined text-[16px]!">arrow_forward</span>
-                    </a>
+                    </a> --}}
                 </div>
 
                 <!-- Step 3 -->
@@ -147,11 +147,11 @@
                         </p>
                     </div>
 
-                    <a href="#eligibility-checker"
+                    {{-- <a href="#eligibility-checker"
                         class="mt-6 pt-4 border-t border-slate-100 text-xs font-bold text-brand-500 flex items-center gap-1.5 group-hover:translate-x-1 transition-transform duration-200">
                         <span>Commence learning</span>
                         <span class="material-symbols-outlined text-[16px]!">arrow_forward</span>
-                    </a>
+                    </a> --}}
                 </div>
 
             </div>

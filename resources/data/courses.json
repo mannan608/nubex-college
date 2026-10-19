@@ -1,53 +1,104 @@
 [
   {
-    "code": "BSB50120",
-    "category_id": 1,
-    "category_slug": "trade",
+    "code": "BSB50420",
+    "category_id": 2,
+    "category_slug": "business",
     "aqf_level": "AQF Level 5",
     "title": "Diploma of Leadership and Management",
-    "image": "/industry/business/BSB50120.jpg",
-    "description": "Develop leadership and management skills to lead teams, manage operational plans, drive business performance, and support organisational growth.",
+    "slug": "diploma-of-leadership-and-management",
+    "image": "/industry/business/BSB50420.jpg",
+    "description": "Develop leadership and management skills to lead teams, manage operational plans, improve business performance, and support organisational growth.",
     "delivery_modes": [
       "Online & Blended",
+      "RPL Available"
+    ]
+  },
+  {
+    "code": "BSB60420",
+    "category_id": 2,
+    "category_slug": "business",
+    "aqf_level": "AQF Level 6",
+    "title": "Advanced Diploma of Leadership and Management",
+    "slug": "advanced-diploma-of-leadership-and-management",
+    "image": "/industry/business/BSB60420.jpg",
+    "description": "Build advanced leadership and strategic management capabilities to develop business strategies, manage organisational change, and lead complex business operations.",
+    "delivery_modes": [
+      "Online & Blended",
+      "RPL Available"
+    ]
+  },
+  {
+    "code": "CHC33021",
+    "category_id": 3,
+    "category_slug": "health-care",
+    "aqf_level": "AQF Level 3",
+    "title": "Certificate III in Individual Support",
+    "slug": "certificate-iii-in-individual-support",
+    "image": "/industry/health-care/CHC33021.jpg",
+    "description": "Develop practical skills to support people with their personal care, daily living activities, independence, and wellbeing in aged care, disability, and community settings.",
+    "delivery_modes": [
+      "Online & Blended",
+      "Work Placement",
       "RPL Available"
     ]
   },
   {
     "code": "CHC43015",
-    "category_id": 2,
+    "category_id": 3,
+    "category_slug": "health-care",
+    "aqf_level": "AQF Level 4",
+    "title": "Certificate IV in Ageing Support",
+    "slug": "certificate-iv-in-ageing-support",
+    "image": "/industry/health-care/CHC43015.jpg",
+    "description": "Develop skills to provide person-centred support to older people, coordinate services, promote independence, and support their health and wellbeing in aged care settings.",
+    "delivery_modes": [
+      "Online & Blended",
+      "Work Placement",
+      "RPL Available"
+    ]
+  },
+  {
+    "code": "CHC43315",
+    "category_id": 3,
+    "category_slug": "health-care",
+    "aqf_level": "AQF Level 4",
+    "title": "Certificate IV in Mental Health",
+    "slug": "certificate-iv-in-mental-health",
+    "image": "/industry/health-care/CHC43315.jpg",
+    "description": "Develop the skills to provide recovery-oriented mental health support, promote wellbeing, assist individuals with their recovery goals, and connect clients with appropriate services.",
+    "delivery_modes": [
+      "Online & Blended",
+      "Work Placement",
+      "RPL Available"
+    ]
+  },
+  {
+    "code": "CHC52025",
+    "category_id": 3,
     "category_slug": "health-care",
     "aqf_level": "AQF Level 5",
-    "title": "Diploma of Business",
-    "image": "/industry/health-care/CHC43015.jpg",
-    "description": "Build practical business expertise in operations, business planning, resource management, and implementing effective business strategies.",
-    "delivery_modes": [
-      "Online & Blended",
-      "RPL Available"
-    ]
-  },
-  {
-    "code": "CPC30220",
-    "category_id": 3,
-    "category_slug": "business",
-    "aqf_level": "AQF Level 5",
-    "title": "Diploma of Information Technology",
-    "image": "/industry/trade-vocational/CPC30220.jpg",
-    "description": "Develop IT skills in technical support, networking, information systems, and technology solutions for modern business environments.",
-    "delivery_modes": [
-      "Online & Blended",
-      "RPL Available"
-    ]
-  },
-  {
-    "code": "CHC52021",
-    "category_id": 1,
-    "category_slug": "trade",
-    "aqf_level": "AQF Level 5",
     "title": "Diploma of Community Services",
-    "image": "/industry/qua-1.jpg",
-    "description": "Build skills in community service delivery, client support, case management, and coordinating programs for individuals and communities.",
+    "slug": "diploma-of-community-services",
+    "image": "/industry/health-care/CHC52025.jpg",
+    "description": "Develop advanced skills in community service delivery, case management, client advocacy, program coordination, and supporting individuals and communities with complex needs.",
     "delivery_modes": [
       "Online & Blended",
+      "Work Placement",
+      "RPL Available"
+    ]
+  },
+  {
+    "code": "HLT33021",
+    "category_id": 3,
+    "category_slug": "health-care",
+    "aqf_level": "AQF Level 3",
+    "title": "Certificate III in Allied Health Assistance",
+    "slug": "certificate-iii-in-allied-health-assistance",
+    "image": "/industry/health-care/HLT33021.jpg",
+    "description": "Develop practical skills to assist allied health professionals in delivering therapeutic and support services that help clients improve their health, independence, and daily functioning.",
+    "delivery_modes": [
+      "Online & Blended",
+      "Work Placement",
       "RPL Available"
     ]
   }

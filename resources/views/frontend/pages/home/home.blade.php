@@ -20,15 +20,9 @@
                 </div>
             </div>
             <!-- Sleek 3-Column Grid Partial -->
-            @include('frontend.pages.industry.qualification-grid', ['qualifications' => $qualifications]) 
+            @include('frontend.pages.industry.qualification-grid', ['qualifications' => $qualifications])
 
-            @if (isset($qualifications) && count($qualifications) > 0)
-                <div class="flex items-center justify-center mt-10 sm:mt-12"> <a href=""
-                        class="inline-flex items-center justify-center gap-2 px-8 py-3 bg-brand-500 hover:bg-[#155b9d] text-white text-sm font-semibold font-heading rounded-xl shadow-sm hover:shadow-md active:scale-95 transition-all duration-200 group">
-                        <span>See More Qualifications</span> <span
-                            class="material-symbols-outlined text-[18px]! transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
-                    </a> </div>
-            @endif
+
         </div>
     </section>
 
@@ -234,11 +228,11 @@
                                 <span>Check Your RPL Eligibility</span> <span
                                     class="material-symbols-outlined text-[19px]! transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
                             </a>
-                            <div
+                            {{-- <div
                                 class="flex items-center justify-center gap-2 text-xs font-semibold text-slate-600 sm:justify-start sm:text-sm">
                                 <span class="material-symbols-outlined text-[21px]! text-brand-500">support_agent</span>
                                 <span>Speak with an advisor</span>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -273,7 +267,7 @@
                     <!-- 2x2 Feature Items Grid -->
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2"> <!-- LLN Assistance -->
                         <div
-                            class="p-4 rounded-2xl bg-slate-50 border border-slate-100 hover:border-brand-500/30 hover:bg-white hover:shadow-md transition-all duration-200">
+                            class="p-4 rounded-2xl bg-white border border-slate-100 hover:border-brand-500/30 hover:bg-white hover:shadow-md transition-all duration-200">
                             <span
                                 class="material-symbols-outlined text-brand-500 text-[24px] mb-1.5 block">psychology_alt</span>
                             <h4 class="font-heading text-sm font-bold text-[#182F5A]"> LLN Assistance </h4>
@@ -281,7 +275,7 @@
                                 and numeracy coaching designed to support your course progression. </p>
                         </div> <!-- Accessibility Plans -->
                         <div
-                            class="p-4 rounded-2xl bg-slate-50 border border-slate-100 hover:border-brand-500/30 hover:bg-white hover:shadow-md transition-all duration-200">
+                            class="p-4 rounded-2xl bg-white border border-slate-100 hover:border-brand-500/30 hover:bg-white hover:shadow-md transition-all duration-200">
                             <span
                                 class="material-symbols-outlined text-brand-500 text-[24px] mb-1.5 block">accessible_forward</span>
                             <h4 class="font-heading text-sm font-bold text-[#182F5A]"> Accessibility Plans </h4>
@@ -289,7 +283,7 @@
                                 learners living with disabilities or ongoing health conditions. </p>
                         </div> <!-- Student Handbook -->
                         <div
-                            class="p-4 rounded-2xl bg-slate-50 border border-slate-100 hover:border-brand-500/30 hover:bg-white hover:shadow-md transition-all duration-200">
+                            class="p-4 rounded-2xl bg-white border border-slate-100 hover:border-brand-500/30 hover:bg-white hover:shadow-md transition-all duration-200">
                             <span
                                 class="material-symbols-outlined text-brand-500 text-[24px] mb-1.5 block">menu_book</span>
                             <h4 class="font-heading text-sm font-bold text-[#182F5A]"> Student Handbook </h4>
@@ -297,7 +291,7 @@
                                 responsibilities, grievance procedures and operational guidelines. </p>
                         </div> <!-- Transparent Fees -->
                         <div
-                            class="p-4 rounded-2xl bg-slate-50 border border-slate-100 hover:border-brand-500/30 hover:bg-white hover:shadow-md transition-all duration-200">
+                            class="p-4 rounded-2xl bg-white border border-slate-100 hover:border-brand-500/30 hover:bg-white hover:shadow-md transition-all duration-200">
                             <span
                                 class="material-symbols-outlined text-brand-500 text-[24px] mb-1.5 block">account_balance</span>
                             <h4 class="font-heading text-sm font-bold text-[#182F5A]"> Transparent Fees </h4>
@@ -323,19 +317,56 @@
                             complies with the Standards for Registered Training Organisations (RTOs) 2015. We maintain
                             strict validation cycles across all qualifications, ensuring our training packages reflect
                             current Australian workplace requirements. </p> <!-- Policy Download Buttons -->
-                        <div class="space-y-2.5 pt-2"> <a
-                                class="p-3.5 rounded-xl bg-slate-50 hover:bg-brand-500/5 border border-slate-200 hover:border-brand-500/30 flex items-center justify-between text-xs sm:text-sm font-semibold text-[#182F5A] hover:text-brand-500 transition-all duration-200 group"
-                                href="#"> <span>Student Complaints &amp; Appeals Policy</span> <span
-                                    class="material-symbols-outlined text-brand-500 text-[20px] transition-transform group-hover:translate-y-0.5">download</span>
-                            </a> <a
-                                class="p-3.5 rounded-xl bg-slate-50 hover:bg-brand-500/5 border border-slate-200 hover:border-brand-500/30 flex items-center justify-between text-xs sm:text-sm font-semibold text-[#182F5A] hover:text-brand-500 transition-all duration-200 group"
-                                href="#"> <span>Fees, Refunds &amp; Cancellations Guidelines</span> <span
-                                    class="material-symbols-outlined text-brand-500 text-[20px] transition-transform group-hover:translate-y-0.5">download</span>
-                            </a> <a
-                                class="p-3.5 rounded-xl bg-slate-50 hover:bg-brand-500/5 border border-slate-200 hover:border-brand-500/30 flex items-center justify-between text-xs sm:text-sm font-semibold text-[#182F5A] hover:text-brand-500 transition-all duration-200 group"
-                                href="#"> <span>RPL &amp; Credit Transfer Framework</span> <span
-                                    class="material-symbols-outlined text-brand-500 text-[20px] transition-transform group-hover:translate-y-0.5">download</span>
-                            </a> </div>
+                        <div class="space-y-2.5 pt-2">
+                            <a href="{{ url('/qualifications/BSB50420') }}"
+                                class="p-3.5 rounded-xl bg-slate-50 hover:bg-brand-500/5 border border-slate-200 hover:border-brand-500/30 flex items-center justify-between text-xs sm:text-sm font-semibold text-[#182F5A] hover:text-brand-500 transition-all duration-200 group">
+                                <span>BSB50420 — Diploma of Leadership &amp; Management</span>
+                                <span
+                                    class="material-symbols-outlined text-brand-500 text-[20px]! transition-transform group-hover:translate-x-1">arrow_forward</span>
+                            </a>
+
+                            <a href="{{ url('/qualifications/BSB60420') }}"
+                                class="p-3.5 rounded-xl bg-slate-50 hover:bg-brand-500/5 border border-slate-200 hover:border-brand-500/30 flex items-center justify-between text-xs sm:text-sm font-semibold text-[#182F5A] hover:text-brand-500 transition-all duration-200 group">
+                                <span>BSB60420 — Advanced Diploma of Leadership &amp; Management</span>
+                                <span
+                                    class="material-symbols-outlined text-brand-500 text-[20px]! transition-transform group-hover:translate-x-1">arrow_forward</span>
+                            </a>
+
+                            <a href="{{ url('/qualifications/CHC33021') }}"
+                                class="p-3.5 rounded-xl bg-slate-50 hover:bg-brand-500/5 border border-slate-200 hover:border-brand-500/30 flex items-center justify-between text-xs sm:text-sm font-semibold text-[#182F5A] hover:text-brand-500 transition-all duration-200 group">
+                                <span>CHC33021 — Certificate III in Individual Support</span>
+                                <span
+                                    class="material-symbols-outlined text-brand-500 text-[20px]! transition-transform group-hover:translate-x-1">arrow_forward</span>
+                            </a>
+
+                            <a href="{{ url('/qualifications/CHC43015') }}"
+                                class="p-3.5 rounded-xl bg-slate-50 hover:bg-brand-500/5 border border-slate-200 hover:border-brand-500/30 flex items-center justify-between text-xs sm:text-sm font-semibold text-[#182F5A] hover:text-brand-500 transition-all duration-200 group">
+                                <span>CHC43015 — Certificate IV in Ageing Support</span>
+                                <span
+                                    class="material-symbols-outlined text-brand-500 text-[20px]! transition-transform group-hover:translate-x-1">arrow_forward</span>
+                            </a>
+
+                            <a href="{{ url('/qualifications/CHC43315') }}"
+                                class="p-3.5 rounded-xl bg-slate-50 hover:bg-brand-500/5 border border-slate-200 hover:border-brand-500/30 flex items-center justify-between text-xs sm:text-sm font-semibold text-[#182F5A] hover:text-brand-500 transition-all duration-200 group">
+                                <span>CHC43315 — Certificate IV in Mental Health</span>
+                                <span
+                                    class="material-symbols-outlined text-brand-500 text-[20px]! transition-transform group-hover:translate-x-1">arrow_forward</span>
+                            </a>
+
+                            <a href="{{ url('/qualifications/CHC52025') }}"
+                                class="p-3.5 rounded-xl bg-slate-50 hover:bg-brand-500/5 border border-slate-200 hover:border-brand-500/30 flex items-center justify-between text-xs sm:text-sm font-semibold text-[#182F5A] hover:text-brand-500 transition-all duration-200 group">
+                                <span>CHC52025 — Diploma of Community Services</span>
+                                <span
+                                    class="material-symbols-outlined text-brand-500 text-[20px]! transition-transform group-hover:translate-x-1">arrow_forward</span>
+                            </a>
+
+                            <a href="{{ url('/qualifications/HLT33021') }}"
+                                class="p-3.5 rounded-xl bg-slate-50 hover:bg-brand-500/5 border border-slate-200 hover:border-brand-500/30 flex items-center justify-between text-xs sm:text-sm font-semibold text-[#182F5A] hover:text-brand-500 transition-all duration-200 group">
+                                <span>HLT33021 — Certificate III in Allied Health Services</span>
+                                <span
+                                    class="material-symbols-outlined text-brand-500 text-[20px]! transition-transform group-hover:translate-x-1">arrow_forward</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -151,11 +151,6 @@
                     Blended Learning
                 </option>
 
-                <option value="workplace"
-                    @selected(old('preferred_pathway') === 'workplace')>
-                    Workplace Based
-                </option>
-
                 <option value="rpl"
                     @selected(old('preferred_pathway') === 'rpl')>
                     Recognition of Prior Learning (RPL)

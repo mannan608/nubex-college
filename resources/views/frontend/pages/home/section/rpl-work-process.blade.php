@@ -6,15 +6,13 @@
                 <span
                     class="inline-flex items-center gap-2 rounded-full border border-brand-500/15 bg-brand-500/[0.06] px-3.5 py-2 font-heading text-[10px] font-extrabold uppercase tracking-[0.14em] text-brand-500 sm:text-xs">
                     <span class="material-symbols-outlined text-[17px]!">route</span>
-                    The Process
+                    How the RPL Process Works
                 </span>
                 <h2
                     class="mt-4 font-heading text-2xl font-extrabold tracking-tight text-[#182F5A] sm:text-3xl lg:text-4xl">
-                    How the RPL Process Works
+                   Do you have industry experience ?
                 </h2>
-                <p class="mx-auto mt-3 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base">
-                    A clear, evidence-based pathway to help you understand your options and take the next step.
-                </p>
+              
             </div>
 
             <!-- Step cards -->

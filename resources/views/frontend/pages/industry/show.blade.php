@@ -1,6 +1,6 @@
 @extends('frontend.layouts.app')
 
-@section('title', $course['name'])
+@section('title', $course['title'])
 
 @section('content')
     <section class="relative overflow-hidden bg-brand-25 py-8 sm:py-12 lg:py-16">
@@ -11,10 +11,10 @@
             <div class="mb-6 flex flex-wrap items-center justify-between gap-4 sm:mb-8 animate-hero-left hero-stagger-1">
                 <div class="flex flex-wrap items-center gap-2">
 
-                    <span
+                    {{-- <span
                         class="inline-flex items-center rounded-full  bg-white px-3 py-1.5  text-[10px] font-semibold uppercase tracking-wider text-brand-700 shadow-sm">
                         {{ $course['category_name'] }}
-                    </span>
+                    </span> --}}
 
                     <span
                         class="inline-flex items-center rounded-full  bg-brand-500 px-3 py-1.5  text-[10px] font-semibold uppercase tracking-wider text-white shadow-sm">
@@ -34,22 +34,22 @@
 
                 <h1
                     class="mb-5 font-heading text-3xl font-bold leading-[1.05] tracking-tight text-neutral-950 sm:text-4xl lg:text-5xl">
-                    {{ $course['hero']['title'] }} of
+                    {{ $course['title'] }} of
                     <br class="hidden sm:inline">
 
-                    <span class="relative inline-block text-brand-500">
+                    {{-- <span class="relative inline-block text-brand-500">
                         {{ $course['category_name'] }}
 
                         <span class="absolute bottom-0 left-0 -z-0 h-2.5 w-full rounded-full bg-brand-200/70"></span>
-                    </span>
+                    </span> --}}
                 </h1>
 
                 <p class="max-w-2xl text-sm leading-7 text-neutral-600 sm:text-base lg:text-lg">
-                    {{ $course['hero']['description'] }}
+                    {{ $course['description'] }}
                 </p>
             </div>
             <!-- Quick Facts -->
-            <div id="quick-facts" class="mb-10 grid grid-cols-2 gap-3 sm:grid-cols-2 lg:grid-cols-4 sm:gap-4 stagger">
+            {{-- <div id="quick-facts" class="mb-10 grid grid-cols-2 gap-3 sm:grid-cols-2 lg:grid-cols-4 sm:gap-4 stagger">
 
                 <!-- Duration -->
                 <div
@@ -135,7 +135,7 @@
                         International eligible
                     </span>
                 </div>
-            </div>
+            </div> --}}
             <!-- Actions -->
             <div class="flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center animate-hero-left hero-stagger-3">
 
@@ -213,10 +213,10 @@
                     </div>
 
 
-                    <div class="space-y-4 text-sm leading-7 text-neutral-600 sm:text-base">
+                    {{-- <div class="space-y-4 text-sm leading-7 text-neutral-600 sm:text-base">
 
                         <p>
-                            {{ $course['course_description'] }}
+                            {{ $course['description'] }}
                         </p>
 
                         @if (!empty($course['important_information']))
@@ -247,7 +247,7 @@
                             Equivalent: Level 6.
                         </p>
 
-                    </div>
+                    </div> --}}
 
                 </article>
 
@@ -284,11 +284,11 @@
                         </div>
                         <span
                             class="hidden shrink-0 border border-brand-200 bg-brand-50 px-3 py-1  text-[10px] font-semibold uppercase tracking-wider text-brand-700 sm:inline-flex">
-                            Total {{ $course['key_information']['total_units'] }} Units
+                            Total 50 Units
                         </span>
 
                     </div>
-                    <p class="mb-6 text-sm leading-6 text-neutral-600">
+                    {{-- <p class="mb-6 text-sm leading-6 text-neutral-600">
                         To achieve the {{ $course['code'] }} {{ $course['name'] }},
                         <strong class="font-semibold text-neutral-900">{{ $course['key_information']['total_units'] }}
                             competency units</strong>
@@ -300,11 +300,11 @@
                         <strong
                             class="font-semibold text-neutral-900">{{ $course['course_structure']['elective_units']['total'] }}
                             elective units</strong>.
-                    </p>
+                    </p> --}}
 
 
                     <!-- CORE UNITS -->
-                    <div class="mb-8">
+                    {{-- <div class="mb-8">
 
                         <div class="mb-3 flex flex-wrap items-center justify-between gap-2">
 
@@ -360,11 +360,11 @@
                             @endforeach
 
                         </div>
-                    </div>
+                    </div> --}}
 
 
                     <!-- ELECTIVE UNITS -->
-                    <div>
+                    {{-- <div>
 
                         <div class="mb-3 flex flex-wrap items-center justify-between gap-2">
 
@@ -422,452 +422,7 @@
                             @endforeach
 
                         </div>
-                    </div>
-
-                </article>
-
-
-
-                <!-- ENTRY REQUIREMENTS -->
-                <article
-                    class="rounded-2xl border border-neutral-200/80 bg-white p-6 shadow-theme-xs transition-shadow duration-300 hover:shadow-theme-sm sm:p-8"
-                    data-purpose="entry-requirements">
-
-                    <div class="mb-6 flex items-center gap-3 border-b border-neutral-200 pb-4">
-
-                        <div
-                            class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-brand-200 bg-brand-50 text-brand-500">
-                            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 00-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                            </svg>
-                        </div>
-
-                        <div>
-                            <span class="block text-[10px] font-semibold uppercase tracking-[0.14em] text-neutral-500">
-                                03.0 Prerequisites &amp; Eligibility
-                            </span>
-
-                            <h2 class="font-heading text-xl font-bold tracking-tight text-neutral-900 sm:text-2xl">
-                                Entry Requirements
-                            </h2>
-                        </div>
-
-                    </div>
-
-
-                    <div class="space-y-5">
-                        @foreach ($course['entry_requirements'] ?? [] as $index => $requirement)
-                            <div class="flex items-start gap-3">
-
-                                <span
-                                    class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-brand-200 bg-brand-50 text-[10px] font-bold text-brand-700">
-                                    {{ $index + 1 }}
-                                </span>
-
-                                <div class="min-w-0">
-
-                                    <strong class="font-heading font-bold text-neutral-900">
-                                        {{ $requirement['label'] }}:
-                                    </strong>
-
-                                    <p class="mt-1 text-sm leading-6 text-neutral-600">
-
-                                        {{ $requirement['value'] }}
-
-                                        @if (!empty($requirement['link']))
-                                            <a href="{{ $requirement['link']['url'] }}" target="_blank"
-                                                rel="noopener noreferrer"
-                                                class="font-medium text-brand-500 underline decoration-brand-200 underline-offset-2 transition-colors hover:text-brand-700">
-                                                {{ $requirement['link']['text'] }}
-                                            </a>
-                                        @endif
-
-                                        @if (!empty($requirement['link']))
-                                            .
-                                        @endif
-
-                                    </p>
-
-                                </div>
-
-                            </div>
-                        @endforeach
-
-                    </div>
-
-                </article>
-
-                <!-- LICENSING & REGULATORY INFORMATION SECTION -->
-                @if (!empty($course['licensing_regulatory_information']))
-                    <article
-                        class="rounded-2xl border border-neutral-200/80 bg-white p-6 shadow-theme-xs transition-shadow duration-300 hover:shadow-theme-sm sm:p-8"
-                        data-purpose="licensing-information">
-
-                        {{-- Section Header --}}
-                        <div class="mb-5 flex items-center gap-3 border-b border-neutral-200 pb-4">
-
-                            {{-- Shield Check Icon Wrapper --}}
-                            <div
-                                class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-brand-200 bg-brand-50 text-brand-500 transition-colors duration-300">
-
-                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                                </svg>
-
-                            </div>
-
-                            <div>
-                                <span class="block text-[10px] font-semibold uppercase tracking-[0.14em] text-neutral-500">
-                                    06.0 Regulatory Compliance
-                                </span>
-
-                                <h2 class="font-heading text-xl font-bold tracking-tight text-neutral-900 sm:text-2xl">
-                                    Licensing &amp; regulatory information
-                                </h2>
-                            </div>
-
-                        </div>
-
-
-                        {{-- Description --}}
-                        @if (!empty($course['licensing_regulatory_information']['description']))
-                            <p class="text-sm leading-relaxed text-neutral-600 sm:text-base sm:leading-7">
-                                {{ $course['licensing_regulatory_information']['description'] }}
-                            </p>
-                        @endif
-
-                    </article>
-                @endif
-
-
-                @if (!empty($course['work_placement']))
-                    <!-- WORK PLACEMENT SECTION -->
-                    <article
-                        class="rounded-2xl border border-neutral-200/80 bg-white p-6 shadow-theme-xs transition-shadow duration-300 hover:shadow-theme-sm sm:p-8"
-                        data-purpose="work-placement">
-
-                        {{-- Section Header --}}
-                        <div class="mb-6 flex items-center gap-3 border-b border-neutral-200 pb-4">
-
-                            <div
-                                class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-brand-200 bg-brand-50 text-brand-500 transition-colors duration-300">
-
-                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                                </svg>
-
-                            </div>
-
-                            <div>
-                                <span class="block text-[10px] font-semibold uppercase tracking-[0.14em] text-neutral-500">
-                                    05.0 Practical Experience
-                                </span>
-
-                                <h2 class="font-heading text-xl font-bold tracking-tight text-neutral-900 sm:text-2xl">
-                                    Work Placement
-                                </h2>
-                            </div>
-
-                        </div>
-
-
-                        {{-- Content Body --}}
-                        <div class="space-y-5">
-
-                            {{-- Highlight Hours Card --}}
-                            @if (!empty($course['work_placement']['hours']))
-                                <div
-                                    class="rounded-xl border border-neutral-200/80 bg-neutral-50 p-5 transition-all duration-300 hover:border-brand-200 hover:bg-brand-25/50 hover:shadow-theme-xs">
-
-                                    <span
-                                        class="block text-[10px] font-semibold uppercase tracking-wider text-neutral-500">
-                                        {{ $course['work_placement']['title'] ?? 'Mandatory Placement' }}
-                                    </span>
-
-                                    <h3
-                                        class="mt-1 font-heading text-2xl font-bold tracking-tight text-neutral-900 sm:text-3xl">
-                                        {{ $course['work_placement']['hours'] }} hours
-                                    </h3>
-
-                                </div>
-                            @endif
-
-
-                            {{-- Description --}}
-                            @if (!empty($course['work_placement']['description']))
-                                <p class="text-sm leading-relaxed text-neutral-600 sm:text-base sm:leading-7">
-                                    {{ $course['work_placement']['description'] }}
-                                </p>
-                            @endif
-
-                        </div>
-
-                    </article>
-                @endif
-
-
-                <!-- CAREER OUTCOMES -->
-                <article
-                    class="rounded-2xl border border-neutral-200/80 bg-white p-6 shadow-theme-xs transition-shadow duration-300 hover:shadow-theme-sm sm:p-8"
-                    data-purpose="career-outcomes">
-
-                    <div class="mb-6 flex items-center gap-3 border-b border-neutral-200 pb-4">
-
-                        <div
-                            class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-brand-200 bg-brand-50 text-brand-500 transition-colors duration-300 group-hover:bg-brand-100">
-                            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                            </svg>
-                        </div>
-
-                        <div>
-                            <span class="block  text-[10px] font-semibold uppercase tracking-[0.14em] text-neutral-500">
-                                04.0 Vocational Horizons
-                            </span>
-
-                            <h2 class="font-heading text-xl font-bold tracking-tight text-neutral-900 sm:text-2xl">
-                                Career Outcomes
-                            </h2>
-                        </div>
-
-                    </div>
-
-
-                    {{-- <p class="mb-5 text-sm leading-6 text-neutral-600">
-                        Graduates of this course are equipped for intermediate to senior operational and administrative
-                        leadership positions:
-                    </p> --}}
-
-
-                    <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
-
-                        @if (!empty($course['career_outcomes']))
-                            @foreach ($course['career_outcomes'] as $career)
-                                <div
-                                    class="flex items-center justify-between gap-3 rounded-xl border border-neutral-200/80 bg-neutral-50 p-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-brand-200 hover:bg-brand-25 hover:shadow-theme-xs group">
-                                    <div class="flex items-center gap-3">
-                                        {{-- Briefcase Icon Wrapper --}}
-                                        <div
-                                            class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-white border border-neutral-200 text-neutral-600 transition-colors duration-300 group-hover:border-brand-300 group-hover:bg-brand-50 group-hover:text-brand-600">
-                                            <svg class="h-4 w-4" fill="none" stroke="currentColor"
-                                                viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                    d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
-                                                </path>
-                                            </svg>
-                                        </div>
-
-                                        {{-- Career Title --}}
-                                        <span
-                                            class="text-sm font-semibold leading-5 text-neutral-900 group-hover:text-brand-600 transition-colors duration-300">
-                                            {{ $career }}
-                                        </span>
-                                    </div>
-
-                                    {{-- Optional Right Chevron Arrow --}}
-                                    <svg class="h-4 w-4 text-neutral-400 transition-all duration-300 group-hover:translate-x-0.5 group-hover:text-brand-500 shrink-0"
-                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M9 5l7 7-7 7"></path>
-                                    </svg>
-                                </div>
-                            @endforeach
-                        @endif
-
-                    </div>
-
-                </article>
-
-
-                <!-- EDUCATION PATHWAYS -->
-                <article
-                    class="rounded-2xl border border-neutral-200/80 bg-white p-6 shadow-theme-xs transition-shadow duration-300 hover:shadow-theme-sm sm:p-8"
-                    data-purpose="education-pathways">
-
-                    <div class="mb-5 flex items-center gap-3 border-b border-neutral-200 pb-4">
-
-                        <div
-                            class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-brand-200 bg-brand-50 text-brand-500 transition-colors duration-300 group-hover:bg-brand-100">
-                            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
-                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                            </svg>
-                        </div>
-
-                        <div>
-                            <span class="block  text-[10px] font-semibold uppercase tracking-[0.14em] text-neutral-500">
-                                05.0 Higher Education Articulation
-                            </span>
-
-                            <h2 class="font-heading text-xl font-bold tracking-tight text-neutral-900 sm:text-2xl">
-                                Education Pathways
-                            </h2>
-                        </div>
-
-                    </div>
-
-
-                    <div class="flex items-start gap-3 rounded-xl border border-brand-200 bg-brand-25 p-4">
-
-
-                        @if (!empty($course['education_pathways']))
-                            <div class="space-y-3">
-                                @foreach ($course['education_pathways'] as $key => $pathway)
-                                    <div
-                                        class="flex items-start gap-3 rounded-xl border border-brand-200 bg-brand-25/50 p-4 transition-all duration-200 hover:border-brand-300 hover:bg-brand-50/60">
-                                        {{-- Academic Cap Icon Wrapper --}}
-                                        <div
-                                            class="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-brand-100 text-brand-600">
-                                            <svg class="h-4 w-4" fill="none" stroke="currentColor"
-                                                viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5" />
-                                            </svg>
-                                        </div>
-
-                                        {{-- Pathway Content --}}
-                                        <p class="text-sm font-medium leading-6 text-neutral-800">
-                                            {{ $pathway }}
-                                        </p>
-                                    </div>
-                                @endforeach
-                            </div>
-                        @endif
-                    </div>
-
-                </article>
-
-
-                <!--  EXIT AWARD -->
-                <article
-                    class="rounded-2xl border border-neutral-200/80 bg-white p-6 shadow-theme-xs transition-shadow duration-300 hover:shadow-theme-sm sm:p-8"
-                    data-purpose="exit-award">
-
-                    <div class="mb-5 flex items-center gap-3 border-b border-neutral-200 pb-4">
-
-                        <div
-                            class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-brand-200 bg-brand-50 text-brand-500 transition-colors duration-300 group-hover:bg-brand-100">
-                            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                            </svg>
-                        </div>
-
-                        <div>
-                            <span class="block  text-[10px] font-semibold uppercase tracking-[0.14em] text-neutral-500">
-                                06.0 Accreditation Recognition
-                            </span>
-
-                            <h2 class="font-heading text-xl font-bold tracking-tight text-neutral-900 sm:text-2xl">
-                                Exit Point / Award
-                            </h2>
-                        </div>
-
-                    </div>
-
-
-                    <div class="space-y-3 text-sm leading-6 text-neutral-600">
-
-                        <ul>
-                            <li>
-                                <p>{{ $course['exit_point_award']['completion_requirement'] }}</p>
-                            </li>
-                            <li class="text-black font-semibold mt-2">
-                                <p>{{ $course['exit_point_award']['partial_completion'] }}</p>
-                            </li>
-                        </ul>
-
-                        <p
-                            class="rounded-r-lg border-l-2 border-neutral-300 bg-neutral-50 px-3 py-2.5  text-[10px] leading-5 text-neutral-500">
-                            Note: Students who complete some but not all units may be issued with an official Statement of
-                            Attainment detailing competencies achieved.
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <!-- RPL / CREDIT TRANSFER -->
-                <article
-                    class="rounded-2xl border border-neutral-200/80 bg-white p-6 shadow-theme-xs transition-shadow duration-300 hover:shadow-theme-sm sm:p-8"
-                    data-purpose="rpl-credits">
-
-                    <div class="mb-5 flex items-center gap-3 border-b border-neutral-200 pb-4">
-
-                        <div
-                            class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-brand-200 bg-brand-50 text-brand-500 transition-colors duration-300 group-hover:bg-brand-100">
-                            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
-                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                            </svg>
-                        </div>
-
-                        <div>
-                            <span class="block  text-[10px] font-semibold uppercase tracking-[0.14em] text-neutral-500">
-                                07.0 Prior Learning Assessment
-                            </span>
-
-                            <h2 class="font-heading text-xl font-bold tracking-tight text-neutral-900 sm:text-2xl">
-                                RPL &amp; Credit Transfer
-                            </h2>
-                        </div>
-
-                    </div>
-
-
-                    <div class="space-y-3 text-sm leading-6 text-neutral-600">
-
-                        <p>
-                            {{ $course['rpl_credit_transfer']['description'] }}
-                        </p>
-
-                        <p class="font-medium text-neutral-900">
-                            {{ $course['rpl_credit_transfer']['recognition_statement'] }}
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <!-- ADDITIONAL INFORMATION -->
-                <article class="rounded-2xl border border-dashed border-brand-200 bg-brand-25 p-6"
-                    data-purpose="additional-info">
-
-                    <div
-                        class="mb-2 flex items-center gap-2  text-[10px] font-semibold uppercase tracking-wider text-brand-600">
-
-                        <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round"
-                                stroke-linejoin="round" stroke-width="2" />
-                        </svg>
-
-                        08.0 Policies &amp; Handbook
-                    </div>
-
-                    <h3 class="mb-2 font-heading text-lg font-bold tracking-tight text-neutral-900">
-                        Additional Information &amp; Regulations
-                    </h3>
-
-                    <p class="text-sm leading-6 text-neutral-600">
-                        For full terms, policies, fees, refund procedures, and international student life support
-                        information, please refer to our official
-                        <a href="{{ $course['additional_information']['student_handbook_url'] }}"
-                            class="font-semibold text-brand-500 underline decoration-brand-200 underline-offset-2 transition-colors hover:text-brand-700">
-                            Student Handbook (PDF)
-                        </a>
-                        and ESOS Framework documentation.
-                    </p>
+                    </div> --}}
 
                 </article>
 
@@ -1056,127 +611,6 @@
                     <span class="mt-3 block text-center  text-[9px] text-neutral-400">
                         File size: 3.4 MB • Updated Jan 2025
                     </span>
-
-                </div>
-
-
-                <!-- COURSE AT A GLANCE -->
-                <div class="rounded-2xl border border-neutral-200/80 bg-white p-6 shadow-theme-xs transition-all duration-300 hover:shadow-theme-sm"
-                    data-purpose="at-a-glance-summary">
-
-                    <div class="mb-3 flex items-center justify-between border-b border-neutral-200 pb-3">
-
-                        <h4 class="font-heading text-sm font-bold uppercase tracking-wider text-neutral-900">
-                            Course At A Glance
-                        </h4>
-
-                        <span
-                            class="rounded-full border border-brand-200 bg-brand-50 px-2.5 py-1  text-[9px] font-semibold text-brand-700">
-                            AQF 6
-                        </span>
-
-                    </div>
-
-
-                    <dl class="divide-y divide-neutral-200 text-xs">
-
-                        <div class="flex justify-between gap-4 py-2.5">
-                            <dt class=" text-neutral-500">
-                                National Code
-                            </dt>
-
-                            <dd class=" font-semibold text-neutral-900">
-                                {{ $course['code'] }}
-                            </dd>
-                        </div>
-
-
-                        <div class="flex justify-between gap-4 py-2.5">
-                            <dt class=" text-neutral-500">
-                                CRICOS Code
-                            </dt>
-
-                            <dd class=" font-semibold text-neutral-900">
-                                {{ $course['key_information']['cricos'] }}
-
-                            </dd>
-                        </div>
-
-
-                        <div class="flex justify-between gap-4 py-2.5">
-                            <dt class=" text-neutral-500">
-                                Duration
-                            </dt>
-
-                            <dd class="font-semibold text-neutral-900">
-                                {{ $course['key_information']['duration'] }}
-                            </dd>
-                        </div>
-
-
-                        <div class="flex justify-between gap-4 py-2.5">
-                            <dt class=" text-neutral-500">
-                                Total Units
-                            </dt>
-
-                            <dd class="text-right font-semibold text-neutral-900">
-                                {{ $course['key_information']['total_units'] }}
-                                ({{ $course['course_structure']['core_units']['total'] }} Core /
-                                {{ $course['course_structure']['elective_units']['total'] }} Elective)
-                            </dd>
-                        </div>
-
-
-                        <div class="flex justify-between gap-4 py-2.5">
-                            <dt class=" text-neutral-500">
-                                Mode of Study
-                            </dt>
-
-                            <dd class="text-right font-semibold text-neutral-900">
-                                {{ $course['key_information']['mode_of_study'] }}
-                            </dd>
-                        </div>
-
-
-                        <div class="flex justify-between gap-4 py-2.5">
-                            <dt class=" text-neutral-500">
-                                Study Discipline
-                            </dt>
-
-                            <dd class="font-semibold text-brand-500">
-                                {{ $course['category_name'] }}
-                            </dd>
-                        </div>
-
-
-                        <div class="flex justify-between gap-4 py-2.5">
-                            <dt class=" text-neutral-500">
-                                Location
-                            </dt>
-
-                            <dd class="text-right font-semibold text-neutral-900">
-                                Parramatta, Sydney
-                            </dd>
-                        </div>
-
-
-                        <div class="flex justify-between gap-4 py-2.5">
-                            <dt class=" text-neutral-500">
-                                Installment Plan
-                            </dt>
-
-                            <dd class="font-semibold text-success-600">
-                                Quarterly Available
-                            </dd>
-                        </div>
-
-                    </dl>
-
-
-                    <div
-                        class="mt-4 border border-brand-200 bg-brand-25 p-3  text-[10px] leading-5 rounded-2xl text-brand-700">
-                        ★ Scholarships available for eligible onshore international applications.
-                    </div>
 
                 </div>
 
