@@ -78,47 +78,72 @@
                         </li>
                     @endforeach
                 </ul>
+                 {{-- <ul class="flex flex-col gap-2.5 text-xs">
+                    <li>
+                        <a class="text-slate-600 hover:text-slate-900 transition-colors flex items-center gap-2 group"
+                            href="https://www.usi.gov.au/">
+
+                            <span>
+                                Create USI
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="text-slate-600 hover:text-slate-900 transition-colors flex items-center gap-2 group"
+                            href="https://www.advancecollege.edu.au/ndis-worker-screening-check/">
+
+                            <span>
+                               NDIS Check
+                            </span>
+                        </a>
+                    </li>
+                </ul> --}}
             </div>
 
-            <!-- Col 3: Student Hub (Span 2) -->
+            <!-- Col 3: Quick Links (Span 2) -->
             <div class="lg:col-span-2 flex flex-col gap-4">
                 <h3 class="font-heading text-xs font-bold tracking-wider text-slate-900 uppercase">
-                    Student Hub
-                </h3>
+                   Quick Links
+                </h3>               
+
                 <ul class="flex flex-col gap-2.5 text-xs text-slate-600">
                     <li>
+                        <a class="hover:text-slate-900 transition-colors flex items-center gap-2" href="https://www.usi.gov.au/">
+                            <span>Create USI</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="hover:text-slate-900 transition-colors flex items-center gap-2" href="https://www.advancecollege.edu.au/ndis-worker-screening-check/">
+                            <span>NDIS Check</span>
+                        </a>
+                    </li>
+                     <li>
+                        <a class="hover:text-slate-900 transition-colors flex items-center gap-2" href="https://www.checked.com.au/">
+                            <span>Create Police Report</span>
+                        </a>
+                    </li>
+                     <li>
+                        <a class="hover:text-slate-900 transition-colors flex items-center gap-2" href="https://www.service.nsw.gov.au/transaction/apply-working-children-check">
+                            <span>Check (WWCC)</span>
+                        </a>
+                    </li>
+                    <li>
                         <a class="hover:text-slate-900 transition-colors flex items-center gap-2" href="#">
-                            <span class="material-symbols-outlined text-[15px]! text-brand-600">menu_book</span>
                             <span>Student Handbook</span>
                         </a>
                     </li>
                     <li>
                         <a class="hover:text-slate-900 transition-colors flex items-center gap-2" href="#">
-                            <span class="material-symbols-outlined text-[15px]! text-brand-600">payments</span>
                             <span>Fees &amp; Payment</span>
                         </a>
                     </li>
                     <li>
                         <a class="hover:text-slate-900 transition-colors flex items-center gap-2" href="#">
-                            <span class="material-symbols-outlined text-[15px]! text-brand-600">currency_exchange</span>
-                            <span>Refund Policy</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="hover:text-slate-900 transition-colors flex items-center gap-2" href="#">
-                            <span class="material-symbols-outlined text-[15px]! text-brand-600">gavel</span>
-                            <span>Complaints &amp; Appeals</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="hover:text-slate-900 transition-colors flex items-center gap-2" href="#">
-                            <span class="material-symbols-outlined text-[15px]! text-brand-600">fact_check</span>
                             <span>Assessment &amp; RPL</span>
                         </a>
                     </li>
                     <li>
                         <a class="hover:text-slate-900 transition-colors flex items-center gap-2" href="#">
-                            <span class="material-symbols-outlined text-[15px]! text-brand-600">support_agent</span>
                             <span>Support Services</span>
                         </a>
                     </li>
@@ -194,9 +219,8 @@
             <div class="flex items-center gap-6">
                 <a class="hover:text-slate-900 transition-colors" href="{{ route('privacy-policy') }}">Privacy
                     Policy</a>
-                <a class="hover:text-slate-900 transition-colors" href="{{ route('terms-conditions') }}">Website
-                    Terms</a>
-                <a class="hover:text-slate-900 transition-colors" href="#">Accessibility</a>
+                <a class="hover:text-slate-900 transition-colors" href="{{ route('terms-conditions') }}">Refund Policy</a>
+                <a class="hover:text-slate-900 transition-colors" href="#">Terms of Conditions</a>
             </div>
         </div>
 

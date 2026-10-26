@@ -3,145 +3,52 @@
 @section('title', $course['title'])
 
 @section('content')
-    <section class="relative overflow-hidden bg-brand-25 py-8 sm:py-12 lg:py-16">
-        <div class="absolute inset-0 mesh-background"></div>
-        <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section
+        class="relative w-full overflow-hidden bg-gradient-to-br from-[#0c273e] via-[#123b5d] to-[#081b2c] text-white border-b border-white/10 shadow-inner">
+        <!-- Background Pattern Effect -->
+        <div
+            class="absolute inset-0 opacity-10 bg-[radial-gradient(#d0e4ff_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none">
+        </div>
 
-            <!-- Top Navigation -->
-            <div class="mb-6 flex flex-wrap items-center justify-between gap-4 sm:mb-8 animate-hero-left hero-stagger-1">
-                <div class="flex flex-wrap items-center gap-2">
+        <!-- Glow Effects -->
+        <div
+            class="absolute top-0 right-1/4 w-[300px] h-[300px] lg:w-[450px] lg:h-[450px] bg-secondary/25 rounded-full blur-3xl pointer-events-none">
+        </div>
+        <div
+            class="absolute bottom-0 left-10 w-[250px] h-[250px] lg:w-[350px] lg:h-[350px] bg-primary-fixed/15 rounded-full blur-3xl pointer-events-none">
+        </div>
 
-                    {{-- <span
-                        class="inline-flex items-center rounded-full  bg-white px-3 py-1.5  text-[10px] font-semibold uppercase tracking-wider text-brand-700 shadow-sm">
-                        {{ $course['category_name'] }}
-                    </span> --}}
-
+        <div class="relative mx-auto w-full max-w-7xl px-4 py-10 sm:px-6 md:py-12 lg:px-8 lg:py-16">
+            <!-- Course Title -->
+            <div class="mb-10 max-w-4xl sm:mb-12 animate-hero-left">
+                <div class="flex flex-wrap items-center gap-2 mb-3">
                     <span
-                        class="inline-flex items-center rounded-full  bg-brand-500 px-3 py-1.5  text-[10px] font-semibold uppercase tracking-wider text-white shadow-sm">
+                        class="inline-flex items-center rounded-full  bg-secondary-200 px-3 py-1.5  text-[11px] font-bold uppercase tracking-wider text-brand-500 shadow-sm">
                         National Code: {{ $course['code'] }}
                     </span>
-
                 </div>
-            </div>
 
-
-            <!-- Course Title -->
-            <div class="mb-10 max-w-4xl sm:mb-12 animate-hero-left hero-stagger-2">
-
-                <span class="mb-3 inline-block  text-[10px] font-semibold uppercase tracking-[0.16em] text-secondary-600">
-                    01 Specification &amp; Outcomes
+                <span class="mb-3 inline-block font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-white">
+                    01 Qualifications
                 </span>
 
                 <h1
-                    class="mb-5 font-heading text-3xl font-bold leading-[1.05] tracking-tight text-neutral-950 sm:text-4xl lg:text-5xl">
-                    {{ $course['title'] }} of
-                    <br class="hidden sm:inline">
-
-                    {{-- <span class="relative inline-block text-brand-500">
-                        {{ $course['category_name'] }}
-
-                        <span class="absolute bottom-0 left-0 -z-0 h-2.5 w-full rounded-full bg-brand-200/70"></span>
-                    </span> --}}
+                    class="mb-5 font-heading text-3xl font-bold leading-[1.05] tracking-tight text-white sm:text-4xl lg:text-5xl">
+                   {{ $course['title'] }}
                 </h1>
 
-                <p class="max-w-2xl text-sm leading-7 text-neutral-600 sm:text-base lg:text-lg">
-                    {{ $course['description'] }}
+                <p class="max-w-2xl text-sm leading-7 text-white sm:text-base lg:text-lg">
+                     {{ $course['description'] }}
                 </p>
+
             </div>
-            <!-- Quick Facts -->
-            {{-- <div id="quick-facts" class="mb-10 grid grid-cols-2 gap-3 sm:grid-cols-2 lg:grid-cols-4 sm:gap-4 stagger">
 
-                <!-- Duration -->
-                <div
-                    class="group rounded-2xl border border-neutral-200/80 bg-white p-4 shadow-theme-xs transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-md sm:p-5 reveal-scale">
-                    <div
-                        class="mb-2 flex items-center gap-1.5  text-[10px] font-semibold uppercase tracking-wider text-brand-500">
-                        <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round"
-                                stroke-linejoin="round" stroke-width="2" />
-                        </svg>
-                        Duration
-                    </div>
-
-                    <p class="font-heading text-xl font-bold tracking-tight text-neutral-900">
-                        {{ $course['key_information']['duration'] }}
-                    </p>
-
-                    <span class="mt-1 block text-[10px] leading-relaxed text-neutral-500">
-                        Incl. scheduled term breaks
-                    </span>
-                </div>
-                <!-- Total Units -->
-                <div
-                    class="group rounded-2xl border border-neutral-200/80 bg-white p-4 shadow-theme-xs transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-md sm:p-5 reveal-scale">
-                    <div
-                        class="mb-2 flex items-center gap-1.5  text-[10px] font-semibold uppercase tracking-wider text-brand-500">
-                        <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path
-                                d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
-                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                        </svg>
-                        Total Units
-                    </div>
-
-                    <p class="font-heading text-xl font-bold tracking-tight text-neutral-900">
-                        {{ $course['course_structure']['total_units'] }}
-                    </p>
-
-                    <span class="mt-1 block text-[10px] leading-relaxed text-neutral-500">
-                        {{ $course['course_structure']['core_units']['total'] }} Core +
-                        {{ $course['course_structure']['elective_units']['total'] }} Electives
-                    </span>
-                </div>
-                <!-- Study Load -->
-                <div
-                    class="group rounded-2xl border border-neutral-200/80 bg-white p-4 shadow-theme-xs transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-md sm:p-5 reveal-scale">
-                    <div
-                        class="mb-2 flex items-center gap-1.5  text-[10px] font-semibold uppercase tracking-wider text-brand-500">
-                        <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path
-                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 00-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                        </svg>
-                        Study Load
-                    </div>
-
-                    <p class="font-heading text-xl font-bold tracking-tight text-neutral-900">
-                        {{ $course['key_information']['mode_of_study'] }}
-                    </p>
-
-                    <span class="mt-1 block text-[10px] leading-relaxed text-neutral-500">
-                        Face-to-face &amp; blended
-                    </span>
-                </div>
-                <!-- CRICOS -->
-                <div
-                    class="group rounded-2xl border border-neutral-200/80 bg-white p-4 shadow-theme-xs transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-md sm:p-5 reveal-scale">
-                    <div
-                        class="mb-2 flex items-center gap-1.5  text-[10px] font-semibold uppercase tracking-wider text-brand-500">
-                        <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path
-                                d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"
-                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                        </svg>
-                        CRICOS Code
-                    </div>
-
-                    <p class="font-heading text-xl font-bold tracking-tight text-neutral-900">
-                        {{ $course['key_information']['cricos'] }}
-                    </p>
-
-                    <span class="mt-1 block text-[10px] leading-relaxed text-neutral-500">
-                        International eligible
-                    </span>
-                </div>
-            </div> --}}
             <!-- Actions -->
-            <div class="flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center animate-hero-left hero-stagger-3">
+            <div class="flex flex-col gap-4 animate-hero-left hero-stagger-2">
 
                 <a href="#admissions-form"
-                    class="inline-flex items-center justify-center gap-2 rounded-xl  bg-brand-500 px-5 py-3 font-heading text-sm font-bold uppercase tracking-wide text-white shadow-theme-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-brand-600 hover:shadow-theme-md active:translate-y-0">
-                    <span>Enquire / Apply for Next Intake</span>
+                    class="w-fit inline-flex items-center justify-center gap-2 rounded-xl border border-secondary-500 bg-secondary-500 px-5 py-3 font-heading text-sm font-bold uppercase tracking-wide text-white shadow-theme-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-secondary-600 hover:shadow-theme-md active:translate-y-0">
+                    <span>ENQUIRE / APPLY FOR NEXT INTAKE</span>
 
                     <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round"
@@ -149,32 +56,43 @@
                     </svg>
                 </a>
 
-
-                <a href="#syllabus"
-                    class="inline-flex items-center justify-center gap-2 rounded-xl  bg-white px-5 py-3 font-heading text-sm font-semibold uppercase tracking-wide text-neutral-800 shadow-theme-xs transition-all duration-300 hover:-translate-y-0.5 hover:border-brand-200 hover:bg-brand-25 hover:text-brand-700 hover:shadow-theme-sm">
-                    <svg class="h-4 w-4 text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" stroke-linecap="round"
-                            stroke-linejoin="round" stroke-width="2" />
-                    </svg>
-
-                    <span>Download Syllabus Matrix</span>
-                </a>
-
-
-                <div class="flex items-center gap-2 text-[10px]  text-neutral-500 sm:ml-auto">
-                    <span class="h-2 w-2 rounded-full bg-success-500"></span>
-
-                    <span>
-                        Next intake starts:
-                        <strong class="text-neutral-900">May 12, 2025</strong>
-                        (Term 2)
-                    </span>
-                </div>
+                <div class="flex flex-wrap items-center gap-y-2 gap-x-6 text-xs text-brand-textSecondary font-medium">
+                <span class="flex items-center text-white">
+                  <svg
+                    class="w-4 h-4 mr-1.5"
+                    fill="currentColor"
+                    viewbox="0 0 20 20"
+                  >
+                    <path
+                      clip-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      fill-rule="evenodd"
+                    ></path>
+                  </svg>
+                  AQF Nationally Recognised Training
+                </span>
+                <span class="flex items-center text-secondary-400">
+                  <svg
+                    class="w-4 h-4 mr-1.5 text-brand-azure"
+                    fill="currentColor"
+                    viewbox="0 0 20 20"
+                  >
+                    <path
+                      clip-rule="evenodd"
+                      d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      fill-rule="evenodd"
+                    ></path>
+                  </svg>
+                  RTO 46173 - training.gov.au verified
+                </span>
+              </div>
 
             </div>
-
         </div>
     </section>
+
+    @include('frontend.pages.home.section.review')
+
 
     <main class="mx-auto max-w-7xl flex-1 px-4 py-10 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
 
@@ -182,8 +100,6 @@
 
             <!-- LEFT CONTENT -->
             <div class="space-y-6 sm:space-y-8 lg:col-span-8">
-
-
                 <!-- COURSE DESCRIPTION -->
                 <article
                     class="rounded-2xl border border-neutral-200/80 bg-white p-6 shadow-theme-xs transition-shadow duration-300 hover:shadow-theme-sm sm:p-8"
@@ -250,187 +166,11 @@
                     </div> --}}
 
                 </article>
-
-
-                <!-- COURSE STRUCTURE-->
-                <article id="syllabus"
-                    class="rounded-2xl border border-neutral-200/80 bg-white p-6 shadow-theme-xs transition-shadow duration-300 hover:shadow-theme-sm sm:p-8"
-                    data-purpose="course-structure">
-
-                    <div class="mb-6 flex items-center justify-between gap-4 border-b border-neutral-200 pb-4">
-
-                        <div class="flex min-w-0 items-center gap-3">
-
-                            <div
-                                class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-brand-200 bg-brand-50 text-brand-500 transition-colors duration-300 group-hover:bg-brand-100">
-                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path
-                                        d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
-                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                                </svg>
-                            </div>
-
-                            <div class="min-w-0">
-                                <span
-                                    class="block  text-[10px] font-semibold uppercase tracking-[0.14em] text-neutral-500">
-                                    02.0 Curriculum Architecture
-                                </span>
-
-                                <h2 class="font-heading text-xl font-bold tracking-tight text-neutral-900 sm:text-2xl">
-                                    Course Structure
-                                </h2>
-                            </div>
-
-                        </div>
-                        <span
-                            class="hidden shrink-0 border border-brand-200 bg-brand-50 px-3 py-1  text-[10px] font-semibold uppercase tracking-wider text-brand-700 sm:inline-flex">
-                            Total 50 Units
-                        </span>
-
-                    </div>
-                    {{-- <p class="mb-6 text-sm leading-6 text-neutral-600">
-                        To achieve the {{ $course['code'] }} {{ $course['name'] }},
-                        <strong class="font-semibold text-neutral-900">{{ $course['key_information']['total_units'] }}
-                            competency units</strong>
-                        must be successfully completed: comprising
-                        <strong
-                            class="font-semibold text-neutral-900">{{ $course['course_structure']['core_units']['total'] }}
-                            core units</strong>
-                        and
-                        <strong
-                            class="font-semibold text-neutral-900">{{ $course['course_structure']['elective_units']['total'] }}
-                            elective units</strong>.
-                    </p> --}}
-
-
-                    <!-- CORE UNITS -->
-                    {{-- <div class="mb-8">
-
-                        <div class="mb-3 flex flex-wrap items-center justify-between gap-2">
-
-                            <h3
-                                class="flex items-center gap-2 font-heading text-sm font-bold uppercase tracking-wide text-brand-700 sm:text-base">
-                                <span class="h-2 w-2 bg-brand-500"></span>
-
-                                Core Units
-                                ({{ $course['course_structure']['core_units']['total'] }} Required)
-                            </h3>
-
-                            <span class="text-[10px] font-semibold uppercase tracking-wider text-neutral-500">
-                                Mandatory Units
-                            </span>
-
-                        </div>
-
-                        <div class="space-y-2.5">
-
-                            @foreach ($course['course_structure']['core_units']['units'] as $unit)
-                                <div
-                                    class="group flex items-start gap-3 rounded-xl border border-neutral-200/80 bg-neutral-50 p-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-brand-200 hover:bg-brand-25 hover:shadow-theme-xs">
-
-                                    <div class="mt-0.5 shrink-0 text-success-600">
-                                        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
-                                            <path clip-rule="evenodd"
-                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                                fill-rule="evenodd" />
-                                        </svg>
-                                    </div>
-
-                                    <div class="min-w-0 flex-1">
-
-                                        <div class="mb-1 flex flex-wrap items-center justify-between gap-2">
-
-                                            <span class="text-[11px] font-semibold text-brand-700">
-                                                {{ $unit['code'] }}
-                                            </span>
-
-                                            <span
-                                                class="rounded-full border border-neutral-200 bg-white px-2 py-0.5 text-[9px] font-semibold uppercase tracking-wide text-neutral-600">
-                                                Core
-                                            </span>
-
-                                        </div>
-
-                                        <p class="text-sm font-semibold leading-6 text-neutral-900">
-                                            {{ $unit['name'] }}
-                                        </p>
-
-                                    </div>
-                                </div>
-                            @endforeach
-
-                        </div>
-                    </div> --}}
-
-
-                    <!-- ELECTIVE UNITS -->
-                    {{-- <div>
-
-                        <div class="mb-3 flex flex-wrap items-center justify-between gap-2">
-
-                            <h3
-                                class="flex items-center gap-2 font-heading text-sm font-bold uppercase tracking-wide text-brand-700 sm:text-base">
-
-                                <span class="h-2 w-2 bg-secondary-500"></span>
-
-                                Elective Units
-                                ({{ $course['course_structure']['elective_units']['total'] }} Required)
-
-                            </h3>
-
-                            <span class="text-[10px] font-semibold uppercase tracking-wider text-neutral-500">
-                                Elective Units
-                            </span>
-
-                        </div>
-
-                        <div class="space-y-2.5">
-
-                            @foreach ($course['course_structure']['elective_units']['units'] as $unit)
-                                <div
-                                    class="group flex items-start gap-3 rounded-xl border border-secondary-200 bg-secondary-25 p-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-secondary-300 hover:bg-secondary-50 hover:shadow-theme-xs">
-
-                                    <div class="mt-0.5 shrink-0 text-secondary-600">
-                                        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
-                                            <path clip-rule="evenodd"
-                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                                fill-rule="evenodd" />
-                                        </svg>
-                                    </div>
-
-                                    <div class="min-w-0 flex-1">
-
-                                        <div class="mb-1 flex flex-wrap items-center justify-between gap-2">
-
-                                            <span class="text-[11px] font-semibold text-secondary-700">
-                                                {{ $unit['code'] }}
-                                            </span>
-
-                                            <span
-                                                class="rounded-full border border-secondary-200 bg-white px-2 py-0.5 text-[9px] font-semibold uppercase tracking-wide text-secondary-700">
-                                                Elective
-                                            </span>
-
-                                        </div>
-
-                                        <p class="text-sm font-semibold leading-6 text-neutral-900">
-                                            {{ $unit['name'] }}
-                                        </p>
-
-                                    </div>
-                                </div>
-                            @endforeach
-
-                        </div>
-                    </div> --}}
-
-                </article>
-
             </div>
 
 
             <!-- RIGHT SIDEBAR -->
-            <aside class="space-y-6 lg:sticky lg:top-24 lg:col-span-4">
+            <aside class="space-y-6  lg:col-span-4 lg:sticky lg:top-28 lg:self-start">
 
                 <!-- ADMISSIONS CARD -->
                 <div id="admissions-form"
@@ -467,8 +207,7 @@
                         <!-- Name -->
                         <div>
 
-                            <label
-                                class="mb-1.5 block  text-[10px] font-semibold uppercase tracking-wide text-neutral-700">
+                            <label class="mb-1.5 block  text-[10px] font-semibold uppercase tracking-wide text-neutral-700">
                                 Full Legal Name *
                             </label>
 
@@ -481,8 +220,7 @@
                         <!-- Email -->
                         <div>
 
-                            <label
-                                class="mb-1.5 block  text-[10px] font-semibold uppercase tracking-wide text-neutral-700">
+                            <label class="mb-1.5 block  text-[10px] font-semibold uppercase tracking-wide text-neutral-700">
                                 Email Address *
                             </label>
 
@@ -493,8 +231,7 @@
                         <!-- Email -->
                         <div>
 
-                            <label
-                                class="mb-1.5 block  text-[10px] font-semibold uppercase tracking-wide text-neutral-700">
+                            <label class="mb-1.5 block  text-[10px] font-semibold uppercase tracking-wide text-neutral-700">
                                 Phone Number *
                             </label>
 
@@ -507,8 +244,7 @@
                         <!-- Residency -->
                         <div>
 
-                            <label
-                                class="mb-1.5 block  text-[10px] font-semibold uppercase tracking-wide text-neutral-700">
+                            <label class="mb-1.5 block  text-[10px] font-semibold uppercase tracking-wide text-neutral-700">
                                 Residency Status *
                             </label>
 
@@ -553,64 +289,6 @@
                             +61 2 8677 3600
                         </a>
                     </div>
-
-                </div>
-
-
-                <!-- BROCHURE CARD -->
-                <div class="rounded-2xl border border-brand-100 bg-brand-25 p-6 shadow-theme-xs transition-all duration-300 hover:-translate-y-0.5 hover:shadow-theme-sm"
-                    data-purpose="course-brochure-card">
-
-                    <span class="mb-1 block  text-[10px] font-semibold uppercase tracking-[0.14em] text-neutral-500">
-                        Document Archive
-                    </span>
-
-                    <h4 class="mb-1 font-heading text-lg font-bold tracking-tight text-neutral-900">
-                        {{ $course['code'] }} Brochure (pdf)
-                    </h4>
-
-                    <p class="mb-5 text-xs leading-6 text-neutral-600">
-                        Detailed course syllabus, semester timetable, credit fee matrix, and academic policies in a single
-                        PDF.
-                    </p>
-
-
-                    <div class="grid grid-cols-2 gap-2">
-
-                        <button type="button"
-                            class="flex items-center justify-center gap-1.5 rounded-lg border border-neutral-200 bg-white px-3 py-2.5  text-[10px] font-semibold uppercase tracking-wide text-neutral-800 transition-all duration-300 hover:-translate-y-0.5 hover:border-brand-200 hover:bg-brand-50 hover:text-brand-700 hover:shadow-theme-xs">
-                            <svg class="h-3.5 w-3.5 text-brand-500" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" />
-
-                                <path
-                                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
-                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                            </svg>
-
-                            View PDF
-                        </button>
-
-
-                        <button type="button"
-                            class="flex items-center justify-center gap-1.5 rounded-lg border border-brand-700 bg-brand-700 px-3 py-2.5 text-[10px] font-semibold uppercase tracking-wide text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-brand-800 hover:shadow-theme-xs">
-
-                            {{-- Fixed Download Icon --}}
-                            <svg class="h-3.5 w-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                            </svg>
-
-                            <span>Download</span>
-                        </button>
-
-                    </div>
-
-
-                    <span class="mt-3 block text-center  text-[9px] text-neutral-400">
-                        File size: 3.4 MB • Updated Jan 2025
-                    </span>
 
                 </div>
 
