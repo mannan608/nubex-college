@@ -24,7 +24,7 @@
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
             <!-- Section Header -->
-            <div class="text-center mb-10 sm:mb-12">
+            <div class="text-center mb-6 sm:mb-8 lg:mb-10">
                 <div
                     class="inline-flex items-center gap-1.5 px-3 py-1 bg-brand-500/10 text-brand-500 rounded-full mb-3 text-[11px] font-bold font-heading uppercase tracking-wider">
                     <span>Fast Evaluation Tool</span>

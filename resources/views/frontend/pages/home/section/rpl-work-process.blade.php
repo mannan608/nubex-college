@@ -2,7 +2,7 @@
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
             <!-- Section heading -->
-            <div class="mx-auto mb-9 max-w-3xl text-center sm:mb-12">
+            <div class="mx-auto max-w-3xl text-center mb-6 sm:mb-8 lg:mb-10">
                 <span
                     class="inline-flex items-center gap-2 rounded-full border border-brand-500/15 bg-brand-500/[0.06] px-3.5 py-2 font-heading text-[10px] font-extrabold uppercase tracking-[0.14em] text-brand-500 sm:text-xs">
                     <span class="material-symbols-outlined text-[17px]!">route</span>

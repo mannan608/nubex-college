@@ -5,7 +5,7 @@
     ) ?? [];
 @endphp
 <footer class="w-full bg-white text-slate-700 border-t border-slate-200" id="contact">
-    <div class="max-w-7xl mx-auto px-6 sm:px-10 pt-16 pb-10">
+    <div class="max-w-7xl mx-auto px-6 sm:px-10 pt-10 sm:pt-12 md:pt-16 pb-6 sm:pb-8 md:pb-10">
 
         <!-- Top Grid Section -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-8 border-b border-slate-200">

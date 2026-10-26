@@ -7,7 +7,7 @@
     <section class="w-full py-12 sm:py-16 lg:py-20 bg-surface" id="qualifications">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-10 gap-4">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-6 sm:mb-8 lg:mb-10 gap-4">
                 <div>
                     <div
                         class="inline-flex items-center gap-1.5 px-3 py-1 bg-brand-500/10 text-brand-500 rounded-full mb-3 text-[11px] font-bold font-heading uppercase tracking-wider">
@@ -33,7 +33,7 @@
     <section class="w-full py-12 sm:py-16 lg:py-20 bg-surface border-y border-slate-200/80">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
-            <div class="max-w-3xl mb-10 sm:mb-14">
+            <div class="max-w-3xl mb-6 sm:mb-8 lg:mb-10">
                 <div
                     class="inline-flex items-center gap-1.5 px-3 py-1 bg-brand-500/10 text-brand-500 rounded-full mb-3 text-[11px] font-bold font-heading uppercase tracking-wider">
                     <span class="material-symbols-outlined text-[16px]!">devices</span> <span>FLEXIBLE LEARNING</span>
@@ -377,7 +377,7 @@
     <section class="w-full py-12 sm:py-16 lg:py-20 bg-white" id="faq">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
-            <div class="text-center mb-10 sm:mb-12">
+            <div class="text-center mb-6 sm:mb-8 lg:mb-10">
                 <div
                     class="inline-flex items-center gap-1.5 px-3 py-1 bg-brand-500/10 text-brand-500 rounded-full mb-3 text-[11px] font-bold font-heading uppercase tracking-wider">
                     <span class="material-symbols-outlined text-[16px]!">help</span> <span>Got Questions?</span>

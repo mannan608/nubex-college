@@ -2,7 +2,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
             <!-- Section Header -->
-            <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
+            <div class="text-center max-w-2xl mx-auto mb-6 sm:mb-8 lg:mb-10">
                 <div
                     class="inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-brand-500/10 text-brand-500 rounded-full mb-3 text-[11px] font-bold font-heading uppercase tracking-wider">
                     <span class="material-symbols-outlined text-[16px]!">trending_up</span>

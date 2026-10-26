@@ -1,7 +1,7 @@
  <section class="w-full py-12 sm:py-16 lg:py-20 bg-white" id="about">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Header Section -->
-            <div class="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
+            <div class="text-center max-w-2xl mx-auto mb-6 sm:mb-8 lg:mb-10">
                 <div
                     class="inline-flex items-center gap-1.5 px-3 py-1 bg-brand-500/10 text-brand-500 rounded-full mb-3 text-[11px] font-bold font-heading uppercase tracking-wider">
                     <span>The Nubex Difference</span>
